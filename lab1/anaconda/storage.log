@@ -1,0 +1,2192 @@
+21:02:18,240 INF blivet: ISCSID is /sbin/iscsid
+21:02:18,241 INF blivet: no initiator set
+21:02:18,328 INF blivet: No FCoE EDD info found: No FCoE boot disk information is found in EDD!
+21:02:21,455 DBG blivet:               Ext4FS.supported: supported: True ;
+21:02:21,456 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 0
+21:02:21,457 DBG blivet:            Ext4FS.supported: supported: True ;
+21:02:21,458 DBG blivet: trying to set new default fstype to 'ext4'
+21:02:21,460 DBG blivet:                  Ext4FS.supported: supported: True ;
+21:02:21,461 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 1
+21:02:21,463 DBG blivet:               Ext4FS.supported: supported: True ;
+21:02:21,491 DBG blivet: trying to set new default fstype to 'xfs'
+21:02:21,493 DBG blivet:               XFS.supported: supported: True ;
+21:02:21,621 DBG blivet: get_format('xfs') returning XFS instance with object id 2
+21:02:21,624 DBG blivet:            XFS.supported: supported: True ;
+21:02:22,215 INF blivet: no initiator set
+21:02:22,216 INF blivet: resetting Blivet (version 3.1.0) instance <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb85c139a90>
+21:02:22,216 INF blivet: DeviceTree.populate: ignored_disks is [] ; exclusive_disks is []
+21:02:22,217 WRN blivet: Failed to call the update_volume_info method: libstoragemgmt functionality not available
+21:02:22,495 INF blivet: devices to scan: ['sr0', 'sda', 'loop0', 'loop1', 'loop2', 'live-rw', 'live-base']
+21:02:22,520 DBG blivet:                DeviceTree.handle_device: name: sr0 ; info: {'DEVLINKS': '/dev/cdrom /dev/disk/by-label/CentOS-8-2-2004-x86_64-dvd '
+             '/dev/disk/by-path/pci-0000:00:01.1-ata-2 '
+             '/dev/disk/by-uuid/2020-06-08-22-08-12-00 '
+             '/dev/disk/by-id/ata-VBOX_CD-ROM_VB2-01700376',
+ 'DEVNAME': '/dev/sr0',
+ 'DEVPATH': '/devices/pci0000:00/0000:00:01.1/ata2/host1/target1:0:0/1:0:0:0/block/sr0',
+ 'DEVTYPE': 'disk',
+ 'ID_ATA': '1',
+ 'ID_BUS': 'ata',
+ 'ID_CDROM': '1',
+ 'ID_CDROM_DVD': '1',
+ 'ID_CDROM_MEDIA': '1',
+ 'ID_CDROM_MEDIA_CD': '1',
+ 'ID_CDROM_MEDIA_SESSION_COUNT': '1',
+ 'ID_CDROM_MEDIA_TRACK_COUNT': '1',
+ 'ID_CDROM_MEDIA_TRACK_COUNT_DATA': '1',
+ 'ID_FOR_SEAT': 'block-pci-0000_00_01_1-ata-2',
+ 'ID_FS_APPLICATION_ID': 'GENISOIMAGE\\x20ISO\\x209660\\x2fHFS\\x20FILESYSTEM\\x20CREATOR\\x20\\x28C\\x29\\x201993\\x20E.YOUNGDALE\\x20\\x28C\\x29\\x201997-2006\\x20J.PEARSON\\x2fJ.SCHILLING\\x20\\x28C\\x29\\x202006-2007\\x20CDRKIT\\x20TEAM',
+ 'ID_FS_BOOT_SYSTEM_ID': 'EL\\x20TORITO\\x20SPECIFICATION',
+ 'ID_FS_LABEL': 'CentOS-8-2-2004-x86_64-dvd',
+ 'ID_FS_LABEL_ENC': 'CentOS-8-2-2004-x86_64-dvd',
+ 'ID_FS_SYSTEM_ID': 'LINUX',
+ 'ID_FS_TYPE': 'iso9660',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': '2020-06-08-22-08-12-00',
+ 'ID_FS_UUID_ENC': '2020-06-08-22-08-12-00',
+ 'ID_FS_VERSION': 'Joliet Extension',
+ 'ID_MODEL': 'CD-ROM',
+ 'ID_MODEL_ENC': 'CD-ROM\\x20\\x20\\x20\\x20\\x20\\x20\\x20\\x20\\x20\\x20',
+ 'ID_PART_TABLE_TYPE': 'dos',
+ 'ID_PART_TABLE_UUID': '31e2b460',
+ 'ID_PATH': 'pci-0000:00:01.1-ata-2',
+ 'ID_PATH_TAG': 'pci-0000_00_01_1-ata-2',
+ 'ID_REVISION': '1.0',
+ 'ID_SCSI': '1',
+ 'ID_SCSI_INQUIRY': '1',
+ 'ID_SERIAL': 'VBOX_CD-ROM_VB2-01700376',
+ 'ID_SERIAL_SHORT': 'VB2-01700376',
+ 'ID_TYPE': 'cd/dvd',
+ 'ID_VENDOR': 'VBOX',
+ 'ID_VENDOR_ENC': 'VBOX\\x20\\x20\\x20\\x20',
+ 'MAJOR': '11',
+ 'MINOR': '0',
+ 'SCSI_MODEL': 'CD-ROM',
+ 'SCSI_MODEL_ENC': 'CD-ROM\\x20\\x20\\x20\\x20\\x20\\x20\\x20\\x20\\x20\\x20',
+ 'SCSI_REVISION': '1.0',
+ 'SCSI_TPGS': '0',
+ 'SCSI_TYPE': 'cd/dvd',
+ 'SCSI_VENDOR': 'VBOX',
+ 'SCSI_VENDOR_ENC': 'VBOX\\x20\\x20\\x20\\x20',
+ 'SUBSYSTEM': 'block',
+ 'SYSTEMD_MOUNT_DEVICE_BOUND': '1',
+ 'SYS_NAME': 'sr0',
+ 'SYS_PATH': '/sys/devices/pci0000:00/0000:00:01.1/ata2/host1/target1:0:0/1:0:0:0/block/sr0',
+ 'TAGS': ':seat:uaccess:systemd:',
+ 'USEC_INITIALIZED': '27486473'} ;
+21:02:22,521 INF blivet: scanning sr0 (/sys/devices/pci0000:00/0000:00:01.1/ata2/host1/target1:0:0/1:0:0:0/block/sr0)...
+21:02:22,524 DBG blivet:                  DeviceTree.get_device_by_name: name: sr0 ; incomplete: False ; hidden: False ;
+21:02:22,529 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:22,536 DBG blivet:                 OpticalDevicePopulator.run:
+21:02:22,536 DBG blivet: get_format('None') returning DeviceFormat instance with object id 4
+21:02:22,537 DBG blivet: get_format('None') returning DeviceFormat instance with object id 5
+21:02:22,550 DBG blivet:                         OpticalDevice._set_format: sr0 ; type: None ; current: None ;
+21:02:22,553 DBG blivet:                       OpticalDevice.update_sysfs_path: sr0 ; status: True ;
+21:02:22,554 DBG blivet: sr0 sysfs_path set to /sys/devices/pci0000:00/0000:00:01.1/ata2/host1/target1:0:0/1:0:0:0/block/sr0
+21:02:22,560 DBG blivet:                           OpticalDevice.read_current_size: exists: True ; path: /dev/sr0 ; sysfs_path: /sys/devices/pci0000:00/0000:00:01.1/ata2/host1/target1:0:0/1:0:0:0/block/sr0 ;
+21:02:22,564 DBG blivet: updated sr0 size to 1.6 GiB (1.6 GiB)
+21:02:22,565 INF blivet: added cdrom sr0 (id 3) to device tree
+21:02:22,565 INF blivet: got device: OpticalDevice instance (0x7fb8635f3908) --
+  name = sr0  status = True  id = 3
+  children = []
+  parents = []
+  uuid = None  size = 1.6 GiB
+  format = existing None
+  major = 11  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:01.1/ata2/host1/target1:0:0/1:0:0:0/block/sr0
+  target size = 1.6 GiB  path = /dev/sr0
+  format args = []  original_format = None
+21:02:22,577 DBG blivet:                  DeviceTree.handle_format: name: sr0 ;
+21:02:22,579 DBG blivet:                    OpticalDevice.media_present: sr0 ; status: True ;
+21:02:22,616 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+21:02:22,616 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 7
+21:02:22,627 DBG blivet:                              EFIFS.supported: supported: True ;
+21:02:22,627 DBG blivet: get_format('efi') returning EFIFS instance with object id 8
+21:02:22,633 DBG blivet:                                MacEFIFS.supported: supported: True ;
+21:02:22,634 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 9
+21:02:22,644 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+21:02:22,644 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 10
+21:02:22,645 INF blivet: type detected on 'sr0' is 'iso9660'
+21:02:22,650 DBG blivet:                        Iso9660FS.supported: supported: True ;
+21:02:22,651 DBG blivet: get_format('iso9660') returning Iso9660FS instance with object id 11
+21:02:22,655 DBG blivet:                       OpticalDevice._set_format: sr0 ; type: iso9660 ; current: None ;
+21:02:22,656 INF blivet: got format: existing iso9660 filesystem
+21:02:23,616 DBG blivet:                               Iso9660FS.supported: supported: True ;
+21:02:23,707 DBG blivet:                                  Iso9660FS.supported: supported: True ;
+21:02:23,715 DBG blivet:                DeviceTree.handle_device: name: sda ; info: {'DEVLINKS': '/dev/disk/by-id/scsi-0ATA_VBOX_HARDDISK_VBf1068734-30828be6 '
+             '/dev/disk/by-path/pci-0000:00:0d.0-ata-1 '
+             '/dev/disk/by-id/ata-VBOX_HARDDISK_VBf1068734-30828be6 '
+             '/dev/disk/by-id/scsi-1ATA_VBOX_HARDDISK_VBf1068734-30828be6 '
+             '/dev/disk/by-id/scsi-SATA_VBOX_HARDDISK_VBf1068734-30828be6',
+ 'DEVNAME': '/dev/sda',
+ 'DEVPATH': '/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda',
+ 'DEVTYPE': 'disk',
+ 'DM_MULTIPATH_DEVICE_PATH': '0',
+ 'ID_ATA': '1',
+ 'ID_ATA_FEATURE_SET_PM': '1',
+ 'ID_ATA_FEATURE_SET_PM_ENABLED': '1',
+ 'ID_ATA_SATA': '1',
+ 'ID_ATA_SATA_SIGNAL_RATE_GEN2': '1',
+ 'ID_ATA_WRITE_CACHE': '1',
+ 'ID_ATA_WRITE_CACHE_ENABLED': '1',
+ 'ID_BUS': 'ata',
+ 'ID_MODEL': 'VBOX_HARDDISK',
+ 'ID_MODEL_ENC': 'VBOX\\x20HARDDISK\\x20\\x20\\x20',
+ 'ID_PATH': 'pci-0000:00:0d.0-ata-1',
+ 'ID_PATH_TAG': 'pci-0000_00_0d_0-ata-1',
+ 'ID_REVISION': '1.0',
+ 'ID_SCSI': '1',
+ 'ID_SCSI_INQUIRY': '1',
+ 'ID_SERIAL': 'VBOX_HARDDISK_VBf1068734-30828be6',
+ 'ID_SERIAL_SHORT': 'VBf1068734-30828be6',
+ 'ID_TYPE': 'disk',
+ 'ID_VENDOR': 'ATA',
+ 'ID_VENDOR_ENC': 'ATA\\x20\\x20\\x20\\x20\\x20',
+ 'MAJOR': '8',
+ 'MINOR': '0',
+ 'MPATH_SBIN_PATH': '/sbin',
+ 'SCSI_IDENT_LUN_ATA': 'VBOX_HARDDISK_VBf1068734-30828be6',
+ 'SCSI_IDENT_LUN_T10': 'ATA_VBOX_HARDDISK_VBf1068734-30828be6',
+ 'SCSI_IDENT_LUN_VENDOR': 'VBf1068734-30828be6',
+ 'SCSI_IDENT_SERIAL': 'VBf1068734-30828be6',
+ 'SCSI_MODEL': 'VBOX_HARDDISK',
+ 'SCSI_MODEL_ENC': 'VBOX\\x20HARDDISK\\x20\\x20\\x20',
+ 'SCSI_REVISION': '1.0',
+ 'SCSI_TPGS': '0',
+ 'SCSI_TYPE': 'disk',
+ 'SCSI_VENDOR': 'ATA',
+ 'SCSI_VENDOR_ENC': 'ATA\\x20\\x20\\x20\\x20\\x20',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'sda',
+ 'SYS_PATH': '/sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '27577134'} ;
+21:02:23,738 INF blivet: scanning sda (/sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda)...
+21:02:23,764 DBG blivet:                  DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+21:02:23,769 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:23,796 DBG blivet:                 DiskDevicePopulator.run: name: sda ;
+21:02:23,833 INF blivet: sda is a disk
+21:02:23,861 DBG blivet: get_format('None') returning DeviceFormat instance with object id 14
+21:02:23,873 DBG blivet: get_format('None') returning DeviceFormat instance with object id 15
+21:02:24,005 DBG blivet:                         DiskDevice._set_format: sda ; type: None ; current: None ;
+21:02:24,027 DBG blivet:                       DiskDevice.update_sysfs_path: sda ; status: True ;
+21:02:24,030 DBG blivet: sda sysfs_path set to /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+21:02:24,044 DBG blivet:                           DiskDevice.read_current_size: exists: True ; path: /dev/sda ; sysfs_path: /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda ;
+21:02:24,055 DBG blivet: updated sda size to 8 GiB (8 GiB)
+21:02:24,072 INF blivet: added disk sda (id 13) to device tree
+21:02:24,073 INF blivet: got device: DiskDevice instance (0x7fb8426b2a58) --
+  name = sda  status = True  id = 13
+  children = []
+  parents = []
+  uuid = None  size = 8 GiB
+  format = existing None
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None
+21:02:24,112 DBG blivet:                  DeviceTree.handle_format: name: sda ;
+21:02:24,113 DBG blivet: no type or existing type for sda, bailing
+21:02:24,116 DBG blivet:                DeviceTree.handle_device: name: loop0 ; info: {'DEVNAME': '/dev/loop0',
+ 'DEVPATH': '/devices/virtual/block/loop0',
+ 'DEVTYPE': 'disk',
+ 'ID_FS_TYPE': 'squashfs',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_VERSION': '4.0',
+ 'MAJOR': '7',
+ 'MINOR': '0',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'loop0',
+ 'SYS_PATH': '/sys/devices/virtual/block/loop0',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '27235242'} ;
+21:02:24,124 INF blivet: scanning loop0 (/sys/devices/virtual/block/loop0)...
+21:02:24,127 DBG blivet:                  DeviceTree.get_device_by_name: name: loop0 ; incomplete: False ; hidden: False ;
+21:02:24,143 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:24,146 DBG blivet:                 LoopDevicePopulator.run: name: loop0 ;
+21:02:24,152 DBG blivet:                   DeviceTree.get_device_by_name: name: /run/install/repo/images/install.img ; incomplete: False ; hidden: False ;
+21:02:24,159 DBG blivet:                   DeviceTree.get_device_by_name returned None
+21:02:24,159 DBG blivet: get_format('None') returning DeviceFormat instance with object id 19
+21:02:24,160 DBG blivet: get_format('None') returning DeviceFormat instance with object id 20
+21:02:24,163 DBG blivet:                         FileDevice._set_format: /run/install/repo/images/install.img ; type: None ; current: None ;
+21:02:24,177 INF blivet: added file /run/install/repo/images/install.img (id 18) to device tree
+21:02:24,208 DBG blivet: get_format('None') returning DeviceFormat instance with object id 23
+21:02:24,252 DBG blivet:                              FileDevice.add_child: name: /run/install/repo/images/install.img ; child: loop0 ; kids: 0 ;
+21:02:24,253 DBG blivet: get_format('None') returning DeviceFormat instance with object id 24
+21:02:24,258 DBG blivet:                         LoopDevice._set_format: loop0 ; type: None ; current: None ;
+21:02:24,263 INF blivet: added loop loop0 (id 22) to device tree
+21:02:24,263 INF blivet: got device: LoopDevice instance (0x7fb8635acb00) --
+  name = loop0  status = False  id = 22
+  children = []
+  parents = ['existing 0 B file /run/install/repo/images/install.img (18)']
+  uuid = None  size = 0 B
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = False
+  sysfs path = 
+  target size = 0 B  path = /dev/loop0
+  format args = []  original_format = None
+21:02:24,277 DBG blivet:                  DeviceTree.handle_format: name: loop0 ;
+21:02:24,281 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+21:02:24,282 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 26
+21:02:24,303 DBG blivet:                              EFIFS.supported: supported: True ;
+21:02:24,309 DBG blivet: get_format('efi') returning EFIFS instance with object id 27
+21:02:24,324 DBG blivet:                                MacEFIFS.supported: supported: True ;
+21:02:24,324 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 28
+21:02:24,333 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+21:02:24,334 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 29
+21:02:24,338 INF blivet: type detected on 'loop0' is 'squashfs'
+21:02:24,338 DBG blivet: get_format('squashfs') returning DeviceFormat instance with object id 30
+21:02:24,344 DBG blivet:                       LoopDevice._set_format: loop0 ; type: None ; current: None ;
+21:02:24,344 INF blivet: got format: existing None
+21:02:24,352 DBG blivet:                DeviceTree.handle_device: name: loop1 ; info: {'DEVLINKS': '/dev/disk/by-uuid/8056f9cb-2ced-4d75-86b4-49efc4f59b0e '
+             '/dev/disk/by-label/Anaconda',
+ 'DEVNAME': '/dev/loop1',
+ 'DEVPATH': '/devices/virtual/block/loop1',
+ 'DEVTYPE': 'disk',
+ 'ID_FS_LABEL': 'Anaconda',
+ 'ID_FS_LABEL_ENC': 'Anaconda',
+ 'ID_FS_TYPE': 'ext4',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': '8056f9cb-2ced-4d75-86b4-49efc4f59b0e',
+ 'ID_FS_UUID_ENC': '8056f9cb-2ced-4d75-86b4-49efc4f59b0e',
+ 'ID_FS_VERSION': '1.0',
+ 'MAJOR': '7',
+ 'MINOR': '1',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'loop1',
+ 'SYS_PATH': '/sys/devices/virtual/block/loop1',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '27240814'} ;
+21:02:24,353 INF blivet: scanning loop1 (/sys/devices/virtual/block/loop1)...
+21:02:24,358 DBG blivet:                  DeviceTree.get_device_by_name: name: loop1 ; incomplete: False ; hidden: False ;
+21:02:24,363 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:24,366 DBG blivet:                 LoopDevicePopulator.run: name: loop1 ;
+21:02:24,370 DBG blivet:                   DeviceTree.get_device_by_name: name: /LiveOS/rootfs.img ; incomplete: False ; hidden: False ;
+21:02:24,377 DBG blivet:                   DeviceTree.get_device_by_name returned None
+21:02:24,377 DBG blivet: get_format('None') returning DeviceFormat instance with object id 33
+21:02:24,379 DBG blivet: get_format('None') returning DeviceFormat instance with object id 34
+21:02:24,384 DBG blivet:                         FileDevice._set_format: /LiveOS/rootfs.img ; type: None ; current: None ;
+21:02:24,387 INF blivet: added file /LiveOS/rootfs.img (id 32) to device tree
+21:02:24,387 DBG blivet: get_format('None') returning DeviceFormat instance with object id 37
+21:02:24,392 DBG blivet:                              FileDevice.add_child: name: /LiveOS/rootfs.img ; child: loop1 ; kids: 0 ;
+21:02:24,396 DBG blivet: get_format('None') returning DeviceFormat instance with object id 38
+21:02:24,400 DBG blivet:                         LoopDevice._set_format: loop1 ; type: None ; current: None ;
+21:02:24,404 INF blivet: added loop loop1 (id 36) to device tree
+21:02:24,404 INF blivet: got device: LoopDevice instance (0x7fb84383ea20) --
+  name = loop1  status = False  id = 36
+  children = []
+  parents = ['existing 0 B file /LiveOS/rootfs.img (32)']
+  uuid = None  size = 0 B
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = False
+  sysfs path = 
+  target size = 0 B  path = /dev/loop1
+  format args = []  original_format = None
+21:02:24,412 DBG blivet:                  DeviceTree.handle_format: name: loop1 ;
+21:02:24,417 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+21:02:24,418 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 40
+21:02:24,424 DBG blivet:                              EFIFS.supported: supported: True ;
+21:02:24,431 DBG blivet: get_format('efi') returning EFIFS instance with object id 41
+21:02:24,434 DBG blivet:                                MacEFIFS.supported: supported: True ;
+21:02:24,434 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 42
+21:02:24,443 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+21:02:24,443 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 43
+21:02:24,443 INF blivet: type detected on 'loop1' is 'ext4'
+21:02:24,544 WRN blivet: Failed to obtain minimum size for device /dev/loop1: failed to gather info from resize program: 1
+21:02:24,550 DBG blivet:                        Ext4FS.supported: supported: True ;
+21:02:24,555 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 44
+21:02:24,563 DBG blivet:                       LoopDevice._set_format: loop1 ; type: ext4 ; current: None ;
+21:02:24,563 INF blivet: got format: existing ext4 filesystem
+21:02:24,638 DBG blivet:                               Ext4FS.supported: supported: True ;
+21:02:24,730 DBG blivet:                                  Ext4FS.supported: supported: True ;
+21:02:24,736 DBG blivet:                DeviceTree.handle_device: name: loop2 ; info: {'DEVNAME': '/dev/loop2',
+ 'DEVPATH': '/devices/virtual/block/loop2',
+ 'DEVTYPE': 'disk',
+ 'ID_FS_TYPE': 'DM_snapshot_cow',
+ 'ID_FS_USAGE': 'other',
+ 'MAJOR': '7',
+ 'MINOR': '2',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'loop2',
+ 'SYS_PATH': '/sys/devices/virtual/block/loop2',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '27239549'} ;
+21:02:24,739 INF blivet: scanning loop2 (/sys/devices/virtual/block/loop2)...
+21:02:24,742 DBG blivet:                  DeviceTree.get_device_by_name: name: loop2 ; incomplete: False ; hidden: False ;
+21:02:24,746 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:24,748 DBG blivet:                 LoopDevicePopulator.run: name: loop2 ;
+21:02:24,756 DBG blivet:                   DeviceTree.get_device_by_name: name: /overlay (deleted) ; incomplete: False ; hidden: False ;
+21:02:24,759 DBG blivet:                   DeviceTree.get_device_by_name returned None
+21:02:24,760 DBG blivet: get_format('None') returning DeviceFormat instance with object id 47
+21:02:24,761 DBG blivet: get_format('None') returning DeviceFormat instance with object id 48
+21:02:24,766 DBG blivet:                         FileDevice._set_format: /overlay (deleted) ; type: None ; current: None ;
+21:02:24,771 INF blivet: added file /overlay (deleted) (id 46) to device tree
+21:02:24,772 DBG blivet: get_format('None') returning DeviceFormat instance with object id 51
+21:02:24,776 DBG blivet:                              FileDevice.add_child: name: /overlay (deleted) ; child: loop2 ; kids: 0 ;
+21:02:24,778 DBG blivet: get_format('None') returning DeviceFormat instance with object id 52
+21:02:24,783 DBG blivet:                         LoopDevice._set_format: loop2 ; type: None ; current: None ;
+21:02:24,784 INF blivet: added loop loop2 (id 50) to device tree
+21:02:24,786 INF blivet: got device: LoopDevice instance (0x7fb843851d68) --
+  name = loop2  status = False  id = 50
+  children = []
+  parents = ['existing 0 B file /overlay (deleted) (46)']
+  uuid = None  size = 0 B
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = False
+  sysfs path = 
+  target size = 0 B  path = /dev/loop2
+  format args = []  original_format = None
+21:02:24,794 DBG blivet:                  DeviceTree.handle_format: name: loop2 ;
+21:02:24,802 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+21:02:24,802 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 54
+21:02:24,808 DBG blivet:                              EFIFS.supported: supported: True ;
+21:02:24,810 DBG blivet: get_format('efi') returning EFIFS instance with object id 55
+21:02:24,819 DBG blivet:                                MacEFIFS.supported: supported: True ;
+21:02:24,819 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 56
+21:02:24,824 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+21:02:24,824 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 57
+21:02:24,827 INF blivet: type detected on 'loop2' is 'DM_snapshot_cow'
+21:02:24,828 DBG blivet: get_format('DM_snapshot_cow') returning DeviceFormat instance with object id 58
+21:02:24,837 DBG blivet:                       LoopDevice._set_format: loop2 ; type: None ; current: None ;
+21:02:24,838 INF blivet: got format: existing None
+21:02:24,848 DBG blivet:                DeviceTree.handle_device: name: live-rw ; info: {'DEVLINKS': '/dev/disk/by-label/Anaconda /dev/disk/by-id/dm-name-live-rw '
+             '/dev/disk/by-uuid/8056f9cb-2ced-4d75-86b4-49efc4f59b0e '
+             '/dev/mapper/live-rw',
+ 'DEVNAME': '/dev/dm-0',
+ 'DEVPATH': '/devices/virtual/block/dm-0',
+ 'DEVTYPE': 'disk',
+ 'DM_NAME': 'live-rw',
+ 'DM_SUSPENDED': '0',
+ 'DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG': '1',
+ 'DM_UDEV_PRIMARY_SOURCE_FLAG': '1',
+ 'DM_UDEV_RULES_VSN': '2',
+ 'ID_FS_LABEL': 'Anaconda',
+ 'ID_FS_LABEL_ENC': 'Anaconda',
+ 'ID_FS_TYPE': 'ext4',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': '8056f9cb-2ced-4d75-86b4-49efc4f59b0e',
+ 'ID_FS_UUID_ENC': '8056f9cb-2ced-4d75-86b4-49efc4f59b0e',
+ 'ID_FS_VERSION': '1.0',
+ 'MAJOR': '253',
+ 'MINOR': '0',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'dm-0',
+ 'SYS_PATH': '/sys/devices/virtual/block/dm-0',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '12632562'} ;
+21:02:24,850 INF blivet: scanning live-rw (/sys/devices/virtual/block/dm-0)...
+21:02:24,852 DBG blivet:                  DeviceTree.get_device_by_name: name: live-rw ; incomplete: False ; hidden: False ;
+21:02:24,857 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:25,057 DBG blivet:                 DMDevicePopulator.run: name: live-rw ;
+21:02:25,071 DBG blivet:                     DeviceTree.get_device_by_name: name: loop1 ; incomplete: False ; hidden: False ;
+21:02:25,075 DBG blivet:                     DeviceTree.get_device_by_name returned existing 0 B loop loop1 (36) with existing ext4 filesystem
+21:02:25,083 DBG blivet:                     DeviceTree.get_device_by_name: name: loop2 ; incomplete: False ; hidden: False ;
+21:02:25,091 DBG blivet:                     DeviceTree.get_device_by_name returned existing 0 B loop loop2 (50)
+21:02:25,096 DBG blivet:                   DeviceTree.get_device_by_name: name: live-rw ; incomplete: False ; hidden: False ;
+21:02:25,101 DBG blivet:                   DeviceTree.get_device_by_name returned None
+21:02:25,104 DBG blivet: get_format('None') returning DeviceFormat instance with object id 61
+21:02:25,112 DBG blivet:                              LoopDevice.add_child: name: loop1 ; child: live-rw ; kids: 0 ;
+21:02:25,113 DBG blivet: get_format('None') returning DeviceFormat instance with object id 62
+21:02:25,121 DBG blivet:                         DMDevice._set_format: live-rw ; type: None ; current: None ;
+21:02:25,133 DBG blivet:                       DMDevice.update_sysfs_path: live-rw ; status: True ;
+21:02:25,134 DBG blivet: live-rw sysfs_path set to /sys/devices/virtual/block/dm-0
+21:02:25,140 DBG blivet:                           DMDevice.read_current_size: exists: True ; path: /dev/mapper/live-rw ; sysfs_path: /sys/devices/virtual/block/dm-0 ;
+21:02:25,146 DBG blivet: updated live-rw size to 3 GiB (3 GiB)
+21:02:25,147 INF blivet: added dm live-rw (id 60) to device tree
+21:02:25,149 INF blivet: got device: DMDevice instance (0x7fb843875860) --
+  name = live-rw  status = True  id = 60
+  children = []
+  parents = ['existing 0 B loop loop1 (36) with existing ext4 filesystem']
+  uuid = None  size = 3 GiB
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = True
+  sysfs path = /sys/devices/virtual/block/dm-0
+  target size = 3 GiB  path = /dev/mapper/live-rw
+  format args = []  original_format = None  target = None  dm_uuid = None
+21:02:25,199 DBG blivet:                  DeviceTree.handle_format: name: live-rw ;
+21:02:25,205 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+21:02:25,207 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 64
+21:02:25,214 DBG blivet:                              EFIFS.supported: supported: True ;
+21:02:25,216 DBG blivet: get_format('efi') returning EFIFS instance with object id 65
+21:02:25,229 DBG blivet:                                MacEFIFS.supported: supported: True ;
+21:02:25,230 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 66
+21:02:25,235 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+21:02:25,236 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 67
+21:02:25,240 INF blivet: type detected on 'live-rw' is 'ext4'
+21:02:25,415 DBG blivet: using current size 3 GiB as min size
+21:02:25,477 DBG blivet:                        Ext4FS.supported: supported: True ;
+21:02:25,478 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 68
+21:02:25,480 DBG blivet:                       DMDevice._set_format: live-rw ; type: ext4 ; current: None ;
+21:02:25,484 INF blivet: got format: existing ext4 filesystem
+21:02:25,584 DBG blivet:                               Ext4FS.supported: supported: True ;
+21:02:25,655 DBG blivet:                                  Ext4FS.supported: supported: True ;
+21:02:25,665 DBG blivet:                DeviceTree.handle_device: name: live-base ; info: {'DEVLINKS': '/dev/disk/by-label/Anaconda '
+             '/dev/disk/by-uuid/8056f9cb-2ced-4d75-86b4-49efc4f59b0e '
+             '/dev/mapper/live-base /dev/disk/by-id/dm-name-live-base',
+ 'DEVNAME': '/dev/dm-1',
+ 'DEVPATH': '/devices/virtual/block/dm-1',
+ 'DEVTYPE': 'disk',
+ 'DM_NAME': 'live-base',
+ 'DM_SUSPENDED': '0',
+ 'DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG': '1',
+ 'DM_UDEV_PRIMARY_SOURCE_FLAG': '1',
+ 'DM_UDEV_RULES_VSN': '2',
+ 'ID_FS_LABEL': 'Anaconda',
+ 'ID_FS_LABEL_ENC': 'Anaconda',
+ 'ID_FS_TYPE': 'ext4',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': '8056f9cb-2ced-4d75-86b4-49efc4f59b0e',
+ 'ID_FS_UUID_ENC': '8056f9cb-2ced-4d75-86b4-49efc4f59b0e',
+ 'ID_FS_VERSION': '1.0',
+ 'MAJOR': '253',
+ 'MINOR': '1',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'dm-1',
+ 'SYS_PATH': '/sys/devices/virtual/block/dm-1',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '12675526'} ;
+21:02:25,666 INF blivet: scanning live-base (/sys/devices/virtual/block/dm-1)...
+21:02:25,672 DBG blivet:                  DeviceTree.get_device_by_name: name: live-base ; incomplete: False ; hidden: False ;
+21:02:25,681 DBG blivet:                  DeviceTree.get_device_by_name returned None
+21:02:25,846 DBG blivet:                 DMDevicePopulator.run: name: live-base ;
+21:02:25,853 DBG blivet:                     DeviceTree.get_device_by_name: name: loop1 ; incomplete: False ; hidden: False ;
+21:02:25,868 DBG blivet:                     DeviceTree.get_device_by_name returned existing 0 B loop loop1 (36) with existing ext4 filesystem
+21:02:25,874 DBG blivet:                   DeviceTree.get_device_by_name: name: live-base ; incomplete: False ; hidden: False ;
+21:02:25,879 DBG blivet:                   DeviceTree.get_device_by_name returned None
+21:02:25,881 DBG blivet: get_format('None') returning DeviceFormat instance with object id 71
+21:02:25,888 DBG blivet:                              LoopDevice.add_child: name: loop1 ; child: live-base ; kids: 1 ;
+21:02:25,889 DBG blivet: get_format('None') returning DeviceFormat instance with object id 72
+21:02:25,897 DBG blivet:                         DMDevice._set_format: live-base ; type: None ; current: None ;
+21:02:25,917 DBG blivet:                       DMDevice.update_sysfs_path: live-base ; status: True ;
+21:02:25,927 DBG blivet: live-base sysfs_path set to /sys/devices/virtual/block/dm-1
+21:02:25,932 DBG blivet:                           DMDevice.read_current_size: exists: True ; path: /dev/mapper/live-base ; sysfs_path: /sys/devices/virtual/block/dm-1 ;
+21:02:25,935 DBG blivet: updated live-base size to 3 GiB (3 GiB)
+21:02:25,937 INF blivet: added dm live-base (id 70) to device tree
+21:02:25,937 INF blivet: got device: DMDevice instance (0x7fb8435c45c0) --
+  name = live-base  status = True  id = 70
+  children = []
+  parents = ['existing 0 B loop loop1 (36) with existing ext4 filesystem']
+  uuid = None  size = 3 GiB
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = True
+  sysfs path = /sys/devices/virtual/block/dm-1
+  target size = 3 GiB  path = /dev/mapper/live-base
+  format args = []  original_format = None  target = None  dm_uuid = None
+21:02:25,973 DBG blivet:                  DeviceTree.handle_format: name: live-base ;
+21:02:25,976 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+21:02:25,977 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 74
+21:02:25,980 DBG blivet:                              EFIFS.supported: supported: True ;
+21:02:25,980 DBG blivet: get_format('efi') returning EFIFS instance with object id 75
+21:02:25,983 DBG blivet:                                MacEFIFS.supported: supported: True ;
+21:02:25,984 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 76
+21:02:25,987 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+21:02:25,987 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 77
+21:02:25,988 INF blivet: type detected on 'live-base' is 'ext4'
+21:02:26,029 WRN blivet: Failed to obtain minimum size for device /dev/mapper/live-base: failed to gather info from resize program: 1
+21:02:26,035 DBG blivet:                        Ext4FS.supported: supported: True ;
+21:02:26,036 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 78
+21:02:26,046 DBG blivet:                       DMDevice._set_format: live-base ; type: ext4 ; current: None ;
+21:02:26,048 INF blivet: got format: existing ext4 filesystem
+21:02:26,102 DBG blivet:                               Ext4FS.supported: supported: True ;
+21:02:26,141 DBG blivet:                                  Ext4FS.supported: supported: True ;
+21:02:26,178 DBG blivet:                OpticalDevice.teardown: sr0 ; status: True ; controllable: True ;
+21:02:26,216 DBG blivet:                    Iso9660FS.teardown: device: /dev/sr0 ; type: iso9660 ; status: True ;
+21:02:26,431 INF blivet: teardown of sr0 failed: umount of /run/install/repo failed (32)
+21:02:26,434 DBG blivet:                DiskDevice.teardown: sda ; status: True ; controllable: True ;
+21:02:26,436 DBG blivet:                    DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+21:02:26,439 DBG blivet:                    DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+21:02:26,471 DBG blivet:                LoopDevice.teardown: loop2 ; status: False ; controllable: False ;
+21:02:26,474 DBG blivet:                    FileDevice.teardown: /overlay (deleted) ; status: False ; controllable: False ;
+21:02:26,475 INF blivet: edd: collected mbr signatures: {}
+21:02:26,477 DBG blivet: edd: found device 0x80 at /sys/firmware/edd/int13_dev80/
+21:02:26,478 WRN blivet: interface is not a valid attribute
+21:02:26,478 WRN blivet: mbr_signature is not a valid attribute
+21:02:26,479 WRN blivet: host_bus is not a valid attribute
+21:02:26,480 DBG blivet: edd: data extracted from 0x80:<EddEntry path: /sys/firmware/edd/int13_dev80/ version: 0x30  mbr_signature: None sectors: 16777216>
+21:02:26,480 ERR blivet: edd: unable to match edd entry 0x80
+21:02:26,481 DBG blivet: resolved 'LABEL=CentOS-8-2-2004-x86_64-dvd' to 'sr0' (cdrom)
+21:02:26,484 DBG blivet:              DeviceTree.get_device_by_path: path: /dev/zram0 ; incomplete: False ; hidden: False ;
+21:02:26,486 DBG blivet:              DeviceTree.get_device_by_path returned None
+21:02:26,486 DBG blivet: failed to resolve '/dev/zram0'
+21:02:26,488 DBG blivet:          DeviceTree.get_device_by_name: name: sr0 ; incomplete: False ; hidden: True ;
+21:02:26,489 DBG blivet:          DeviceTree.get_device_by_name returned existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+21:02:26,493 DBG blivet:             DiskDevice.teardown: sda ; status: True ; controllable: True ;
+21:02:26,495 DBG blivet:                 DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+21:02:26,498 DBG blivet:                 DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+21:02:26,525 DBG blivet:             LoopDevice.teardown: loop2 ; status: False ; controllable: False ;
+21:02:26,528 DBG blivet:                 FileDevice.teardown: /overlay (deleted) ; status: False ; controllable: False ;
+21:02:26,548 DBG blivet:                     Ext4FS.supported: supported: True ;
+21:02:26,551 DBG blivet:                     Ext4FS.supported: supported: True ;
+21:02:26,554 DBG blivet:                   Ext4FS.supported: supported: True ;
+21:02:26,557 DBG blivet:                   Iso9660FS.supported: supported: True ;
+21:02:26,573 DBG blivet: /dev/sr0 is mounted on /run/install/repo
+21:02:26,577 DBG blivet: /dev/sr0 is mounted on /run/install/repo
+21:02:26,617 DBG blivet:           DeviceTree.get_device_by_path: path: /dev/sr0 ; incomplete: False ; hidden: False ;
+21:02:26,623 DBG blivet:           DeviceTree.get_device_by_path returned existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+21:03:00,553 DBG blivet:         DiskLabel.__init__:
+21:03:00,553 INF blivet: DiskLabel.parted_device returning None
+21:03:00,557 DBG blivet:         DMRaidMember.__init__:
+21:03:00,560 DBG blivet:           Ext2FS.supported: supported: True ;
+21:03:00,562 DBG blivet:         Ext2FS.supported: supported: True ;
+21:03:00,569 DBG blivet:           Ext3FS.supported: supported: True ;
+21:03:00,570 DBG blivet:         Ext3FS.supported: supported: True ;
+21:03:00,572 DBG blivet:           Ext4FS.supported: supported: True ;
+21:03:00,573 DBG blivet:         Ext4FS.supported: supported: True ;
+21:03:00,577 DBG blivet:           FATFS.supported: supported: True ;
+21:03:00,644 DBG blivet:         FATFS.supported: supported: True ;
+21:03:00,646 DBG blivet:             EFIFS.supported: supported: True ;
+21:03:00,652 DBG blivet:           EFIFS.supported: supported: True ;
+21:03:00,659 DBG blivet:             BTRFS.supported: supported: True ;
+21:03:00,662 DBG blivet:         BTRFS.supported: supported: True ;
+21:03:00,667 DBG blivet:           XFS.supported: supported: True ;
+21:03:00,670 DBG blivet:         XFS.supported: supported: True ;
+21:03:00,673 DBG blivet:           HFS.supported: supported: False ;
+21:03:00,676 DBG blivet:         HFS.supported: supported: False ;
+21:03:00,681 DBG blivet:             AppleBootstrapFS.supported: supported: True ;
+21:03:00,683 DBG blivet:           AppleBootstrapFS.supported: supported: True ;
+21:03:00,687 DBG blivet:           HFSPlus.supported: supported: False ;
+21:03:00,688 DBG blivet:         HFSPlus.supported: supported: False ;
+21:03:00,694 DBG blivet:               MacEFIFS.supported: supported: True ;
+21:03:00,700 DBG blivet:           MacEFIFS.supported: supported: True ;
+21:03:00,702 DBG blivet:           NTFS.supported: supported: False ;
+21:03:00,704 DBG blivet:         NTFS.supported: supported: False ;
+21:03:00,707 DBG blivet:           NFS.supported: supported: False ;
+21:03:00,710 DBG blivet:         NFS.supported: supported: False ;
+21:03:00,717 DBG blivet:           NFSv4.supported: supported: False ;
+21:03:00,718 DBG blivet:         NFSv4.supported: supported: False ;
+21:03:00,720 DBG blivet:           Iso9660FS.supported: supported: True ;
+21:03:00,721 DBG blivet:         Iso9660FS.supported: supported: True ;
+21:03:00,723 DBG blivet:             NoDevFS.supported: supported: False ;
+21:03:00,729 DBG blivet:         NoDevFS.supported: supported: False ;
+21:03:00,731 DBG blivet:             DevPtsFS.supported: supported: False ;
+21:03:00,732 DBG blivet:         DevPtsFS.supported: supported: False ;
+21:03:00,739 DBG blivet:             ProcFS.supported: supported: False ;
+21:03:00,740 DBG blivet:         ProcFS.supported: supported: False ;
+21:03:00,743 DBG blivet:             SysFS.supported: supported: False ;
+21:03:00,746 DBG blivet:         SysFS.supported: supported: False ;
+21:03:00,749 DBG blivet:               TmpFS.supported: supported: True ;
+21:03:00,766 DBG blivet:         TmpFS.supported: supported: True ;
+21:03:00,771 DBG blivet:           BindFS.supported: supported: False ;
+21:03:00,773 DBG blivet:         BindFS.supported: supported: False ;
+21:03:00,777 DBG blivet:             SELinuxFS.supported: supported: False ;
+21:03:00,779 DBG blivet:         SELinuxFS.supported: supported: False ;
+21:03:00,785 DBG blivet:             USBFS.supported: supported: False ;
+21:03:00,787 DBG blivet:         USBFS.supported: supported: False ;
+21:03:00,792 DBG blivet:             EFIVarFS.supported: supported: False ;
+21:03:00,794 DBG blivet:         EFIVarFS.supported: supported: False ;
+21:03:00,798 DBG blivet:         LUKS.__init__:
+21:03:00,805 DBG blivet:         Integrity.__init__:
+21:03:00,807 DBG blivet:         LVMPhysicalVolume.__init__:
+21:03:00,810 DBG blivet:         MDRaidMember.__init__:
+21:03:00,859 DBG blivet:         MultipathMember.__init__:
+21:03:00,864 DBG blivet:         SwapSpace.__init__:
+00:06:45,155 DBG blivet:        DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: True ;
+00:06:45,157 DBG blivet:        DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13)
+00:07:41,380 DBG blivet: starting Blivet copy
+00:07:41,392 DBG blivet: finished Blivet copy
+00:07:41,394 DBG blivet: starting Blivet copy
+00:07:41,403 DBG blivet: finished Blivet copy
+00:07:41,405 DBG blivet:        DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: True ;
+00:07:41,407 DBG blivet:        DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13)
+00:07:41,410 DBG blivet:          DeviceTree.get_dependent_devices: dep: existing 8 GiB disk sda (13) ; hidden: True ;
+00:07:41,411 DBG blivet: checking if sr0 depends on sda
+00:07:41,412 DBG blivet: checking if sda depends on sda
+00:07:41,412 DBG blivet: checking if /run/install/repo/images/install.img depends on sda
+00:07:41,412 DBG blivet: checking if loop0 depends on sda
+00:07:41,413 DBG blivet: checking if /LiveOS/rootfs.img depends on sda
+00:07:41,413 DBG blivet: checking if loop1 depends on sda
+00:07:41,413 DBG blivet: checking if /overlay (deleted) depends on sda
+00:07:41,414 DBG blivet: checking if loop2 depends on sda
+00:07:41,414 DBG blivet: checking if live-rw depends on sda
+00:07:41,414 DBG blivet: checking if live-base depends on sda
+00:07:41,482 DBG blivet:              DeviceTree.get_dependent_devices: dep: existing 8 GiB disk sda (13) ; hidden: False ;
+00:07:41,491 DBG blivet: dep is a leaf
+00:07:41,492 DBG blivet: removing sda
+00:07:41,494 DBG blivet:                DeviceTree.get_dependent_devices: dep: existing 8 GiB disk sda (13) ; hidden: False ;
+00:07:41,502 DBG blivet: dep is a leaf
+00:07:41,503 DBG blivet: get_format('None') returning DeviceFormat instance with object id 179
+00:07:41,510 DBG blivet:                      DiskDevice._set_format: sda ; type: None ; current: None ;
+00:07:41,510 INF blivet: registered action: [178] destroy format None on disk sda (id 13)
+00:07:41,516 DBG blivet: get_format('None') returning DeviceFormat instance with object id 181
+00:07:41,518 DBG blivet:                    DiskDevice._set_format: sda ; type: None ; current: None ;
+00:07:41,518 INF blivet: registered action: [180] destroy format None on disk sda (id 13)
+00:07:41,528 DBG blivet:               DiskLabel.__init__: device: /dev/sda ;
+00:07:41,754 DBG blivet: selecting None disklabel for sda based on size
+00:07:41,764 DBG blivet:                     DiskLabel.fresh_parted_disk: device: /dev/sda ; label_type: msdos ;
+00:07:41,765 DBG blivet: selecting None disklabel for sda based on size
+00:07:41,765 DBG blivet: Did not change pmbr_boot on parted.Disk instance --
+  type: msdos  primaryPartitionCount: 0
+  lastPartitionNumber: -1  maxPrimaryPartitionCount: 4
+  partitions: []
+  device: <parted.device.Device object at 0x7fb841f97080>
+  PedDisk: <_ped.Disk object at 0x7fb8411f4748>
+00:07:41,834 DBG blivet: get_format('disklabel') returning DiskLabel instance with object id 182
+00:07:41,838 DBG blivet:                    DiskDevice._set_format: sda ; type: disklabel ; current: None ;
+00:07:41,839 INF blivet: registered action: [183] create format msdos disklabel on disk sda (id 13)
+00:07:41,939 DBG blivet:                DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:41,941 DBG blivet:                DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:41,943 DBG blivet: resolved 'sda' to 'sda' (disk)
+00:07:41,945 DBG blivet:               DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:41,947 DBG blivet:               DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:41,954 DBG blivet:             DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:41,956 DBG blivet:             DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:41,958 DBG blivet: resolved 'sda' to 'sda' (disk)
+00:07:42,023 DBG blivet:                  DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:42,026 DBG blivet:                  DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:42,028 DBG blivet: resolved 'sda' to 'sda' (disk)
+00:07:42,030 DBG blivet:                 DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:42,032 DBG blivet:                 DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:42,039 DBG blivet:               DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:42,041 DBG blivet:               DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:42,043 DBG blivet: resolved 'sda' to 'sda' (disk)
+00:07:42,070 DBG blivet: starting Blivet copy
+00:07:42,085 DBG blivet: finished Blivet copy
+00:07:55,975 DBG storage.ui:                  DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:55,978 DBG storage.ui:                  DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:55,981 DBG storage.ui: resolved 'sda' to 'sda' (disk)
+00:07:55,983 DBG storage.ui:                 DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:55,985 DBG storage.ui:                 DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:55,992 DBG storage.ui:               DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:55,994 DBG storage.ui:               DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:55,996 DBG storage.ui: resolved 'sda' to 'sda' (disk)
+00:07:56,010 DBG storage.ui:              LVMPhysicalVolume.__init__: mountpoint: None ;
+00:07:56,010 DBG storage.ui: get_format('lvmpv') returning LVMPhysicalVolume instance with object id 220
+00:07:56,011 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 222
+00:07:56,014 DBG storage.ui:                        DiskDevice.add_child: name: sda ; child: req0 ; kids: 0 ;
+00:07:56,017 DBG storage.ui:                   PartitionDevice._set_format: req0 ; type: lvmpv ; current: None ;
+00:07:56,020 DBG storage.ui:                      DiskDevice.remove_child: name: sda ; child: req0 ; kids: 1 ;
+00:07:56,021 INF storage.ui: added partition req0 (id 221) to device tree
+00:07:56,021 INF storage.ui: registered action: [224] create device partition req0 (id 221)
+00:07:56,023 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 226
+00:07:56,026 DBG storage.ui:                   PartitionDevice._set_format: req0 ; type: lvmpv ; current: lvmpv ;
+00:07:56,027 INF storage.ui: registered action: [225] create format lvmpv on partition req0 (id 221)
+00:07:56,043 DBG storage.ui:                Ext4FS.supported: supported: True ;
+00:07:56,043 DBG storage.ui: get_format('ext4') returning Ext4FS instance with object id 227
+00:07:56,044 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 229
+00:07:56,046 DBG storage.ui:                        DiskDevice.add_child: name: sda ; child: req1 ; kids: 0 ;
+00:07:56,048 DBG storage.ui:                   PartitionDevice._set_format: req1 ; type: ext4 ; current: None ;
+00:07:56,052 DBG storage.ui:                      DiskDevice.remove_child: name: sda ; child: req1 ; kids: 1 ;
+00:07:56,052 INF storage.ui: added partition req1 (id 228) to device tree
+00:07:56,053 INF storage.ui: registered action: [231] create device partition req1 (id 228)
+00:07:56,054 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 233
+00:07:56,056 DBG storage.ui:                   PartitionDevice._set_format: req1 ; type: ext4 ; current: ext4 ;
+00:07:56,058 INF storage.ui: registered action: [232] create format ext4 filesystem mounted at /boot on partition req1 (id 228)
+00:07:56,061 DBG storage.ui:           DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:07:56,062 DBG storage.ui: removing all non-preexisting partitions ['req0(id 221)', 'req1(id 228)'] from disk(s) ['sda']
+00:07:56,063 DBG storage.ui: allocate_partitions: disks=['sda'] ; partitions=['req0(id 221)', 'req1(id 228)']
+00:07:56,063 DBG storage.ui: removing all non-preexisting partitions ['req1(id 228)', 'req0(id 221)'] from disk(s) ['sda']
+00:07:56,064 DBG storage.ui: allocating partition: req1 ; id: 228 ; disks: ['sda'] ;
+boot: True ; primary: False ; size: 1024 MiB ; grow: False ; max_size: 0 B ; start: None ; end: None
+00:07:56,065 DBG storage.ui: checking freespace on sda
+00:07:56,066 DBG storage.ui: get_best_free_space_region: disk=/dev/sda part_type=0 req_size=1024 MiB boot=True best=None grow=False start=None
+00:07:56,067 DBG storage.ui: checking 2-16777215 (8 GiB)
+00:07:56,068 DBG storage.ui: current free range is 2-16777215 (8 GiB)
+00:07:56,068 DBG storage.ui: updating use_disk to sda, type: 0
+00:07:56,069 DBG storage.ui: new free: 2-16777215 / 8 GiB
+00:07:56,069 DBG storage.ui: new free allows for 0 sectors of growth
+00:07:56,070 DBG storage.ui: found free space for bootable request
+00:07:56,071 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:07:56,076 DBG storage.ui: adjusted start sector from 2 to 2048
+00:07:56,077 DBG storage.ui: created partition sda1 of 1024 MiB and added it to /dev/sda
+00:07:56,080 DBG storage.ui:              PartitionDevice._set_parted_partition: req1 ;
+00:07:56,080 DBG storage.ui: device req1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f1668>  PedPartition: <_ped.Partition object at 0x7fb841109a40>
+00:07:56,083 DBG storage.ui:              PartitionDevice._set_disk: sda1 ; old: None ; new: sda ;
+00:07:56,085 DBG storage.ui:                   DiskDevice.add_child: name: sda ; child: sda1 ; kids: 0 ;
+00:07:56,088 DBG storage.ui:              PartitionDevice._set_parted_partition: sda1 ;
+00:07:56,088 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e60f940>  PedPartition: <_ped.Partition object at 0x7fb83e5b93b8>
+00:07:56,089 DBG storage.ui: allocating partition: req0 ; id: 221 ; disks: ['sda'] ;
+boot: False ; primary: False ; size: 500 MiB ; grow: True ; max_size: 0 B ; start: None ; end: None
+00:07:56,090 DBG storage.ui: checking freespace on sda
+00:07:56,091 DBG storage.ui: get_best_free_space_region: disk=/dev/sda part_type=0 req_size=500 MiB boot=False best=None grow=True start=None
+00:07:56,092 DBG storage.ui: checking 2-2047 (1023 KiB)
+00:07:56,093 DBG storage.ui: current free range is 2-2047 (1023 KiB)
+00:07:56,093 DBG storage.ui: checking 2099200-16777215 (7 GiB)
+00:07:56,094 DBG storage.ui: current free range is 2099200-16777215 (7 GiB)
+00:07:56,094 DBG storage.ui: evaluating growth potential for new layout
+00:07:56,095 DBG storage.ui: calculating growth for disk /dev/sda
+00:07:56,095 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:07:56,098 DBG storage.ui:              PartitionDevice._set_parted_partition: req0 ;
+00:07:56,098 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f1630>  PedPartition: <_ped.Partition object at 0x7fb8459f2e60>
+00:07:56,100 DBG storage.ui:              PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:07:56,102 DBG storage.ui:                   DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:07:56,103 DBG storage.ui: adding request 228 to chunk 16775168 (2048-16777215) on /dev/sda
+00:07:56,104 DBG storage.ui: adding request 221 to chunk 16775168 (2048-16777215) on /dev/sda
+00:07:56,105 DBG storage.ui: Chunk.grow_requests: 16775168 (2048-16777215) on /dev/sda start = 2048  end = 16777215
+sector_size = 512 B
+
+00:07:56,106 DBG storage.ui: req: PartitionRequest instance --
+id = 228  name = sda1  growable = False
+base = 2097152  growth = 0  max_grow = 0
+done = True
+00:07:56,108 DBG storage.ui: req: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 1024000  growth = 0  max_grow = 4293943295
+done = False
+00:07:56,108 DBG storage.ui: 1 requests and 13654016 (6.51 GiB) left in chunk
+00:07:56,109 DBG storage.ui: adding 13654016 (6.51 GiB) to 221 (sda2)
+00:07:56,110 DBG storage.ui: new grow amount for request 221 (sda2) is 13654016 units, or 6.51 GiB
+00:07:56,110 DBG storage.ui: request 228 (sda1) growth: 0 (0 B) size: 1024 MiB
+00:07:56,111 DBG storage.ui: request 221 (sda2) growth: 13654016 (6.51 GiB) size: 7 GiB
+00:07:56,111 DBG storage.ui: disk /dev/sda growth: 13654016 (6.51 GiB)
+00:07:56,113 DBG storage.ui:              PartitionDevice._set_parted_partition: sda2 ;
+00:07:56,114 DBG storage.ui: device sda2 new parted_partition None
+00:07:56,115 DBG storage.ui:              PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:07:56,118 DBG storage.ui:                       DiskDevice.remove_child: name: sda ; child: req0 ; kids: 2 ;
+00:07:56,118 DBG storage.ui: total growth: 13654016 sectors
+00:07:56,118 DBG storage.ui: updating use_disk to sda, type: 0
+00:07:56,119 DBG storage.ui: new free: 2099200-16777215 / 7 GiB
+00:07:56,119 DBG storage.ui: new free allows for 13654016 sectors of growth
+00:07:56,120 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:07:56,121 DBG storage.ui: created partition sda2 of 500 MiB and added it to /dev/sda
+00:07:56,123 DBG storage.ui:              PartitionDevice._set_parted_partition: req0 ;
+00:07:56,123 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f1748>  PedPartition: <_ped.Partition object at 0x7fb841109af0>
+00:07:56,126 DBG storage.ui:              PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:07:56,128 DBG storage.ui:                   DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:07:56,130 DBG storage.ui:              PartitionDevice._set_parted_partition: sda2 ;
+00:07:56,130 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f13c8>  PedPartition: <_ped.Partition object at 0x7fb841109ba0>
+00:07:56,131 DBG storage.ui: grow_partitions: disks=['sda'], partitions=['sda2(id 221)', 'sda1(id 228)']
+00:07:56,132 DBG storage.ui: growable partitions are ['sda2']
+00:07:56,133 DBG storage.ui: adding request 221 to chunk 16775168 (2048-16777215) on /dev/sda
+00:07:56,134 DBG storage.ui: adding request 228 to chunk 16775168 (2048-16777215) on /dev/sda
+00:07:56,134 DBG storage.ui: disk sda has 1 chunks
+00:07:56,134 DBG storage.ui: Chunk.grow_requests: 16775168 (2048-16777215) on /dev/sda start = 2048  end = 16777215
+sector_size = 512 B
+
+00:07:56,135 DBG storage.ui: req: PartitionRequest instance --
+id = 228  name = sda1  growable = False
+base = 2097152  growth = 0  max_grow = 0
+done = True
+00:07:56,135 DBG storage.ui: req: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 1024000  growth = 0  max_grow = 4293943295
+done = False
+00:07:56,136 DBG storage.ui: 1 requests and 13654016 (6.51 GiB) left in chunk
+00:07:56,136 DBG storage.ui: adding 13654016 (6.51 GiB) to 221 (sda2)
+00:07:56,137 DBG storage.ui: new grow amount for request 221 (sda2) is 13654016 units, or 6.51 GiB
+00:07:56,137 DBG storage.ui: growing partitions on sda
+00:07:56,138 DBG storage.ui: partition sda1 (228): 0
+00:07:56,138 DBG storage.ui: new geometry for sda1: parted.Geometry instance --
+  start: 2048  end: 2099199  length: 2097152
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb8425585f8>
+00:07:56,139 DBG storage.ui: partition sda2 (221): 0
+00:07:56,140 DBG storage.ui: new geometry for sda2: parted.Geometry instance --
+  start: 2099200  end: 16777215  length: 14678016
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb842558940>
+00:07:56,140 DBG storage.ui: removing all non-preexisting partitions ['sda1(id 228)', 'sda2(id 221)'] from disk(s) ['sda']
+00:07:56,142 DBG storage.ui:               PartitionDevice._set_parted_partition: sda1 ;
+00:07:56,143 DBG storage.ui: device sda1 new parted_partition None
+00:07:56,145 DBG storage.ui:               PartitionDevice._set_disk: req1 ; old: sda ; new: None ;
+00:07:56,147 DBG storage.ui:                        DiskDevice.remove_child: name: sda ; child: req1 ; kids: 2 ;
+00:07:56,149 DBG storage.ui:               PartitionDevice._set_parted_partition: sda2 ;
+00:07:56,150 DBG storage.ui: device sda2 new parted_partition None
+00:07:56,152 DBG storage.ui:               PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:07:56,154 DBG storage.ui:                        DiskDevice.remove_child: name: sda ; child: req0 ; kids: 1 ;
+00:07:56,154 DBG storage.ui: back from remove_new_partitions
+00:07:56,155 DBG storage.ui: extended: None
+00:07:56,155 DBG storage.ui: setting req1 new geometry: parted.Geometry instance --
+  start: 2048  end: 2099199  length: 2097152
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb8425585f8>
+00:07:56,157 DBG storage.ui:              PartitionDevice._set_parted_partition: req1 ;
+00:07:56,157 DBG storage.ui: device req1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f1400>  PedPartition: <_ped.Partition object at 0x7fb841109a98>
+00:07:56,160 DBG storage.ui:              PartitionDevice._set_disk: sda1 ; old: None ; new: sda ;
+00:07:56,162 DBG storage.ui:                   DiskDevice.add_child: name: sda ; child: sda1 ; kids: 0 ;
+00:07:56,164 DBG storage.ui:              PartitionDevice._set_parted_partition: sda1 ;
+00:07:56,164 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f1278>  PedPartition: <_ped.Partition object at 0x7fb841109af0>
+00:07:56,165 DBG storage.ui: setting req0 new geometry: parted.Geometry instance --
+  start: 2099200  end: 16777215  length: 14678016
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb842558940>
+00:07:56,173 DBG storage.ui:              PartitionDevice._set_parted_partition: req0 ;
+00:07:56,174 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f19b0>  PedPartition: <_ped.Partition object at 0x7fb841109ca8>
+00:07:56,179 DBG storage.ui:              PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:07:56,182 DBG storage.ui:                   DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:07:56,184 DBG storage.ui:              PartitionDevice._set_parted_partition: sda2 ;
+00:07:56,185 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e5f16d8>  PedPartition: <_ped.Partition object at 0x7fb841109ba0>
+00:07:56,186 DBG storage.ui: fixing size of non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:07:56,192 DBG storage.ui: fixing size of non-existent 7 GiB partition sda2 (221) with non-existent lvmpv
+00:07:56,694 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 235
+00:07:56,699 DBG storage.ui:                            LVMVolumeGroupDevice._add_parent: cl ; parent: sda2 ;
+00:07:56,702 DBG storage.ui:                                PartitionDevice.add_child: name: sda2 ; child: cl ; kids: 0 ;
+00:07:56,704 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 236
+00:07:56,707 DBG storage.ui:                      LVMVolumeGroupDevice._set_format: cl ; type: None ; current: None ;
+00:07:56,709 INF storage.ui: added lvmvg cl (id 234) to device tree
+00:07:56,709 INF storage.ui: registered action: [238] create device lvmvg cl (id 234)
+00:07:56,712 DBG storage.ui:                XFS.supported: supported: True ;
+00:07:56,712 DBG storage.ui: get_format('xfs') returning XFS instance with object id 239
+00:07:56,713 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 241
+00:07:56,716 DBG storage.ui:                            LVMVolumeGroupDevice.add_child: name: cl ; child: root ; kids: 0 ;
+00:07:56,719 DBG storage.ui:                          LVMLogicalVolumeDevice._set_format: cl-root ; type: xfs ; current: None ;
+00:07:56,721 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 243
+00:07:56,724 DBG storage.ui:                            LVMVolumeGroupDevice.remove_child: name: cl ; child: root ; kids: 1 ;
+00:07:56,726 DBG storage.ui:                          LVMVolumeGroupDevice.add_child: name: cl ; child: root ; kids: 0 ;
+00:07:56,729 DBG storage.ui:                        LVMLogicalVolumeDevice._set_format: cl-root ; type: xfs ; current: None ;
+00:07:56,731 DBG storage.ui: cl size is 7 GiB
+00:07:56,733 DBG storage.ui: vg cl has 7 GiB free
+00:07:56,733 DBG storage.ui: Adding cl-root/1024 MiB to cl
+00:07:56,734 INF storage.ui: added lvmlv cl-root (id 240) to device tree
+00:07:56,735 INF storage.ui: registered action: [245] create device lvmlv cl-root (id 240)
+00:07:56,736 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 247
+00:07:56,739 DBG storage.ui:                      LVMLogicalVolumeDevice._set_format: cl-root ; type: xfs ; current: xfs ;
+00:07:56,740 INF storage.ui: registered action: [246] create format xfs filesystem mounted at / on lvmlv cl-root (id 240)
+00:07:56,743 DBG storage.ui:              SwapSpace.__init__: mountpoint: None ;
+00:07:56,744 DBG storage.ui: get_format('swap') returning SwapSpace instance with object id 248
+00:07:56,744 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 250
+00:07:56,747 DBG storage.ui:                            LVMVolumeGroupDevice.add_child: name: cl ; child: swap ; kids: 1 ;
+00:07:56,750 DBG storage.ui:                          LVMLogicalVolumeDevice._set_format: cl-swap ; type: swap ; current: None ;
+00:07:56,751 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 252
+00:07:56,754 DBG storage.ui:                            LVMVolumeGroupDevice.remove_child: name: cl ; child: swap ; kids: 2 ;
+00:07:56,757 DBG storage.ui:                          LVMVolumeGroupDevice.add_child: name: cl ; child: swap ; kids: 1 ;
+00:07:56,760 DBG storage.ui:                        LVMLogicalVolumeDevice._set_format: cl-swap ; type: swap ; current: None ;
+00:07:56,761 DBG storage.ui: cl size is 7 GiB
+00:07:56,763 DBG storage.ui: vg cl has 6 GiB free
+00:07:56,764 DBG storage.ui: Adding cl-swap/819.2 MiB to cl
+00:07:56,765 INF storage.ui: added lvmlv cl-swap (id 249) to device tree
+00:07:56,765 INF storage.ui: registered action: [254] create device lvmlv cl-swap (id 249)
+00:07:56,766 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 256
+00:07:56,769 DBG storage.ui:                      LVMLogicalVolumeDevice._set_format: cl-swap ; type: swap ; current: swap ;
+00:07:56,769 INF storage.ui: registered action: [255] create format swap on lvmlv cl-swap (id 249)
+00:07:56,771 DBG storage.ui: cl size is 7 GiB
+00:07:56,773 DBG storage.ui: vg cl has 5.2 GiB free
+00:07:56,774 DBG storage.ui: vg cl: 5.2 GiB free ; lvs: ['root', 'swap']
+00:07:56,775 DBG storage.ui: cl size is 7 GiB
+00:07:56,778 DBG storage.ui: vg cl has 5.2 GiB free
+00:07:56,780 DBG storage.ui: adding request 240 to chunk 1791 on /dev/cl
+00:07:56,781 DBG storage.ui: adding request 249 to chunk 1791 on /dev/cl
+00:07:56,781 DBG storage.ui: Chunk.grow_requests: VGChunk instance --
+device = /dev/cl  length = 1791  size = 7 GiB
+remaining = 1  pool = 1330
+00:07:56,783 DBG storage.ui: req: LVRequest instance --
+id = 240  name = cl-root  growable = True
+base = 256  growth = 0  max_grow = 12544
+done = False
+00:07:56,784 DBG storage.ui: req: LVRequest instance --
+id = 249  name = cl-swap  growable = False
+base = 205  growth = 0  max_grow = 0
+done = True
+00:07:56,785 DBG storage.ui: 1 requests and 1330 (5.2 GiB) left in chunk
+00:07:56,785 DBG storage.ui: adding 1330 (5.2 GiB) to 240 (cl-root)
+00:07:56,786 DBG storage.ui: new grow amount for request 240 (cl-root) is 1330 units, or 5.2 GiB
+00:07:56,786 DBG storage.ui: trying to set lv cl-root size to 6.2 GiB
+00:07:56,788 DBG storage.ui: cl size is 7 GiB
+00:07:56,790 DBG storage.ui: vg cl has 5.2 GiB free
+00:07:56,842 DBG storage.ui:                   DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:56,845 DBG storage.ui:                   DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:56,848 DBG storage.ui: resolved 'sda' to 'sda' (disk)
+00:07:56,850 DBG storage.ui:                  DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:56,852 DBG storage.ui:                  DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:56,863 DBG storage.ui:                DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:07:56,865 DBG storage.ui:                DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:56,868 DBG storage.ui: resolved 'sda' to 'sda' (disk)
+00:07:56,896 DBG storage.ui:           DeviceTree.get_device_by_path: path: /dev/sda1 ; incomplete: False ; hidden: False ;
+00:07:56,898 DBG storage.ui:           DeviceTree.get_device_by_path returned non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:07:56,904 DBG storage.ui:           DeviceTree.get_device_by_path: path: /dev/sda2 ; incomplete: False ; hidden: False ;
+00:07:56,906 DBG storage.ui:           DeviceTree.get_device_by_path returned non-existent 7 GiB partition sda2 (221) with non-existent lvmpv
+00:07:56,966 DBG blivet:                   Ext4FS.supported: supported: True ;
+00:07:56,966 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 257
+00:07:56,971 DBG blivet:                     BTRFS.supported: supported: True ;
+00:07:56,971 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 258
+00:07:56,973 DBG blivet:                BTRFS.supported: supported: True ;
+00:08:04,516 DBG blivet: cl size is 7 GiB
+00:08:04,518 DBG blivet: vg cl has 0 B free
+00:08:04,519 DBG blivet: cl size is 7 GiB
+00:08:04,521 DBG blivet: vg cl has 0 B free
+00:08:04,528 DBG blivet: cl size is 7 GiB
+00:08:04,530 DBG blivet: vg cl has 0 B free
+00:08:04,533 DBG blivet: cl size is 7 GiB
+00:08:04,535 DBG blivet: vg cl has 0 B free
+00:08:04,548 DBG blivet: cl size is 7 GiB
+00:08:04,550 DBG blivet: vg cl has 0 B free
+00:08:04,551 DBG blivet: cl size is 7 GiB
+00:08:04,554 DBG blivet: vg cl has 0 B free
+00:08:04,561 DBG blivet: cl size is 7 GiB
+00:08:04,564 DBG blivet: vg cl has 0 B free
+00:08:04,565 DBG blivet: cl size is 7 GiB
+00:08:04,568 DBG blivet: vg cl has 0 B free
+00:08:04,575 DBG blivet:              XFS.supported: supported: True ;
+00:08:04,576 DBG blivet: get_format('xfs') returning XFS instance with object id 259
+00:08:04,580 DBG blivet:                BTRFS.supported: supported: True ;
+00:08:04,581 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 260
+00:08:04,582 DBG blivet:           BTRFS.supported: supported: True ;
+00:08:04,584 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:04,587 DBG blivet: cl size is 7 GiB
+00:08:04,589 DBG blivet: vg cl has 0 B free
+00:08:04,594 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:04,596 DBG blivet: cl size is 7 GiB
+00:08:04,598 DBG blivet: vg cl has 0 B free
+00:08:23,321 DBG blivet: cl size is 7 GiB
+00:08:23,323 DBG blivet: vg cl has 0 B free
+00:08:23,324 DBG blivet: cl size is 7 GiB
+00:08:23,326 DBG blivet: vg cl has 0 B free
+00:08:23,332 DBG blivet: cl size is 7 GiB
+00:08:23,335 DBG blivet: vg cl has 0 B free
+00:08:23,336 DBG blivet: cl size is 7 GiB
+00:08:23,338 DBG blivet: vg cl has 0 B free
+00:08:23,350 DBG blivet:              Ext4FS.supported: supported: True ;
+00:08:23,351 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 261
+00:08:23,355 DBG blivet:                BTRFS.supported: supported: True ;
+00:08:23,355 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 262
+00:08:23,357 DBG blivet:           BTRFS.supported: supported: True ;
+00:08:27,696 DBG blivet: cl size is 7 GiB
+00:08:27,699 DBG blivet: vg cl has 0 B free
+00:08:27,700 DBG blivet: cl size is 7 GiB
+00:08:27,702 DBG blivet: vg cl has 0 B free
+00:08:27,708 DBG blivet: cl size is 7 GiB
+00:08:27,710 DBG blivet: vg cl has 0 B free
+00:08:27,711 DBG blivet: cl size is 7 GiB
+00:08:27,713 DBG blivet: vg cl has 0 B free
+00:08:27,725 DBG blivet: cl size is 7 GiB
+00:08:27,727 DBG blivet: vg cl has 0 B free
+00:08:27,728 DBG blivet: cl size is 7 GiB
+00:08:27,730 DBG blivet: vg cl has 0 B free
+00:08:27,736 DBG blivet: cl size is 7 GiB
+00:08:27,739 DBG blivet: vg cl has 0 B free
+00:08:27,740 DBG blivet: cl size is 7 GiB
+00:08:27,742 DBG blivet: vg cl has 0 B free
+00:08:27,750 DBG blivet:              XFS.supported: supported: True ;
+00:08:27,750 DBG blivet: get_format('xfs') returning XFS instance with object id 263
+00:08:27,754 DBG blivet:                BTRFS.supported: supported: True ;
+00:08:27,755 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 264
+00:08:27,757 DBG blivet:           BTRFS.supported: supported: True ;
+00:08:27,759 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:27,761 DBG blivet: cl size is 7 GiB
+00:08:27,764 DBG blivet: vg cl has 0 B free
+00:08:27,767 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:27,769 DBG blivet: cl size is 7 GiB
+00:08:27,772 DBG blivet: vg cl has 0 B free
+00:08:28,389 DBG blivet: cl size is 7 GiB
+00:08:28,392 DBG blivet: vg cl has 0 B free
+00:08:28,393 DBG blivet: cl size is 7 GiB
+00:08:28,396 DBG blivet: vg cl has 0 B free
+00:08:28,403 DBG blivet: cl size is 7 GiB
+00:08:28,405 DBG blivet: vg cl has 0 B free
+00:08:28,406 DBG blivet: cl size is 7 GiB
+00:08:28,409 DBG blivet: vg cl has 0 B free
+00:08:28,416 DBG blivet: cl size is 7 GiB
+00:08:28,418 DBG blivet: vg cl has 0 B free
+00:08:28,420 DBG blivet: cl size is 7 GiB
+00:08:28,422 DBG blivet: vg cl has 0 B free
+00:08:28,429 DBG blivet: cl size is 7 GiB
+00:08:28,431 DBG blivet: vg cl has 0 B free
+00:08:28,432 DBG blivet: cl size is 7 GiB
+00:08:28,435 DBG blivet: vg cl has 0 B free
+00:08:28,443 DBG blivet: cl size is 7 GiB
+00:08:28,446 DBG blivet: vg cl has 0 B free
+00:08:28,447 DBG blivet: cl size is 7 GiB
+00:08:28,450 DBG blivet: vg cl has 0 B free
+00:08:28,457 DBG blivet: cl size is 7 GiB
+00:08:28,460 DBG blivet: vg cl has 0 B free
+00:08:28,461 DBG blivet: cl size is 7 GiB
+00:08:28,464 DBG blivet: vg cl has 0 B free
+00:08:28,474 DBG blivet:            SwapSpace.__init__:
+00:08:28,474 DBG blivet: get_format('swap') returning SwapSpace instance with object id 265
+00:08:28,479 DBG blivet:                BTRFS.supported: supported: True ;
+00:08:28,480 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 266
+00:08:28,481 DBG blivet:           BTRFS.supported: supported: True ;
+00:08:28,485 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:28,487 DBG blivet: cl size is 7 GiB
+00:08:28,490 DBG blivet: vg cl has 0 B free
+00:08:28,494 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:28,496 DBG blivet: cl size is 7 GiB
+00:08:28,498 DBG blivet: vg cl has 0 B free
+00:08:29,387 DBG blivet: cl size is 7 GiB
+00:08:29,390 DBG blivet: vg cl has 0 B free
+00:08:29,391 DBG blivet: cl size is 7 GiB
+00:08:29,394 DBG blivet: vg cl has 0 B free
+00:08:29,400 DBG blivet: cl size is 7 GiB
+00:08:29,403 DBG blivet: vg cl has 0 B free
+00:08:29,404 DBG blivet: cl size is 7 GiB
+00:08:29,406 DBG blivet: vg cl has 0 B free
+00:08:29,414 DBG blivet: cl size is 7 GiB
+00:08:29,416 DBG blivet: vg cl has 0 B free
+00:08:29,417 DBG blivet: cl size is 7 GiB
+00:08:29,420 DBG blivet: vg cl has 0 B free
+00:08:29,427 DBG blivet: cl size is 7 GiB
+00:08:29,429 DBG blivet: vg cl has 0 B free
+00:08:29,431 DBG blivet: cl size is 7 GiB
+00:08:29,433 DBG blivet: vg cl has 0 B free
+00:08:29,441 DBG blivet: cl size is 7 GiB
+00:08:29,444 DBG blivet: vg cl has 0 B free
+00:08:29,446 DBG blivet: cl size is 7 GiB
+00:08:29,448 DBG blivet: vg cl has 0 B free
+00:08:29,455 DBG blivet: cl size is 7 GiB
+00:08:29,457 DBG blivet: vg cl has 0 B free
+00:08:29,458 DBG blivet: cl size is 7 GiB
+00:08:29,461 DBG blivet: vg cl has 0 B free
+00:08:29,468 DBG blivet:              XFS.supported: supported: True ;
+00:08:29,469 DBG blivet: get_format('xfs') returning XFS instance with object id 267
+00:08:29,473 DBG blivet:                BTRFS.supported: supported: True ;
+00:08:29,473 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 268
+00:08:29,475 DBG blivet:           BTRFS.supported: supported: True ;
+00:08:29,478 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:29,480 DBG blivet: cl size is 7 GiB
+00:08:29,482 DBG blivet: vg cl has 0 B free
+00:08:29,486 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:08:29,489 DBG blivet: cl size is 7 GiB
+00:08:29,492 DBG blivet: vg cl has 0 B free
+00:08:51,742 DBG blivet:          Ext4FS.supported: supported: True ;
+00:08:51,743 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 269
+00:09:01,367 DBG blivet:           Ext4FS.supported: supported: True ;
+00:09:01,368 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 270
+00:09:01,370 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, ['sda'], {'size': Size (4.1999999992549419403076171875 GiB), 'disks': [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 7 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None], 'encrypted': False, 'luks_version': None, 'raid_level': None, 'min_luks_entropy': 256}
+00:09:01,377 DBG blivet: cl size is 7 GiB
+00:09:01,380 DBG blivet: vg cl has 0 B free
+00:09:01,388 DBG blivet: cl size is 7 GiB
+00:09:01,391 DBG blivet: vg cl has 0 B free
+00:09:01,392 DBG blivet: cl size is 7 GiB
+00:09:01,394 DBG blivet: vg cl has 0 B free
+00:09:01,400 DBG blivet: cl size is 7 GiB
+00:09:01,403 DBG blivet: vg cl has 0 B free
+00:09:01,404 DBG blivet: cl size is 7 GiB
+00:09:01,407 DBG blivet: vg cl has 0 B free
+00:09:01,419 DBG storage.ui:          InstallerStorage.factory_device: 0 ; min_luks_entropy: 256 ; device: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at / ; name: root ; size: 4.2 GiB ; fstype: ext4 ; encrypted: False ; luks_version: None ; label:  ; mountpoint: / ; raid_level: None ; container_name: cl ; container_encrypted: False ; container_raid_level: None ; container_size: 0 ; disks: [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 7 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None] ;
+00:09:01,427 DBG storage.ui: cl size is 7 GiB
+00:09:01,429 DBG storage.ui: vg cl has 0 B free
+00:09:01,430 DBG storage.ui: cl size is 7 GiB
+00:09:01,432 DBG storage.ui: vg cl has 0 B free
+00:09:01,440 DBG storage.ui: cl size is 7 GiB
+00:09:01,442 DBG storage.ui: vg cl has 0 B free
+00:09:01,444 DBG storage.ui: cl size is 7 GiB
+00:09:01,446 DBG storage.ui: vg cl has 0 B free
+00:09:01,456 DBG storage.ui: cl size is 7 GiB
+00:09:01,459 DBG storage.ui: vg cl has 0 B free
+00:09:01,461 DBG storage.ui: cl size is 7 GiB
+00:09:01,464 DBG storage.ui: vg cl has 0 B free
+00:09:01,450 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, ['sda'], {'min_luks_entropy': 256, 'device': LVMLogicalVolumeDevice instance (0x7fb83e658550) --
+  name = cl-root  status = False  id = 240
+  children = []
+  parents = ['non-existent 7 GiB lvmvg cl (234)']
+  uuid = None  size = 6.2 GiB
+  format = non-existent xfs filesystem mounted at /
+  major = 0  minor = 0  exists = False  protected = False
+  sysfs path = 
+  target size = 1024 MiB  path = /dev/mapper/cl-root
+  format args = []  original_format = xfs  target = None  dm_uuid = None  VG device = LVMVolumeGroupDevice instance (0x7fb83e5f19e8) --
+  name = cl  status = False  id = 234
+  children = ['non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem '
+ 'mounted at /',
+ 'non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap']
+  parents = ['non-existent 7 GiB partition sda2 (221) with non-existent lvmpv']
+  uuid = None  size = 7 GiB
+  format = non-existent None
+  major = 0  minor = 0  exists = False  protected = False
+  sysfs path = 
+  target size = 0 B  path = /dev/cl
+  format args = []  original_format = None  free = 0  PE Size = 4 MiB  PE Count = 0
+  PE Free = 0  PV Count = 1
+  modified = True  extents = 1791  free space = 0 B
+  free extents = 0  reserved percent = 0  reserved space = 0 B
+  PVs = ['non-existent 7 GiB partition sda2 (221) with non-existent lvmpv']
+  LVs = ['non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem '
+ 'mounted at /',
+ 'non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap']
+  segment type = linear percent = 0
+  VG space used = 6.2 GiB, 'name': 'root', 'size': Size (4.1999999992549419403076171875 GiB), 'fstype': 'ext4', 'encrypted': False, 'luks_version': None, 'label': '', 'mountpoint': '/', 'raid_level': None, 'container_name': 'cl', 'container_encrypted': False, 'container_raid_level': None, 'container_size': 0, 'disks': [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 7 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None]}
+00:09:01,473 DBG storage.ui: cl size is 7 GiB
+00:09:01,476 DBG storage.ui: vg cl has 0 B free
+00:09:01,477 DBG storage.ui: cl size is 7 GiB
+00:09:01,479 DBG storage.ui: vg cl has 0 B free
+00:09:01,486 DBG storage.ui: cl size is 7 GiB
+00:09:01,487 DBG storage.ui: vg cl has 0 B free
+00:09:01,489 DBG storage.ui: cl size is 7 GiB
+00:09:01,490 DBG storage.ui: vg cl has 0 B free
+00:09:01,498 DBG storage.ui: cl size is 7 GiB
+00:09:01,500 DBG storage.ui: vg cl has 0 B free
+00:09:01,501 DBG storage.ui: cl size is 7 GiB
+00:09:01,504 DBG storage.ui: vg cl has 0 B free
+00:09:01,510 DBG storage.ui:           LVMFactory.configure: parent_factory: None ;
+00:09:01,510 DBG storage.ui: starting Blivet copy
+00:09:01,533 DBG storage.ui:                    DeviceTree.get_device_by_id: id_num: 13 ; incomplete: False ; hidden: False ;
+00:09:01,536 DBG storage.ui:                    DeviceTree.get_device_by_id returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:09:01,543 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda1 ;
+00:09:01,544 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8412a2240>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e65edd8>  PedPartition: <_ped.Partition object at 0x7fb841109b48>
+00:09:01,547 DBG storage.ui:                    DeviceTree.get_device_by_id: id_num: 13 ; incomplete: False ; hidden: False ;
+00:09:01,549 DBG storage.ui:                    DeviceTree.get_device_by_id returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:09:01,554 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda2 ;
+00:09:01,555 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8412a2240>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e65e9e8>  PedPartition: <_ped.Partition object at 0x7fb841109c50>
+00:09:01,556 DBG storage.ui: finished Blivet copy
+00:09:01,558 DBG storage.ui:                   Ext4FS.supported: supported: True ;
+00:09:01,559 DBG storage.ui: get_format('ext4') returning Ext4FS instance with object id 335
+00:09:01,560 DBG storage.ui: cl size is 7 GiB
+00:09:01,563 DBG storage.ui: vg cl has 0 B free
+00:09:01,564 DBG storage.ui: size bumped to 11.21 GiB to include new device space
+00:09:01,564 DBG storage.ui: size cut to 5.01 GiB to omit old device space
+00:09:01,565 DBG storage.ui: child factory class: <class 'blivet.devicefactory.PartitionSetFactory'>
+00:09:01,566 DBG storage.ui: child factory args: []
+00:09:01,566 DBG storage.ui: child factory kwargs: {'storage': <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, 'size': Size (5.009765625 GiB), 'disks': [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 7 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None], 'fstype': 'lvmpv', 'encrypted': False}
+00:09:01,573 DBG storage.ui:              PartitionSetFactory.configure: parent_factory: <blivet.devicefactory.LVMFactory object at 0x7fb8412a1080> ;
+00:09:01,574 DBG storage.ui: parent factory container: non-existent 7 GiB lvmvg cl (234)
+00:09:01,579 DBG storage.ui: cl size is 7 GiB
+00:09:01,582 DBG storage.ui: vg cl has 0 B free
+00:09:01,583 DBG storage.ui: cl size is 7 GiB
+00:09:01,585 DBG storage.ui: vg cl has 0 B free
+00:09:01,590 DBG storage.ui: cl size is 7 GiB
+00:09:01,593 DBG storage.ui: vg cl has 0 B free
+00:09:01,594 DBG storage.ui: cl size is 7 GiB
+00:09:01,596 DBG storage.ui: vg cl has 0 B free
+00:09:01,598 DBG storage.ui: members: ['sda2']
+00:09:01,598 DBG storage.ui: add_disks: []
+00:09:01,598 DBG storage.ui: remove_disks: []
+00:09:01,600 DBG storage.ui:                  LVMPhysicalVolume.__init__:
+00:09:01,601 DBG storage.ui: get_format('lvmpv') returning LVMPhysicalVolume instance with object id 336
+00:09:01,602 DBG storage.ui: cl size is 7 GiB
+00:09:01,605 DBG storage.ui: vg cl has 0 B free
+00:09:01,606 DBG storage.ui: size bumped to 11.21 GiB to include new device space
+00:09:01,606 DBG storage.ui: size cut to 5.01 GiB to omit old device space
+00:09:01,607 DBG storage.ui: adding a TotalSizeSet with size 5.01 GiB
+00:09:01,607 DBG storage.ui: set.allocated = 8388608
+00:09:01,610 DBG storage.ui:                  DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:09:01,611 DBG storage.ui: removing all non-preexisting partitions ['sda1(id 228)', 'sda2(id 221)'] from disk(s) ['sda']
+00:09:01,614 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda1 ;
+00:09:01,614 DBG storage.ui: device sda1 new parted_partition None
+00:09:01,616 DBG storage.ui:                     PartitionDevice._set_disk: req1 ; old: sda ; new: None ;
+00:09:01,626 DBG storage.ui:                              DiskDevice.remove_child: name: sda ; child: req1 ; kids: 2 ;
+00:09:01,630 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda2 ;
+00:09:01,630 DBG storage.ui: device sda2 new parted_partition None
+00:09:01,633 DBG storage.ui:                     PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:09:01,635 DBG storage.ui:                              DiskDevice.remove_child: name: sda ; child: req0 ; kids: 1 ;
+00:09:01,636 DBG storage.ui: allocate_partitions: disks=['sda'] ; partitions=['req1(id 228)', 'req0(id 221)']
+00:09:01,637 DBG storage.ui: removing all non-preexisting partitions ['req1(id 228)', 'req0(id 221)'] from disk(s) ['sda']
+00:09:01,637 DBG storage.ui: allocating partition: req1 ; id: 228 ; disks: ['sda'] ;
+boot: True ; primary: False ; size: 1024 MiB ; grow: False ; max_size: 0 B ; start: None ; end: None
+00:09:01,638 DBG storage.ui: checking freespace on sda
+00:09:01,639 DBG storage.ui: get_best_free_space_region: disk=/dev/sda part_type=0 req_size=1024 MiB boot=True best=None grow=False start=None
+00:09:01,640 DBG storage.ui: checking 2-16777215 (8 GiB)
+00:09:01,640 DBG storage.ui: current free range is 2-16777215 (8 GiB)
+00:09:01,641 DBG storage.ui: updating use_disk to sda, type: 0
+00:09:01,641 DBG storage.ui: new free: 2-16777215 / 8 GiB
+00:09:01,642 DBG storage.ui: new free allows for 0 sectors of growth
+00:09:01,642 DBG storage.ui: found free space for bootable request
+00:09:01,643 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:09:01,644 DBG storage.ui: adjusted start sector from 2 to 2048
+00:09:01,644 DBG storage.ui: created partition sda1 of 1024 MiB and added it to /dev/sda
+00:09:01,647 DBG storage.ui:                     PartitionDevice._set_parted_partition: req1 ;
+00:09:01,647 DBG storage.ui: device req1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e600ac8>  PedPartition: <_ped.Partition object at 0x7fb8410a2f68>
+00:09:01,650 DBG storage.ui:                     PartitionDevice._set_disk: sda1 ; old: None ; new: sda ;
+00:09:01,652 DBG storage.ui:                          DiskDevice.add_child: name: sda ; child: sda1 ; kids: 0 ;
+00:09:01,655 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda1 ;
+00:09:01,656 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e65e278>  PedPartition: <_ped.Partition object at 0x7fb841109af0>
+00:09:01,657 DBG storage.ui: allocating partition: req0 ; id: 221 ; disks: ['sda'] ;
+boot: False ; primary: False ; size: 8 MiB ; grow: True ; max_size: 5.01 GiB ; start: None ; end: None
+00:09:01,658 DBG storage.ui: checking freespace on sda
+00:09:01,659 DBG storage.ui: get_best_free_space_region: disk=/dev/sda part_type=0 req_size=8 MiB boot=False best=None grow=True start=None
+00:09:01,659 DBG storage.ui: checking 2-2047 (1023 KiB)
+00:09:01,660 DBG storage.ui: current free range is 2-2047 (1023 KiB)
+00:09:01,660 DBG storage.ui: checking 2099200-16777215 (7 GiB)
+00:09:01,661 DBG storage.ui: current free range is 2099200-16777215 (7 GiB)
+00:09:01,662 DBG storage.ui: evaluating growth potential for new layout
+00:09:01,662 DBG storage.ui: calculating growth for disk /dev/sda
+00:09:01,663 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:09:01,666 DBG storage.ui:                     PartitionDevice._set_parted_partition: req0 ;
+00:09:01,666 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411c48d0>  PedPartition: <_ped.Partition object at 0x7fb841109d58>
+00:09:01,669 DBG storage.ui:                     PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:09:01,672 DBG storage.ui:                          DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:09:01,673 DBG storage.ui: adding request 228 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:01,674 DBG storage.ui: adding request 221 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:01,675 DBG storage.ui: Chunk.grow_requests: 16775168 (2048-16777215) on /dev/sda start = 2048  end = 16777215
+sector_size = 512 B
+
+00:09:01,675 DBG storage.ui: req: PartitionRequest instance --
+id = 228  name = sda1  growable = False
+base = 2097152  growth = 0  max_grow = 0
+done = True
+00:09:01,676 DBG storage.ui: req: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 0  max_grow = 10489856
+done = False
+00:09:01,676 DBG storage.ui: 1 requests and 14661632 (6.99 GiB) left in chunk
+00:09:01,677 DBG storage.ui: adding 14661632 (6.99 GiB) to 221 (sda2)
+00:09:01,677 DBG storage.ui: taking back 4171776 (1.99 GiB) from 221 (sda2)
+00:09:01,678 DBG storage.ui: new grow amount for request 221 (sda2) is 10489856 units, or 5 GiB
+00:09:01,686 DBG storage.ui: request 228 (sda1) growth: 0 (0 B) size: 1024 MiB
+00:09:01,687 DBG storage.ui: request 221 (sda2) growth: 10489856 (5 GiB) size: 5.01 GiB
+00:09:01,687 DBG storage.ui: disk /dev/sda growth: 10489856 (5 GiB)
+00:09:01,690 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda2 ;
+00:09:01,690 DBG storage.ui: device sda2 new parted_partition None
+00:09:01,692 DBG storage.ui:                     PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:09:01,695 DBG storage.ui:                              DiskDevice.remove_child: name: sda ; child: req0 ; kids: 2 ;
+00:09:01,696 DBG storage.ui: total growth: 10489856 sectors
+00:09:01,696 DBG storage.ui: updating use_disk to sda, type: 0
+00:09:01,697 DBG storage.ui: new free: 2099200-16777215 / 7 GiB
+00:09:01,697 DBG storage.ui: new free allows for 10489856 sectors of growth
+00:09:01,698 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:09:01,699 DBG storage.ui: created partition sda2 of 8 MiB and added it to /dev/sda
+00:09:01,701 DBG storage.ui:                     PartitionDevice._set_parted_partition: req0 ;
+00:09:01,702 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411c4da0>  PedPartition: <_ped.Partition object at 0x7fb8410a2f10>
+00:09:01,704 DBG storage.ui:                     PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:09:01,707 DBG storage.ui:                          DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:09:01,710 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda2 ;
+00:09:01,710 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e65e3c8>  PedPartition: <_ped.Partition object at 0x7fb841109e60>
+00:09:01,711 DBG storage.ui: grow_partitions: disks=['sda'], partitions=['sda1(id 228)', 'sda2(id 221)']
+00:09:01,712 DBG storage.ui: growable partitions are ['sda2']
+00:09:01,713 DBG storage.ui: adding request 228 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:01,714 DBG storage.ui: adding request 221 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:01,714 DBG storage.ui: disk sda has 1 chunks
+00:09:01,714 DBG storage.ui: Chunk.grow_requests: 16775168 (2048-16777215) on /dev/sda start = 2048  end = 16777215
+sector_size = 512 B
+
+00:09:01,715 DBG storage.ui: req: PartitionRequest instance --
+id = 228  name = sda1  growable = False
+base = 2097152  growth = 0  max_grow = 0
+done = True
+00:09:01,715 DBG storage.ui: req: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 0  max_grow = 10489856
+done = False
+00:09:01,716 DBG storage.ui: 1 requests and 14661632 (6.99 GiB) left in chunk
+00:09:01,716 DBG storage.ui: adding 14661632 (6.99 GiB) to 221 (sda2)
+00:09:01,717 DBG storage.ui: taking back 4171776 (1.99 GiB) from 221 (sda2)
+00:09:01,717 DBG storage.ui: new grow amount for request 221 (sda2) is 10489856 units, or 5 GiB
+00:09:01,717 DBG storage.ui: set: ['sda2'] 8388608/5379194880
+00:09:01,718 DBG storage.ui: allocating 5370806272 to TotalSizeSet with 8388608/5379194880 (5370806272 needed)
+00:09:01,719 DBG storage.ui: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 10489856  max_grow = 10489856
+done = True
+00:09:01,719 DBG storage.ui: needed: 0
+00:09:01,719 DBG storage.ui: set: ['sda2'] 5379194880/5379194880
+00:09:01,720 DBG storage.ui: allocating 0 to TotalSizeSet with 5379194880/5379194880 (0 needed)
+00:09:01,721 DBG storage.ui: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 10489856  max_grow = 10489856
+done = True
+00:09:01,721 DBG storage.ui: needed: 0
+00:09:01,722 DBG storage.ui: growing partitions on sda
+00:09:01,722 DBG storage.ui: partition sda1 (228): 0
+00:09:01,723 DBG storage.ui: new geometry for sda1: parted.Geometry instance --
+  start: 2048  end: 2099199  length: 2097152
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb8411c41d0>
+00:09:01,723 DBG storage.ui: partition sda2 (221): 0
+00:09:01,724 DBG storage.ui: new geometry for sda2: parted.Geometry instance --
+  start: 2099200  end: 12605439  length: 10506240
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb8411c4cc0>
+00:09:01,725 DBG storage.ui: removing all non-preexisting partitions ['sda1(id 228)', 'sda2(id 221)'] from disk(s) ['sda']
+00:09:01,727 DBG storage.ui:                      PartitionDevice._set_parted_partition: sda1 ;
+00:09:01,728 DBG storage.ui: device sda1 new parted_partition None
+00:09:01,730 DBG storage.ui:                      PartitionDevice._set_disk: req1 ; old: sda ; new: None ;
+00:09:01,733 DBG storage.ui:                               DiskDevice.remove_child: name: sda ; child: req1 ; kids: 2 ;
+00:09:01,735 DBG storage.ui:                      PartitionDevice._set_parted_partition: sda2 ;
+00:09:01,736 DBG storage.ui: device sda2 new parted_partition None
+00:09:01,738 DBG storage.ui:                      PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:09:01,742 DBG storage.ui:                               DiskDevice.remove_child: name: sda ; child: req0 ; kids: 1 ;
+00:09:01,742 DBG storage.ui: back from remove_new_partitions
+00:09:01,742 DBG storage.ui: extended: None
+00:09:01,743 DBG storage.ui: setting req1 new geometry: parted.Geometry instance --
+  start: 2048  end: 2099199  length: 2097152
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb8411c41d0>
+00:09:01,745 DBG storage.ui:                     PartitionDevice._set_parted_partition: req1 ;
+00:09:01,746 DBG storage.ui: device req1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411c4080>  PedPartition: <_ped.Partition object at 0x7fb841109ba0>
+00:09:01,748 DBG storage.ui:                     PartitionDevice._set_disk: sda1 ; old: None ; new: sda ;
+00:09:01,751 DBG storage.ui:                          DiskDevice.add_child: name: sda ; child: sda1 ; kids: 0 ;
+00:09:01,754 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda1 ;
+00:09:01,754 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411c4c50>  PedPartition: <_ped.Partition object at 0x7fb841109a40>
+00:09:01,755 DBG storage.ui: setting req0 new geometry: parted.Geometry instance --
+  start: 2099200  end: 12605439  length: 10506240
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb8411c4cc0>
+00:09:01,757 DBG storage.ui:                     PartitionDevice._set_parted_partition: req0 ;
+00:09:01,758 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411c42b0>  PedPartition: <_ped.Partition object at 0x7fb841109eb8>
+00:09:01,760 DBG storage.ui:                     PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:09:01,763 DBG storage.ui:                          DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:09:01,766 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda2 ;
+00:09:01,766 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411bd080>  PedPartition: <_ped.Partition object at 0x7fb841109e60>
+00:09:01,768 DBG storage.ui: fixing size of non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:09:01,772 DBG storage.ui: fixing size of non-existent 5.01 GiB partition sda2 (221) with non-existent lvmpv
+00:09:01,781 DBG storage.ui: new member set: ['sda2']
+00:09:01,781 DBG storage.ui: old member set: ['sda2']
+00:09:01,783 DBG storage.ui: cl size is 5.01 GiB
+00:09:01,785 DBG storage.ui: vg cl has -1.99 GiB free
+00:09:01,785 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 337
+00:09:01,788 DBG storage.ui:                      LVMLogicalVolumeDevice._set_format: cl-root ; type: None ; current: xfs ;
+00:09:01,789 DBG storage.ui: cl size is 5.01 GiB
+00:09:01,791 DBG storage.ui: vg cl has -1.99 GiB free
+00:09:01,792 INF storage.ui: adjusting device size from 6.2 GiB to 4.2 GiB
+00:09:01,793 DBG storage.ui: trying to set lv cl-root size to 4.2 GiB
+00:09:01,795 DBG storage.ui:                    Ext4FS.supported: supported: True ;
+00:09:01,795 DBG storage.ui: get_format('ext4') returning Ext4FS instance with object id 338
+00:09:01,796 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 340
+00:09:01,799 DBG storage.ui:                            LVMLogicalVolumeDevice._set_format: cl-root ; type: None ; current: None ;
+00:09:01,800 INF storage.ui: registered action: [339] destroy format None on lvmlv cl-root (id 240)
+00:09:01,803 DBG storage.ui:                            LVMLogicalVolumeDevice._set_format: cl-root ; type: ext4 ; current: None ;
+00:09:01,804 INF storage.ui: registered action: [341] create format ext4 filesystem mounted at / on lvmlv cl-root (id 240)
+00:09:01,818 DBG blivet: cl size is 5.01 GiB
+00:09:01,821 DBG blivet: vg cl has 8 MiB free
+00:09:01,822 DBG blivet: cl size is 5.01 GiB
+00:09:01,824 DBG blivet: vg cl has 8 MiB free
+00:09:01,830 DBG blivet: cl size is 5.01 GiB
+00:09:01,832 DBG blivet: vg cl has 8 MiB free
+00:09:01,834 DBG blivet: cl size is 5.01 GiB
+00:09:01,836 DBG blivet: vg cl has 8 MiB free
+00:09:01,844 DBG blivet:              Ext4FS.supported: supported: True ;
+00:09:01,845 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 342
+00:09:01,850 DBG blivet:                BTRFS.supported: supported: True ;
+00:09:01,850 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 343
+00:09:01,852 DBG blivet:           BTRFS.supported: supported: True ;
+00:09:01,854 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:09:01,857 DBG blivet: cl size is 5.01 GiB
+00:09:01,859 DBG blivet: vg cl has 8 MiB free
+00:09:01,863 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:09:01,865 DBG blivet: cl size is 5.01 GiB
+00:09:01,867 DBG blivet: vg cl has 8 MiB free
+00:09:01,894 DBG blivet:              AppleBootstrapFS.supported: supported: True ;
+00:09:01,894 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 344
+00:09:01,896 DBG blivet:           AppleBootstrapFS.supported: supported: True ;
+00:09:01,897 DBG blivet: get_format('biosboot') returning BIOSBoot instance with object id 345
+00:09:01,898 DBG blivet: get_format('prepboot') returning PPCPRePBoot instance with object id 346
+00:09:20,030 DBG blivet:           Ext4FS.supported: supported: True ;
+00:09:20,031 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 347
+00:09:20,032 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, ['sda'], {'size': Size (4.19921875 GiB), 'disks': [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 5.01 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None], 'encrypted': False, 'luks_version': None, 'raid_level': None, 'min_luks_entropy': 256}
+00:09:20,039 DBG blivet: cl size is 5.01 GiB
+00:09:20,041 DBG blivet: vg cl has 8 MiB free
+00:09:20,050 DBG blivet: cl size is 5.01 GiB
+00:09:20,052 DBG blivet: vg cl has 8 MiB free
+00:09:20,053 DBG blivet: cl size is 5.01 GiB
+00:09:20,056 DBG blivet: vg cl has 8 MiB free
+00:09:20,062 DBG blivet: cl size is 5.01 GiB
+00:09:20,065 DBG blivet: vg cl has 8 MiB free
+00:09:20,066 DBG blivet: cl size is 5.01 GiB
+00:09:20,068 DBG blivet: vg cl has 8 MiB free
+00:09:20,092 DBG blivet:              AppleBootstrapFS.supported: supported: True ;
+00:09:20,092 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 348
+00:09:20,094 DBG blivet:           AppleBootstrapFS.supported: supported: True ;
+00:09:20,095 DBG blivet: get_format('biosboot') returning BIOSBoot instance with object id 349
+00:09:20,095 DBG blivet: get_format('prepboot') returning PPCPRePBoot instance with object id 350
+00:09:41,380 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (953.67431640625 MiB), 'min_luks_entropy': 256}
+00:09:41,383 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,385 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,388 DBG storage.ui:         InstallerStorage.factory_device: 0 ; min_luks_entropy: 256 ; mountpoint: /home ; size: 953.67 MiB ; fstype: xfs ; encrypted: False ; disks: [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 5.01 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None] ; container_encrypted: False ; container_raid_level: None ; container_size: 0 ;
+00:09:41,392 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, ['sda'], {'min_luks_entropy': 256, 'mountpoint': '/home', 'size': Size (953.67431640625 MiB), 'fstype': 'xfs', 'encrypted': False, 'disks': [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 5.01 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None], 'container_encrypted': False, 'container_raid_level': None, 'container_size': 0}
+00:09:41,398 DBG storage.ui:          LVMFactory.configure: parent_factory: None ;
+00:09:41,399 DBG storage.ui: starting Blivet copy
+00:09:41,421 DBG storage.ui:                   DeviceTree.get_device_by_id: id_num: 13 ; incomplete: False ; hidden: False ;
+00:09:41,424 DBG storage.ui:                   DeviceTree.get_device_by_id returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:09:41,429 DBG storage.ui:                   PartitionDevice._set_parted_partition: sda1 ;
+00:09:41,429 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411e81d0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8410652b0>  PedPartition: <_ped.Partition object at 0x7fb8410c3468>
+00:09:41,432 DBG storage.ui:                   DeviceTree.get_device_by_id: id_num: 13 ; incomplete: False ; hidden: False ;
+00:09:41,434 DBG storage.ui:                   DeviceTree.get_device_by_id returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:09:41,439 DBG storage.ui:                   PartitionDevice._set_parted_partition: sda2 ;
+00:09:41,440 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411e81d0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8410654a8>  PedPartition: <_ped.Partition object at 0x7fb8410c34c0>
+00:09:41,441 DBG storage.ui: finished Blivet copy
+00:09:41,443 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,446 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,449 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,451 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,454 DBG storage.ui:                  XFS.supported: supported: True ;
+00:09:41,454 DBG storage.ui: get_format('xfs') returning XFS instance with object id 420
+00:09:41,458 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,460 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,462 DBG storage.ui: size bumped to 5.94 GiB to include new device space
+00:09:41,462 DBG storage.ui: child factory class: <class 'blivet.devicefactory.PartitionSetFactory'>
+00:09:41,463 DBG storage.ui: child factory args: []
+00:09:41,463 DBG storage.ui: child factory kwargs: {'storage': <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, 'size': Size (5.9375 GiB), 'disks': [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = ['non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem '
+ 'mounted at /boot',
+ 'non-existent 5.01 GiB partition sda2 (221) with non-existent lvmpv']
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None], 'fstype': 'lvmpv', 'encrypted': False}
+00:09:41,470 DBG storage.ui:             PartitionSetFactory.configure: parent_factory: <blivet.devicefactory.LVMFactory object at 0x7fb8412a27f0> ;
+00:09:41,470 DBG storage.ui: parent factory container: non-existent 5.01 GiB lvmvg cl (234)
+00:09:41,476 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,479 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,481 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,483 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,489 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,491 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,493 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,495 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,496 DBG storage.ui: members: ['sda2']
+00:09:41,497 DBG storage.ui: add_disks: []
+00:09:41,497 DBG storage.ui: remove_disks: []
+00:09:41,500 DBG storage.ui:                 LVMPhysicalVolume.__init__:
+00:09:41,503 DBG storage.ui: get_format('lvmpv') returning LVMPhysicalVolume instance with object id 421
+00:09:41,505 DBG storage.ui: cl size is 5.01 GiB
+00:09:41,508 DBG storage.ui: vg cl has 8 MiB free
+00:09:41,509 DBG storage.ui: size bumped to 5.94 GiB to include new device space
+00:09:41,509 DBG storage.ui: adding a TotalSizeSet with size 5.94 GiB
+00:09:41,510 DBG storage.ui: set.allocated = 8388608
+00:09:41,513 DBG storage.ui:                 DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:09:41,514 DBG storage.ui: removing all non-preexisting partitions ['sda1(id 228)', 'sda2(id 221)'] from disk(s) ['sda']
+00:09:41,517 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda1 ;
+00:09:41,517 DBG storage.ui: device sda1 new parted_partition None
+00:09:41,520 DBG storage.ui:                    PartitionDevice._set_disk: req1 ; old: sda ; new: None ;
+00:09:41,522 DBG storage.ui:                             DiskDevice.remove_child: name: sda ; child: req1 ; kids: 2 ;
+00:09:41,525 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda2 ;
+00:09:41,525 DBG storage.ui: device sda2 new parted_partition None
+00:09:41,528 DBG storage.ui:                    PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:09:41,531 DBG storage.ui:                             DiskDevice.remove_child: name: sda ; child: req0 ; kids: 1 ;
+00:09:41,532 DBG storage.ui: allocate_partitions: disks=['sda'] ; partitions=['req1(id 228)', 'req0(id 221)']
+00:09:41,533 DBG storage.ui: removing all non-preexisting partitions ['req1(id 228)', 'req0(id 221)'] from disk(s) ['sda']
+00:09:41,534 DBG storage.ui: allocating partition: req1 ; id: 228 ; disks: ['sda'] ;
+boot: True ; primary: False ; size: 1024 MiB ; grow: False ; max_size: 0 B ; start: None ; end: None
+00:09:41,536 DBG storage.ui: checking freespace on sda
+00:09:41,537 DBG storage.ui: get_best_free_space_region: disk=/dev/sda part_type=0 req_size=1024 MiB boot=True best=None grow=False start=None
+00:09:41,538 DBG storage.ui: checking 2-16777215 (8 GiB)
+00:09:41,539 DBG storage.ui: current free range is 2-16777215 (8 GiB)
+00:09:41,540 DBG storage.ui: updating use_disk to sda, type: 0
+00:09:41,540 DBG storage.ui: new free: 2-16777215 / 8 GiB
+00:09:41,540 DBG storage.ui: new free allows for 0 sectors of growth
+00:09:41,541 DBG storage.ui: found free space for bootable request
+00:09:41,542 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:09:41,542 DBG storage.ui: adjusted start sector from 2 to 2048
+00:09:41,543 DBG storage.ui: created partition sda1 of 1024 MiB and added it to /dev/sda
+00:09:41,545 DBG storage.ui:                    PartitionDevice._set_parted_partition: req1 ;
+00:09:41,546 DBG storage.ui: device req1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8410658d0>  PedPartition: <_ped.Partition object at 0x7fb8410c3570>
+00:09:41,548 DBG storage.ui:                    PartitionDevice._set_disk: sda1 ; old: None ; new: sda ;
+00:09:41,551 DBG storage.ui:                         DiskDevice.add_child: name: sda ; child: sda1 ; kids: 0 ;
+00:09:41,554 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda1 ;
+00:09:41,554 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8411c41d0>  PedPartition: <_ped.Partition object at 0x7fb8410c3360>
+00:09:41,555 DBG storage.ui: allocating partition: req0 ; id: 221 ; disks: ['sda'] ;
+boot: False ; primary: False ; size: 8 MiB ; grow: True ; max_size: 5.94 GiB ; start: None ; end: None
+00:09:41,557 DBG storage.ui: checking freespace on sda
+00:09:41,558 DBG storage.ui: get_best_free_space_region: disk=/dev/sda part_type=0 req_size=8 MiB boot=False best=None grow=True start=None
+00:09:41,559 DBG storage.ui: checking 2-2047 (1023 KiB)
+00:09:41,559 DBG storage.ui: current free range is 2-2047 (1023 KiB)
+00:09:41,560 DBG storage.ui: checking 2099200-16777215 (7 GiB)
+00:09:41,560 DBG storage.ui: current free range is 2099200-16777215 (7 GiB)
+00:09:41,561 DBG storage.ui: evaluating growth potential for new layout
+00:09:41,561 DBG storage.ui: calculating growth for disk /dev/sda
+00:09:41,562 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:09:41,565 DBG storage.ui:                    PartitionDevice._set_parted_partition: req0 ;
+00:09:41,565 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb841065b00>  PedPartition: <_ped.Partition object at 0x7fb841109af0>
+00:09:41,570 DBG storage.ui:                    PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:09:41,572 DBG storage.ui:                         DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:09:41,574 DBG storage.ui: adding request 228 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:41,574 DBG storage.ui: adding request 221 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:41,575 DBG storage.ui: Chunk.grow_requests: 16775168 (2048-16777215) on /dev/sda start = 2048  end = 16777215
+sector_size = 512 B
+
+00:09:41,575 DBG storage.ui: req: PartitionRequest instance --
+id = 228  name = sda1  growable = False
+base = 2097152  growth = 0  max_grow = 0
+done = True
+00:09:41,576 DBG storage.ui: req: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 0  max_grow = 12435456
+done = False
+00:09:41,576 DBG storage.ui: 1 requests and 14661632 (6.99 GiB) left in chunk
+00:09:41,577 DBG storage.ui: adding 14661632 (6.99 GiB) to 221 (sda2)
+00:09:41,577 DBG storage.ui: taking back 2226176 (1.06 GiB) from 221 (sda2)
+00:09:41,578 DBG storage.ui: new grow amount for request 221 (sda2) is 12435456 units, or 5.93 GiB
+00:09:41,578 DBG storage.ui: request 228 (sda1) growth: 0 (0 B) size: 1024 MiB
+00:09:41,579 DBG storage.ui: request 221 (sda2) growth: 12435456 (5.93 GiB) size: 5.94 GiB
+00:09:41,579 DBG storage.ui: disk /dev/sda growth: 12435456 (5.93 GiB)
+00:09:41,582 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda2 ;
+00:09:41,582 DBG storage.ui: device sda2 new parted_partition None
+00:09:41,584 DBG storage.ui:                    PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:09:41,587 DBG storage.ui:                             DiskDevice.remove_child: name: sda ; child: req0 ; kids: 2 ;
+00:09:41,588 DBG storage.ui: total growth: 12435456 sectors
+00:09:41,588 DBG storage.ui: updating use_disk to sda, type: 0
+00:09:41,589 DBG storage.ui: new free: 2099200-16777215 / 7 GiB
+00:09:41,589 DBG storage.ui: new free allows for 12435456 sectors of growth
+00:09:41,590 DBG storage.ui: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7fb83e60fef0>
+00:09:41,591 DBG storage.ui: created partition sda2 of 8 MiB and added it to /dev/sda
+00:09:41,594 DBG storage.ui:                    PartitionDevice._set_parted_partition: req0 ;
+00:09:41,594 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb841065630>  PedPartition: <_ped.Partition object at 0x7fb8410c3410>
+00:09:41,597 DBG storage.ui:                    PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:09:41,600 DBG storage.ui:                         DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:09:41,602 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda2 ;
+00:09:41,603 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8410658d0>  PedPartition: <_ped.Partition object at 0x7fb8410c32b0>
+00:09:41,604 DBG storage.ui: grow_partitions: disks=['sda'], partitions=['sda1(id 228)', 'sda2(id 221)']
+00:09:41,604 DBG storage.ui: growable partitions are ['sda2']
+00:09:41,605 DBG storage.ui: adding request 228 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:41,606 DBG storage.ui: adding request 221 to chunk 16775168 (2048-16777215) on /dev/sda
+00:09:41,606 DBG storage.ui: disk sda has 1 chunks
+00:09:41,607 DBG storage.ui: Chunk.grow_requests: 16775168 (2048-16777215) on /dev/sda start = 2048  end = 16777215
+sector_size = 512 B
+
+00:09:41,607 DBG storage.ui: req: PartitionRequest instance --
+id = 228  name = sda1  growable = False
+base = 2097152  growth = 0  max_grow = 0
+done = True
+00:09:41,608 DBG storage.ui: req: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 0  max_grow = 12435456
+done = False
+00:09:41,608 DBG storage.ui: 1 requests and 14661632 (6.99 GiB) left in chunk
+00:09:41,609 DBG storage.ui: adding 14661632 (6.99 GiB) to 221 (sda2)
+00:09:41,609 DBG storage.ui: taking back 2226176 (1.06 GiB) from 221 (sda2)
+00:09:41,610 DBG storage.ui: new grow amount for request 221 (sda2) is 12435456 units, or 5.93 GiB
+00:09:41,610 DBG storage.ui: set: ['sda2'] 8388608/6375342080
+00:09:41,611 DBG storage.ui: allocating 6366953472 to TotalSizeSet with 8388608/6375342080 (6366953472 needed)
+00:09:41,611 DBG storage.ui: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 12435456  max_grow = 12435456
+done = True
+00:09:41,612 DBG storage.ui: needed: 0
+00:09:41,612 DBG storage.ui: set: ['sda2'] 6375342080/6375342080
+00:09:41,613 DBG storage.ui: allocating 0 to TotalSizeSet with 6375342080/6375342080 (0 needed)
+00:09:41,613 DBG storage.ui: PartitionRequest instance --
+id = 221  name = sda2  growable = True
+base = 16384  growth = 12435456  max_grow = 12435456
+done = True
+00:09:41,614 DBG storage.ui: needed: 0
+00:09:41,614 DBG storage.ui: growing partitions on sda
+00:09:41,615 DBG storage.ui: partition sda1 (228): 0
+00:09:41,616 DBG storage.ui: new geometry for sda1: parted.Geometry instance --
+  start: 2048  end: 2099199  length: 2097152
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb841065a90>
+00:09:41,616 DBG storage.ui: partition sda2 (221): 0
+00:09:41,617 DBG storage.ui: new geometry for sda2: parted.Geometry instance --
+  start: 2099200  end: 14551039  length: 12451840
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb841065be0>
+00:09:41,618 DBG storage.ui: removing all non-preexisting partitions ['sda1(id 228)', 'sda2(id 221)'] from disk(s) ['sda']
+00:09:41,620 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda1 ;
+00:09:41,620 DBG storage.ui: device sda1 new parted_partition None
+00:09:41,623 DBG storage.ui:                     PartitionDevice._set_disk: req1 ; old: sda ; new: None ;
+00:09:41,626 DBG storage.ui:                              DiskDevice.remove_child: name: sda ; child: req1 ; kids: 2 ;
+00:09:41,634 DBG storage.ui:                     PartitionDevice._set_parted_partition: sda2 ;
+00:09:41,635 DBG storage.ui: device sda2 new parted_partition None
+00:09:41,640 DBG storage.ui:                     PartitionDevice._set_disk: req0 ; old: sda ; new: None ;
+00:09:41,644 DBG storage.ui:                              DiskDevice.remove_child: name: sda ; child: req0 ; kids: 1 ;
+00:09:41,644 DBG storage.ui: back from remove_new_partitions
+00:09:41,645 DBG storage.ui: extended: None
+00:09:41,645 DBG storage.ui: setting req1 new geometry: parted.Geometry instance --
+  start: 2048  end: 2099199  length: 2097152
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb841065a90>
+00:09:41,647 DBG storage.ui:                    PartitionDevice._set_parted_partition: req1 ;
+00:09:41,648 DBG storage.ui: device req1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb841065e10>  PedPartition: <_ped.Partition object at 0x7fb8410c3678>
+00:09:41,650 DBG storage.ui:                    PartitionDevice._set_disk: sda1 ; old: None ; new: sda ;
+00:09:41,653 DBG storage.ui:                         DiskDevice.add_child: name: sda ; child: sda1 ; kids: 0 ;
+00:09:41,656 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda1 ;
+00:09:41,657 DBG storage.ui: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb841068198>  PedPartition: <_ped.Partition object at 0x7fb8410c3830>
+00:09:41,658 DBG storage.ui: setting req0 new geometry: parted.Geometry instance --
+  start: 2099200  end: 14551039  length: 12451840
+  device: <parted.device.Device object at 0x7fb8411bd320>  PedGeometry: <_ped.Geometry object at 0x7fb841065be0>
+00:09:41,660 DBG storage.ui:                    PartitionDevice._set_parted_partition: req0 ;
+00:09:41,661 DBG storage.ui: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb8410652e8>  PedPartition: <_ped.Partition object at 0x7fb8410c3308>
+00:09:41,664 DBG storage.ui:                    PartitionDevice._set_disk: sda2 ; old: None ; new: sda ;
+00:09:41,667 DBG storage.ui:                         DiskDevice.add_child: name: sda ; child: sda2 ; kids: 1 ;
+00:09:41,670 DBG storage.ui:                    PartitionDevice._set_parted_partition: sda2 ;
+00:09:41,671 DBG storage.ui: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd4e0>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb83e60f9e8>  PedPartition: <_ped.Partition object at 0x7fb8410c3360>
+00:09:41,673 DBG storage.ui: fixing size of non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:09:41,678 DBG storage.ui: fixing size of non-existent 5.94 GiB partition sda2 (221) with non-existent lvmpv
+00:09:41,687 DBG storage.ui: new member set: ['sda2']
+00:09:41,687 DBG storage.ui: old member set: ['sda2']
+00:09:41,688 DBG storage.ui: cl size is 5.93 GiB
+00:09:41,691 DBG storage.ui: vg cl has 956 MiB free
+00:09:41,692 DBG storage.ui: cl size is 5.93 GiB
+00:09:41,694 DBG storage.ui: vg cl has 956 MiB free
+00:09:41,697 DBG storage.ui:                     XFS.supported: supported: True ;
+00:09:41,697 DBG storage.ui: get_format('xfs') returning XFS instance with object id 422
+00:09:41,698 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 424
+00:09:41,701 DBG storage.ui:                                 LVMVolumeGroupDevice.add_child: name: cl ; child: home ; kids: 2 ;
+00:09:41,705 DBG storage.ui:                               LVMLogicalVolumeDevice._set_format: cl-home ; type: xfs ; current: None ;
+00:09:41,706 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 426
+00:09:41,710 DBG storage.ui:                                 LVMVolumeGroupDevice.remove_child: name: cl ; child: home ; kids: 3 ;
+00:09:41,713 DBG storage.ui:                               LVMVolumeGroupDevice.add_child: name: cl ; child: home ; kids: 2 ;
+00:09:41,716 DBG storage.ui:                             LVMLogicalVolumeDevice._set_format: cl-home ; type: xfs ; current: None ;
+00:09:41,718 DBG storage.ui: cl size is 5.93 GiB
+00:09:41,720 DBG storage.ui: vg cl has 956 MiB free
+00:09:41,721 DBG storage.ui: Adding cl-home/953.67 MiB to cl
+00:09:41,722 INF storage.ui: added lvmlv cl-home (id 423) to device tree
+00:09:41,722 INF storage.ui: registered action: [428] create device lvmlv cl-home (id 423)
+00:09:41,723 DBG storage.ui: get_format('None') returning DeviceFormat instance with object id 430
+00:09:41,729 DBG storage.ui:                          LVMLogicalVolumeDevice._set_format: cl-home ; type: xfs ; current: xfs ;
+00:09:41,730 INF storage.ui: registered action: [429] create format xfs filesystem mounted at /home on lvmlv cl-home (id 423)
+00:09:41,772 DBG blivet:                   Ext4FS.supported: supported: True ;
+00:09:41,773 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 431
+00:09:41,777 DBG blivet:                     BTRFS.supported: supported: True ;
+00:09:41,778 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 432
+00:09:41,779 DBG blivet:                BTRFS.supported: supported: True ;
+00:09:41,795 DBG blivet: cl size is 5.93 GiB
+00:09:41,798 DBG blivet: vg cl has 0 B free
+00:09:41,799 DBG blivet: cl size is 5.93 GiB
+00:09:41,802 DBG blivet: vg cl has 0 B free
+00:09:41,813 DBG blivet: cl size is 5.93 GiB
+00:09:41,816 DBG blivet: vg cl has 0 B free
+00:09:41,817 DBG blivet: cl size is 5.93 GiB
+00:09:41,820 DBG blivet: vg cl has 0 B free
+00:09:41,827 DBG blivet: cl size is 5.93 GiB
+00:09:41,830 DBG blivet: vg cl has 0 B free
+00:09:41,831 DBG blivet: cl size is 5.93 GiB
+00:09:41,834 DBG blivet: vg cl has 0 B free
+00:09:41,840 DBG blivet: cl size is 5.93 GiB
+00:09:41,843 DBG blivet: vg cl has 0 B free
+00:09:41,844 DBG blivet: cl size is 5.93 GiB
+00:09:41,847 DBG blivet: vg cl has 0 B free
+00:09:41,855 DBG blivet:                XFS.supported: supported: True ;
+00:09:41,856 DBG blivet: get_format('xfs') returning XFS instance with object id 433
+00:09:41,860 DBG blivet:                  BTRFS.supported: supported: True ;
+00:09:41,860 DBG blivet: get_format('btrfs') returning BTRFS instance with object id 434
+00:09:41,862 DBG blivet:             BTRFS.supported: supported: True ;
+00:09:41,864 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:09:41,867 DBG blivet: cl size is 5.93 GiB
+00:09:41,870 DBG blivet: vg cl has 0 B free
+00:09:41,874 DBG storage.ui: instantiating <class 'blivet.devicefactory.LVMFactory'>: <pyanaconda.storage.osinstall.InstallerStorage object at 0x7fb8635acef0>, [], {'size': Size (0 B), 'min_luks_entropy': 256}
+00:09:41,876 DBG blivet: cl size is 5.93 GiB
+00:09:41,884 DBG blivet: vg cl has 0 B free
+00:10:23,161 INF blivet: removing obsolete action 246 (341)
+00:10:23,161 INF blivet: removing obsolete action 339 (341)
+00:10:23,162 DBG blivet: action 339 already pruned
+00:10:23,162 DBG blivet: action 246 already pruned
+00:10:23,163 INF blivet: removing obsolete action 180 (178)
+00:10:23,236 DBG blivet:                 DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:10:23,238 DBG blivet:                 DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:10:23,242 DBG blivet: resolved 'sda' to 'sda' (disk)
+00:10:23,244 DBG blivet:                DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:10:23,246 DBG blivet:                DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:10:23,257 DBG blivet:              DeviceTree.get_device_by_name: name: sda ; incomplete: False ; hidden: False ;
+00:10:23,258 DBG blivet:              DeviceTree.get_device_by_name returned existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:10:23,262 DBG blivet: resolved 'sda' to 'sda' (disk)
+00:10:23,294 DBG blivet:           DeviceTree.get_device_by_path: path: /dev/sda1 ; incomplete: False ; hidden: False ;
+00:10:23,296 DBG blivet:           DeviceTree.get_device_by_path returned non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:10:23,302 DBG blivet:           DeviceTree.get_device_by_path: path: /dev/sda2 ; incomplete: False ; hidden: False ;
+00:10:23,304 DBG blivet:           DeviceTree.get_device_by_path returned non-existent 5.94 GiB partition sda2 (221) with non-existent lvmpv
+00:12:10,556 DBG blivet:               LoopDevice.teardown: loop2 ; status: False ; controllable: False ;
+00:12:10,559 DBG blivet:                   FileDevice.teardown: /overlay (deleted) ; status: False ; controllable: False ;
+00:12:10,561 DBG blivet:               PartitionDevice.teardown: sda1 ; status: False ; controllable: True ;
+00:12:10,563 DBG blivet:                   DiskDevice.teardown: sda ; status: True ; controllable: True ;
+00:12:10,565 DBG blivet:                       DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+00:12:10,603 DBG blivet:                  LVMLogicalVolumeDevice.teardown: cl-root ; status: False ; controllable: True ;
+00:12:10,606 DBG blivet:                      LVMVolumeGroupDevice.teardown: cl ; status: False ; controllable: True ;
+00:12:10,608 DBG blivet:                          PartitionDevice.teardown: sda2 ; status: False ; controllable: True ;
+00:12:10,611 DBG blivet:                              DiskDevice.teardown: sda ; status: True ; controllable: True ;
+00:12:10,614 DBG blivet:                                  DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+00:12:10,651 DBG blivet:                  LVMLogicalVolumeDevice.teardown: cl-swap ; status: False ; controllable: True ;
+00:12:10,653 DBG blivet:                      LVMVolumeGroupDevice.teardown: cl ; status: False ; controllable: True ;
+00:12:10,656 DBG blivet:                          PartitionDevice.teardown: sda2 ; status: False ; controllable: True ;
+00:12:10,659 DBG blivet:                              DiskDevice.teardown: sda ; status: True ; controllable: True ;
+00:12:10,662 DBG blivet:                                  DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+00:12:10,696 DBG blivet:                  LVMLogicalVolumeDevice.teardown: cl-home ; status: False ; controllable: True ;
+00:12:10,700 DBG blivet:                      LVMVolumeGroupDevice.teardown: cl ; status: False ; controllable: True ;
+00:12:10,703 DBG blivet:                          PartitionDevice.teardown: sda2 ; status: False ; controllable: True ;
+00:12:10,705 DBG blivet:                              DiskDevice.teardown: sda ; status: True ; controllable: True ;
+00:12:10,709 DBG blivet:                                  DeviceFormat.teardown: device: /dev/sda ; type: None ; status: False ;
+00:12:10,743 DBG blivet: action: [178] destroy format None on disk sda (id 13)
+00:12:10,744 DBG blivet: action: [183] create format msdos disklabel on disk sda (id 13)
+00:12:10,744 DBG blivet: action: [231] create device partition sda1 (id 228)
+00:12:10,744 DBG blivet: action: [232] create format ext4 filesystem mounted at /boot on partition sda1 (id 228)
+00:12:10,745 DBG blivet: action: [224] create device partition sda2 (id 221)
+00:12:10,745 DBG blivet: action: [225] create format lvmpv on partition sda2 (id 221)
+00:12:10,746 DBG blivet: action: [238] create device lvmvg cl (id 234)
+00:12:10,746 DBG blivet: action: [428] create device lvmlv cl-home (id 423)
+00:12:10,747 DBG blivet: action: [429] create format xfs filesystem mounted at /home on lvmlv cl-home (id 423)
+00:12:10,747 DBG blivet: action: [254] create device lvmlv cl-swap (id 249)
+00:12:10,748 DBG blivet: action: [255] create format swap on lvmlv cl-swap (id 249)
+00:12:10,750 DBG blivet: action: [245] create device lvmlv cl-root (id 240)
+00:12:10,751 DBG blivet: action: [341] create format ext4 filesystem mounted at / on lvmlv cl-root (id 240)
+00:12:10,752 INF blivet: pruning action queue...
+00:12:10,800 INF blivet: resetting parted disks...
+00:12:10,802 DBG blivet:                     DiskLabel.reset_parted_disk: device: /dev/sda ;
+00:12:10,805 DBG blivet:                     PartitionDevice.pre_commit_fixup: sda1 ;
+00:12:10,807 DBG blivet:                     PartitionDevice.pre_commit_fixup: sda2 ;
+00:12:10,808 INF blivet: sorting actions...
+00:12:10,823 DBG blivet: action: [178] destroy format None on disk sda (id 13)
+00:12:10,823 DBG blivet: lvm filter: removing cl from the reject list
+00:12:10,824 DBG blivet: cl wasn't in the reject list
+00:12:10,824 DBG blivet: lvm filter: removing cl-home from the reject list
+00:12:10,825 DBG blivet: cl-home wasn't in the reject list
+00:12:10,825 DBG blivet: lvm filter: removing cl-root from the reject list
+00:12:10,826 DBG blivet: cl-root wasn't in the reject list
+00:12:10,826 DBG blivet: lvm filter: removing cl-swap from the reject list
+00:12:10,826 DBG blivet: cl-swap wasn't in the reject list
+00:12:10,827 DBG blivet: lvm filter: removing sda1 from the reject list
+00:12:10,827 DBG blivet: sda1 wasn't in the reject list
+00:12:10,828 DBG blivet: lvm filter: removing sda2 from the reject list
+00:12:10,828 DBG blivet: sda2 wasn't in the reject list
+00:12:10,828 DBG blivet: action: [183] create format msdos disklabel on disk sda (id 13)
+00:12:10,829 DBG blivet: lvm filter: removing cl from the reject list
+00:12:10,829 DBG blivet: cl wasn't in the reject list
+00:12:10,830 DBG blivet: lvm filter: removing cl-home from the reject list
+00:12:10,830 DBG blivet: cl-home wasn't in the reject list
+00:12:10,831 DBG blivet: lvm filter: removing cl-root from the reject list
+00:12:10,831 DBG blivet: cl-root wasn't in the reject list
+00:12:10,831 DBG blivet: lvm filter: removing cl-swap from the reject list
+00:12:10,832 DBG blivet: cl-swap wasn't in the reject list
+00:12:10,833 DBG blivet: lvm filter: removing sda1 from the reject list
+00:12:10,834 DBG blivet: sda1 wasn't in the reject list
+00:12:10,834 DBG blivet: lvm filter: removing sda2 from the reject list
+00:12:10,835 DBG blivet: sda2 wasn't in the reject list
+00:12:10,835 DBG blivet: action: [231] create device partition sda1 (id 228)
+00:12:10,836 DBG blivet: action: [224] create device partition sda2 (id 221)
+00:12:10,837 DBG blivet: lvm filter: removing cl from the reject list
+00:12:10,837 DBG blivet: cl wasn't in the reject list
+00:12:10,838 DBG blivet: lvm filter: removing cl-home from the reject list
+00:12:10,838 DBG blivet: cl-home wasn't in the reject list
+00:12:10,838 DBG blivet: lvm filter: removing cl-root from the reject list
+00:12:10,839 DBG blivet: cl-root wasn't in the reject list
+00:12:10,839 DBG blivet: lvm filter: removing cl-swap from the reject list
+00:12:10,839 DBG blivet: cl-swap wasn't in the reject list
+00:12:10,840 DBG blivet: action: [225] create format lvmpv on partition sda2 (id 221)
+00:12:10,841 DBG blivet: lvm filter: removing cl from the reject list
+00:12:10,841 DBG blivet: cl wasn't in the reject list
+00:12:10,841 DBG blivet: lvm filter: removing cl-home from the reject list
+00:12:10,843 DBG blivet: cl-home wasn't in the reject list
+00:12:10,843 DBG blivet: lvm filter: removing cl-root from the reject list
+00:12:10,843 DBG blivet: cl-root wasn't in the reject list
+00:12:10,844 DBG blivet: lvm filter: removing cl-swap from the reject list
+00:12:10,844 DBG blivet: cl-swap wasn't in the reject list
+00:12:10,845 DBG blivet: action: [238] create device lvmvg cl (id 234)
+00:12:10,846 DBG blivet: lvm filter: removing cl-home from the reject list
+00:12:10,846 DBG blivet: cl-home wasn't in the reject list
+00:12:10,847 DBG blivet: lvm filter: removing cl-root from the reject list
+00:12:10,847 DBG blivet: cl-root wasn't in the reject list
+00:12:10,847 DBG blivet: lvm filter: removing cl-swap from the reject list
+00:12:10,848 DBG blivet: cl-swap wasn't in the reject list
+00:12:10,848 DBG blivet: action: [245] create device lvmlv cl-root (id 240)
+00:12:10,851 DBG blivet: action: [341] create format ext4 filesystem mounted at / on lvmlv cl-root (id 240)
+00:12:10,852 DBG blivet: action: [254] create device lvmlv cl-swap (id 249)
+00:12:10,853 DBG blivet: action: [255] create format swap on lvmlv cl-swap (id 249)
+00:12:10,855 DBG blivet: action: [428] create device lvmlv cl-home (id 423)
+00:12:10,856 DBG blivet: action: [429] create format xfs filesystem mounted at /home on lvmlv cl-home (id 423)
+00:12:10,857 DBG blivet: action: [232] create format ext4 filesystem mounted at /boot on partition sda1 (id 228)
+00:12:10,859 INF blivet: executing action: [178] destroy format None on disk sda (id 13)
+00:12:10,861 DBG blivet:                     DiskDevice.setup: sda ; orig: True ; status: True ; controllable: True ;
+00:12:10,863 DBG blivet:                     DeviceFormat.destroy: device: /dev/sda ; type: None ; status: False ;
+00:12:10,969 INF blivet: executing action: [183] create format msdos disklabel on disk sda (id 13)
+00:12:10,973 DBG blivet:                     DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:12:10,975 DBG blivet:                     DiskLabel.create: device: /dev/sda ; type: disklabel ; status: False ;
+00:12:10,977 DBG blivet:                       DiskLabel._create: device: /dev/sda ; type: disklabel ; status: False ;
+00:12:10,980 DBG blivet:                         DiskLabel.commit: device: /dev/sda ; numparts: 0 ;
+00:12:11,307 DBG blivet:                     DiskDevice.update_sysfs_path: sda ; status: True ;
+00:12:11,308 DBG blivet: sda sysfs_path set to /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+00:12:11,309 INF blivet: executing action: [231] create device partition sda1 (id 228)
+00:12:11,312 DBG blivet:                     PartitionDevice.create: sda1 ; status: False ;
+00:12:11,314 DBG blivet:                         PartitionDevice.setup_parents: name: sda1 ; orig: False ;
+00:12:11,317 DBG blivet:                           DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:12:11,320 DBG blivet:                           DiskLabel.setup: device: /dev/sda ; type: disklabel ; status: False ;
+00:12:11,323 DBG blivet:                       PartitionDevice._create: sda1 ; status: False ;
+00:12:11,326 DBG blivet:                         PartitionDevice._wipe: sda1 ; status: False ;
+00:12:11,489 DBG blivet:                         DiskLabel.commit: device: /dev/sda ; numparts: 1 ;
+00:12:11,609 DBG blivet: post-commit partition path is /dev/sda1
+00:12:11,612 DBG blivet:                           PartitionDevice._set_parted_partition: sda1 ;
+00:12:11,613 DBG blivet: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd5f8>  fileSystem: None
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb840f386a0>  PedPartition: <_ped.Partition object at 0x7fb840ed4fc0>
+00:12:11,617 DBG blivet:                         DeviceFormat.destroy: device: /dev/sda1 ; type: None ; status: False ;
+00:12:11,641 DBG blivet:                           PartitionDevice.setup: sda1 ; orig: False ; status: True ; controllable: True ;
+00:12:11,648 DBG blivet:                           PartitionDevice.update_sysfs_path: sda1 ; status: True ;
+00:12:11,650 DBG blivet: sda1 sysfs_path set to /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda/sda1
+00:12:11,690 DBG blivet:                                 PartitionDevice.read_current_size: exists: True ; path: /dev/sda1 ; sysfs_path: /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda/sda1 ;
+00:12:11,692 DBG blivet: updated sda1 size to 1024 MiB (1024 MiB)
+00:12:11,693 INF blivet: executing action: [224] create device partition sda2 (id 221)
+00:12:11,695 DBG blivet:                     PartitionDevice.create: sda2 ; status: False ;
+00:12:11,697 DBG blivet:                         PartitionDevice.setup_parents: name: sda2 ; orig: False ;
+00:12:11,700 DBG blivet:                           DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:12:11,703 DBG blivet:                           DiskLabel.setup: device: /dev/sda ; type: disklabel ; status: False ;
+00:12:11,706 DBG blivet:                       PartitionDevice._create: sda2 ; status: False ;
+00:12:11,709 DBG blivet:                         PartitionDevice._wipe: sda2 ; status: False ;
+00:12:11,848 DBG blivet:                         DiskLabel.commit: device: /dev/sda ; numparts: 2 ;
+00:12:11,989 DBG blivet: post-commit partition path is /dev/sda2
+00:12:11,994 DBG blivet:                           PartitionDevice._set_parted_partition: sda2 ;
+00:12:11,995 DBG blivet: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd5f8>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb840f38cf8>  PedPartition: <_ped.Partition object at 0x7fb840ed4d58>
+00:12:12,001 DBG blivet:                         DeviceFormat.destroy: device: /dev/sda2 ; type: None ; status: False ;
+00:12:12,026 DBG blivet:                           PartitionDevice.setup: sda2 ; orig: False ; status: True ; controllable: True ;
+00:12:12,032 DBG blivet:                           PartitionDevice.update_sysfs_path: sda2 ; status: True ;
+00:12:12,035 DBG blivet: sda2 sysfs_path set to /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda/sda2
+00:12:12,074 DBG blivet:                                 PartitionDevice.read_current_size: exists: True ; path: /dev/sda2 ; sysfs_path: /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda/sda2 ;
+00:12:12,076 DBG blivet: updated sda2 size to 5.94 GiB (5.94 GiB)
+00:12:12,077 INF blivet: executing action: [225] create format lvmpv on partition sda2 (id 221)
+00:12:12,080 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 1 ;
+00:12:12,082 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 2 ;
+00:12:12,085 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 3 ;
+00:12:12,088 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 4 ;
+00:12:12,091 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 5 ;
+00:12:12,093 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 8 ;
+00:12:12,096 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 9 ;
+00:12:12,098 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 10 ;
+00:12:12,100 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 11 ;
+00:12:12,102 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 12 ;
+00:12:12,106 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 13 ;
+00:12:12,108 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 14 ;
+00:12:12,111 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 15 ;
+00:12:12,113 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 16 ;
+00:12:12,115 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 17 ;
+00:12:12,118 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda2 ; flag: 18 ;
+00:12:12,120 DBG blivet:                     PartitionDevice.set_flag: path: /dev/sda2 ; flag: 6 ;
+00:12:12,124 DBG blivet:                     DiskLabel.commit_to_disk: device: /dev/sda ; numparts: 2 ;
+00:12:12,280 DBG blivet:                     PartitionDevice.setup: sda2 ; orig: False ; status: True ; controllable: True ;
+00:12:12,285 DBG blivet:                     LVMPhysicalVolume.create: device: /dev/sda2 ; type: lvmpv ; status: False ;
+00:12:12,287 DBG blivet:                       LVMPhysicalVolume._create: device: /dev/sda2 ; type: lvmpv ; status: False ;
+00:12:12,955 DBG blivet:                     PartitionDevice.update_sysfs_path: sda2 ; status: True ;
+00:12:12,959 DBG blivet: sda2 sysfs_path set to /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda/sda2
+00:12:12,961 INF blivet: executing action: [238] create device lvmvg cl (id 234)
+00:12:12,964 DBG blivet:                     LVMVolumeGroupDevice.create: cl ; status: False ;
+00:12:12,966 DBG blivet:                         LVMVolumeGroupDevice.setup_parents: name: cl ; orig: False ;
+00:12:12,969 DBG blivet:                           PartitionDevice.setup: sda2 ; orig: False ; status: True ; controllable: True ;
+00:12:12,974 DBG blivet:                           LVMPhysicalVolume.setup: device: /dev/sda2 ; type: lvmpv ; status: None ;
+00:12:12,977 DBG blivet:                       LVMVolumeGroupDevice._create: cl ; status: False ;
+00:12:13,074 DBG blivet:                           LVMVolumeGroupDevice.setup: cl ; orig: False ; status: True ; controllable: True ;
+00:12:13,083 DBG blivet:                           LVMVolumeGroupDevice.update_sysfs_path: cl ; status: True ;
+00:12:13,137 INF blivet: executing action: [245] create device lvmlv cl-root (id 240)
+00:12:13,141 DBG blivet:                     LVMLogicalVolumeDevice.create: cl-root ; status: False ;
+00:12:13,144 DBG blivet:                              LVMLogicalVolumeDevice.setup_parents: name: cl-root ; orig: False ;
+00:12:13,148 DBG blivet:                                LVMVolumeGroupDevice.setup: cl ; orig: False ; status: True ; controllable: True ;
+00:12:13,199 DBG blivet:                        LVMLogicalVolumeDevice._create: cl-root ; status: False ;
+00:12:13,321 DBG blivet:                               LVMLogicalVolumeDevice.setup: cl-root ; orig: False ; status: True ; controllable: True ;
+00:12:13,329 DBG blivet:                            LVMLogicalVolumeDevice.update_sysfs_path: cl-root ; status: True ;
+00:12:13,331 DBG blivet: cl-root sysfs_path set to /sys/devices/virtual/block/dm-2
+00:12:13,393 DBG blivet:                                   LVMLogicalVolumeDevice.read_current_size: exists: True ; path: /dev/mapper/cl-root ; sysfs_path: /sys/devices/virtual/block/dm-2 ;
+00:12:13,395 DBG blivet: updated cl-root size to 4.2 GiB (4.2 GiB)
+00:12:13,396 INF blivet: executing action: [341] create format ext4 filesystem mounted at / on lvmlv cl-root (id 240)
+00:12:13,400 DBG blivet:                        LVMLogicalVolumeDevice.setup: cl-root ; orig: False ; status: True ; controllable: True ;
+00:12:13,403 DBG blivet:                     Ext4FS.create: device: /dev/mapper/cl-root ; type: ext4 ; status: False ;
+00:12:13,406 DBG blivet:                       Ext4FS._create: type: ext4 ; device: /dev/mapper/cl-root ; mountpoint: / ;
+00:12:14,135 DBG blivet:                     LVMLogicalVolumeDevice.update_sysfs_path: cl-root ; status: True ;
+00:12:14,136 DBG blivet: cl-root sysfs_path set to /sys/devices/virtual/block/dm-2
+00:12:14,139 INF blivet: executing action: [254] create device lvmlv cl-swap (id 249)
+00:12:14,142 DBG blivet:                     LVMLogicalVolumeDevice.create: cl-swap ; status: False ;
+00:12:14,145 DBG blivet:                              LVMLogicalVolumeDevice.setup_parents: name: cl-swap ; orig: False ;
+00:12:14,148 DBG blivet:                                LVMVolumeGroupDevice.setup: cl ; orig: False ; status: True ; controllable: True ;
+00:12:14,225 DBG blivet:                        LVMLogicalVolumeDevice._create: cl-swap ; status: False ;
+00:12:14,361 DBG blivet:                               LVMLogicalVolumeDevice.setup: cl-swap ; orig: False ; status: True ; controllable: True ;
+00:12:14,372 DBG blivet:                            LVMLogicalVolumeDevice.update_sysfs_path: cl-swap ; status: True ;
+00:12:14,373 DBG blivet: cl-swap sysfs_path set to /sys/devices/virtual/block/dm-3
+00:12:14,435 DBG blivet:                                   LVMLogicalVolumeDevice.read_current_size: exists: True ; path: /dev/mapper/cl-swap ; sysfs_path: /sys/devices/virtual/block/dm-3 ;
+00:12:14,437 DBG blivet: updated cl-swap size to 820 MiB (820 MiB)
+00:12:14,438 INF blivet: executing action: [255] create format swap on lvmlv cl-swap (id 249)
+00:12:14,443 DBG blivet:                        LVMLogicalVolumeDevice.setup: cl-swap ; orig: False ; status: True ; controllable: True ;
+00:12:14,445 DBG blivet:                     SwapSpace.create: device: /dev/mapper/cl-swap ; type: swap ; status: False ;
+00:12:14,447 DBG blivet:                       SwapSpace._create: device: /dev/mapper/cl-swap ; type: swap ; status: False ;
+00:12:14,684 DBG blivet:                     LVMLogicalVolumeDevice.update_sysfs_path: cl-swap ; status: True ;
+00:12:14,685 DBG blivet: cl-swap sysfs_path set to /sys/devices/virtual/block/dm-3
+00:12:14,687 INF blivet: executing action: [428] create device lvmlv cl-home (id 423)
+00:12:14,690 DBG blivet:                     LVMLogicalVolumeDevice.create: cl-home ; status: False ;
+00:12:14,694 DBG blivet:                              LVMLogicalVolumeDevice.setup_parents: name: cl-home ; orig: False ;
+00:12:14,697 DBG blivet:                                LVMVolumeGroupDevice.setup: cl ; orig: False ; status: True ; controllable: True ;
+00:12:14,750 DBG blivet:                        LVMLogicalVolumeDevice._create: cl-home ; status: False ;
+00:12:14,885 DBG blivet:                               LVMLogicalVolumeDevice.setup: cl-home ; orig: False ; status: True ; controllable: True ;
+00:12:14,890 DBG blivet:                            LVMLogicalVolumeDevice.update_sysfs_path: cl-home ; status: True ;
+00:12:14,892 DBG blivet: cl-home sysfs_path set to /sys/devices/virtual/block/dm-4
+00:12:14,961 DBG blivet:                                   LVMLogicalVolumeDevice.read_current_size: exists: True ; path: /dev/mapper/cl-home ; sysfs_path: /sys/devices/virtual/block/dm-4 ;
+00:12:14,962 DBG blivet: updated cl-home size to 956 MiB (956 MiB)
+00:12:14,964 INF blivet: executing action: [429] create format xfs filesystem mounted at /home on lvmlv cl-home (id 423)
+00:12:14,969 DBG blivet:                        LVMLogicalVolumeDevice.setup: cl-home ; orig: False ; status: True ; controllable: True ;
+00:12:14,974 DBG blivet:                     XFS.create: device: /dev/mapper/cl-home ; type: xfs ; status: False ;
+00:12:14,977 DBG blivet:                       XFS._create: type: xfs ; device: /dev/mapper/cl-home ; mountpoint: /home ;
+00:12:15,379 DBG blivet:                     LVMLogicalVolumeDevice.update_sysfs_path: cl-home ; status: True ;
+00:12:15,380 DBG blivet: cl-home sysfs_path set to /sys/devices/virtual/block/dm-4
+00:12:15,382 INF blivet: executing action: [232] create format ext4 filesystem mounted at /boot on partition sda1 (id 228)
+00:12:15,387 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 1 ;
+00:12:15,391 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 2 ;
+00:12:15,393 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 3 ;
+00:12:15,395 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 4 ;
+00:12:15,397 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 5 ;
+00:12:15,400 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 6 ;
+00:12:15,402 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 8 ;
+00:12:15,406 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 9 ;
+00:12:15,408 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 10 ;
+00:12:15,410 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 11 ;
+00:12:15,412 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 12 ;
+00:12:15,415 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 13 ;
+00:12:15,417 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 14 ;
+00:12:15,420 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 15 ;
+00:12:15,424 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 16 ;
+00:12:15,426 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 17 ;
+00:12:15,428 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/sda1 ; flag: 18 ;
+00:12:15,431 DBG blivet:                     DiskLabel.commit_to_disk: device: /dev/sda ; numparts: 2 ;
+00:12:15,588 DBG blivet:                     PartitionDevice.setup: sda1 ; orig: False ; status: True ; controllable: True ;
+00:12:15,594 DBG blivet:                     Ext4FS.create: device: /dev/sda1 ; type: ext4 ; status: False ;
+00:12:15,597 DBG blivet:                       Ext4FS._create: type: ext4 ; device: /dev/sda1 ; mountpoint: /boot ;
+00:12:15,979 DBG blivet:                     PartitionDevice.update_sysfs_path: sda1 ; status: True ;
+00:12:15,980 DBG blivet: sda1 sysfs_path set to /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda/sda1
+00:12:15,992 DBG blivet:                       PartitionDevice._set_parted_partition: sda1 ;
+00:12:15,992 DBG blivet: device sda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd5f8>  fileSystem: <parted.filesystem.FileSystem object at 0x7fb840f297f0>
+  number: 1  path: /dev/sda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb840f29b70>  PedPartition: <_ped.Partition object at 0x7fb840f56990>
+00:12:15,996 DBG blivet:                       PartitionDevice._set_parted_partition: sda2 ;
+00:12:15,997 DBG blivet: device sda2 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7fb8411bd5f8>  fileSystem: None
+  number: 2  path: /dev/sda2  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7fb840f29c50>  PedPartition: <_ped.Partition object at 0x7fb840f56570>
+00:12:16,003 DBG blivet:                 PartitionDevice.set_flag: path: /dev/sda1 ; flag: 1 ;
+00:12:16,006 DBG blivet:               DiskDevice.setup: sda ; orig: False ; status: True ; controllable: True ;
+00:12:16,008 DBG blivet:               DiskLabel.commit_to_disk: device: /dev/sda ; numparts: 2 ;
+00:12:16,044 DBG blivet: cl size is 5.93 GiB
+00:12:16,065 DBG blivet: vg cl has 0 B free
+00:12:16,074 DBG blivet: cl size is 5.93 GiB
+00:12:16,080 DBG blivet: vg cl has 0 B free
+00:12:16,093 DBG blivet:                            XFS.supported: supported: True ;
+00:12:16,098 DBG blivet:                            Ext4FS.supported: supported: True ;
+00:12:16,103 DBG blivet:                          Ext4FS.supported: supported: True ;
+00:12:16,110 DBG blivet:                          Ext4FS.supported: supported: True ;
+00:12:16,115 DBG blivet:                        Ext4FS.supported: supported: True ;
+00:12:16,123 DBG blivet:                          Ext4FS.supported: supported: True ;
+00:12:16,132 DBG blivet:                        Iso9660FS.supported: supported: True ;
+00:12:16,146 DBG blivet:                   LVMLogicalVolumeDevice.setup: cl-swap ; orig: False ; status: True ; controllable: True ;
+00:12:16,148 DBG blivet:                SwapSpace.setup: device: /dev/mapper/cl-swap ; type: swap ; status: False ;
+00:12:16,153 DBG blivet:                  SwapSpace._setup: device: /dev/mapper/cl-swap ; type: swap ; status: False ;
+00:12:16,208 DBG blivet:                    BindFS.supported: supported: False ;
+00:12:16,213 DBG blivet: get_format('bind') returning BindFS instance with object id 438
+00:12:16,215 DBG blivet: get_format('None') returning DeviceFormat instance with object id 440
+00:12:16,224 DBG blivet:                       DirectoryDevice._set_format: /dev ; type: bind ; current: None ;
+00:12:16,228 DBG blivet: updated /dev size to 3.16 KiB (3.16 KiB)
+00:12:16,231 DBG blivet:                        TmpFS.supported: supported: True ;
+00:12:16,246 DBG blivet: get_format('tmpfs') returning TmpFS instance with object id 442
+00:12:16,248 DBG blivet: get_format('None') returning DeviceFormat instance with object id 444
+00:12:16,252 DBG blivet:                       NoDevice._set_format: tmpfs ; type: tmpfs ; current: None ;
+00:12:16,257 DBG blivet:                      DevPtsFS.supported: supported: False ;
+00:12:16,258 DBG blivet: get_format('devpts') returning DevPtsFS instance with object id 446
+00:12:16,259 DBG blivet: get_format('None') returning DeviceFormat instance with object id 448
+00:12:16,261 DBG blivet:                       NoDevice._set_format: devpts ; type: devpts ; current: None ;
+00:12:16,265 DBG blivet:                      SysFS.supported: supported: False ;
+00:12:16,265 DBG blivet: get_format('sysfs') returning SysFS instance with object id 450
+00:12:16,266 DBG blivet: get_format('None') returning DeviceFormat instance with object id 452
+00:12:16,269 DBG blivet:                       NoDevice._set_format: sysfs ; type: sysfs ; current: None ;
+00:12:16,274 DBG blivet:                      ProcFS.supported: supported: False ;
+00:12:16,274 DBG blivet: get_format('proc') returning ProcFS instance with object id 454
+00:12:16,275 DBG blivet: get_format('None') returning DeviceFormat instance with object id 456
+00:12:16,277 DBG blivet:                       NoDevice._set_format: proc ; type: proc ; current: None ;
+00:12:16,280 DBG blivet:                      SELinuxFS.supported: supported: False ;
+00:12:16,281 DBG blivet: get_format('selinuxfs') returning SELinuxFS instance with object id 458
+00:12:16,281 DBG blivet: get_format('None') returning DeviceFormat instance with object id 460
+00:12:16,284 DBG blivet:                       NoDevice._set_format: selinuxfs ; type: selinuxfs ; current: None ;
+00:12:16,288 DBG blivet:                      USBFS.supported: supported: False ;
+00:12:16,289 DBG blivet: get_format('usbfs') returning USBFS instance with object id 462
+00:12:16,290 DBG blivet: get_format('None') returning DeviceFormat instance with object id 464
+00:12:16,292 DBG blivet:                       NoDevice._set_format: usbfs ; type: usbfs ; current: None ;
+00:12:16,295 DBG blivet:                    BindFS.supported: supported: False ;
+00:12:16,296 DBG blivet: get_format('bind') returning BindFS instance with object id 466
+00:12:16,296 DBG blivet: get_format('None') returning DeviceFormat instance with object id 468
+00:12:16,301 DBG blivet:                       DirectoryDevice._set_format: /run ; type: bind ; current: None ;
+00:12:16,302 DBG blivet: updated /run size to 740 B (740 B)
+00:12:16,306 DBG blivet:                   LVMLogicalVolumeDevice.setup: cl-root ; orig: False ; status: True ; controllable: True ;
+00:12:16,360 DBG blivet:                Ext4FS.setup: device: /dev/mapper/cl-root ; type: ext4 ; status: False ;
+00:12:16,499 DBG blivet:                PartitionDevice.setup: sda1 ; orig: False ; status: True ; controllable: True ;
+00:12:16,686 DBG blivet:                Ext4FS.setup: device: /dev/sda1 ; type: ext4 ; status: False ;
+00:12:16,781 DBG blivet:                DirectoryDevice.setup: /dev ; orig: False ; status: True ; controllable: True ;
+00:12:17,051 DBG blivet:                BindFS.setup: device: /dev ; type: bind ; status: False ;
+00:12:17,117 DBG blivet:                NoDevice.setup: devpts ; orig: False ; status: False ; controllable: True ;
+00:12:17,334 DBG blivet:                DevPtsFS.setup: device: devpts ; type: devpts ; status: False ;
+00:12:17,400 DBG blivet:                NoDevice.setup: tmpfs ; orig: False ; status: False ; controllable: True ;
+00:12:17,585 DBG blivet:                TmpFS.setup: device: tmpfs ; type: tmpfs ; status: True ;
+00:12:17,620 DBG blivet:                   LVMLogicalVolumeDevice.setup: cl-home ; orig: False ; status: True ; controllable: True ;
+00:12:17,863 DBG blivet:                XFS.setup: device: /dev/mapper/cl-home ; type: xfs ; status: False ;
+00:12:17,988 DBG blivet:                NoDevice.setup: proc ; orig: False ; status: False ; controllable: True ;
+00:12:18,276 DBG blivet:                ProcFS.setup: device: proc ; type: proc ; status: False ;
+00:12:18,400 DBG blivet:                DirectoryDevice.setup: /run ; orig: False ; status: True ; controllable: True ;
+00:12:18,709 DBG blivet:                BindFS.setup: device: /run ; type: bind ; status: False ;
+00:12:18,777 DBG blivet:                NoDevice.setup: sysfs ; orig: False ; status: False ; controllable: True ;
+00:12:19,085 DBG blivet:                SysFS.setup: device: sysfs ; type: sysfs ; status: False ;
+00:12:19,159 DBG blivet:                NoDevice.setup: selinuxfs ; orig: False ; status: False ; controllable: True ;
+00:12:19,419 DBG blivet:                SELinuxFS.setup: device: selinuxfs ; type: selinuxfs ; status: False ;
+00:12:19,948 DBG blivet: /dev/sr0 is mounted on /run/install/repo

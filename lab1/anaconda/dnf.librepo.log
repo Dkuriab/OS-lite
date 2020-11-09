@@ -1,0 +1,10 @@
+2020-08-27T21:02:21Z INFO Librepo version: 1.11.0 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.61.1 OpenSSL/1.1.1c zlib/1.2.11 brotli/1.0.6 libidn2/2.2.0 libpsl/0.20.2 (+libidn2/2.0.5) libssh/0.9.0/openssl/zlib nghttp2/1.33.0)
+2020-08-27T21:02:26Z INFO Librepo version: 1.11.0 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.61.1 OpenSSL/1.1.1c zlib/1.2.11 brotli/1.0.6 libidn2/2.2.0 libpsl/0.20.2 (+libidn2/2.0.5) libssh/0.9.0/openssl/zlib nghttp2/1.33.0)
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/BaseOS/repodata/repomd.xml
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/BaseOS/repodata/190ce1d49a76eafb61b0e2738d7331a45f1efbdfb4c2c274176486f8c82f7f80-primary.xml.gz
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/BaseOS/repodata/53db8eac92f79abf479e202fb013aca86d5060fd948e1ed7ea8f9493e72fd4d1-filelists.xml.gz
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/BaseOS/repodata/08a9add0907af002934460d81ea0edc8bb4154db679cdc113d4c51efcbddfce4-comps-BaseOS.x86_64.xml.xz
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/Minimal/repodata/repomd.xml
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/Minimal/repodata/1cb61ea996355add02b1426ed4c1780ea75ce0c04c5d1107c025c3fbd7d8bcae-primary.xml.gz
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/Minimal/repodata/95a4415d859d7120efb6b3cf964c07bebbff9a5275ca673e6e74a97bcbfb2a5f-filelists.xml.gz
+2020-08-27T21:02:26Z INFO Downloading: file:///run/install/repo/Minimal/repodata/0a0ee3d6de957f97960893014ede3f247303f7770819f3ecf9ae30beed45675e-comps-Minimal.x86_64.xml.xz

@@ -1,0 +1,48 @@
+21:02:18,563 DBG ifcfg: content of files (network initialization):
+21:02:18,567 DBG ifcfg: all settings: []
+21:02:18,768 DBG ifcfg: content of files (missing ifcfgs created for devices ['enp0s3']):
+21:02:18,769 DBG ifcfg: /etc/sysconfig/network-scripts/ifcfg-enp0s3:
+21:02:18,770 DBG ifcfg:   TYPE=Ethernet
+21:02:18,773 DBG ifcfg:   PROXY_METHOD=none
+21:02:18,773 DBG ifcfg:   BROWSER_ONLY=no
+21:02:18,773 DBG ifcfg:   BOOTPROTO=dhcp
+21:02:18,774 DBG ifcfg:   DEFROUTE=yes
+21:02:18,774 DBG ifcfg:   IPV4_FAILURE_FATAL=no
+21:02:18,774 DBG ifcfg:   IPV6INIT=yes
+21:02:18,775 DBG ifcfg:   IPV6_AUTOCONF=yes
+21:02:18,775 DBG ifcfg:   IPV6_DEFROUTE=yes
+21:02:18,775 DBG ifcfg:   IPV6_FAILURE_FATAL=no
+21:02:18,776 DBG ifcfg:   IPV6_ADDR_GEN_MODE=stable-privacy
+21:02:18,776 DBG ifcfg:   NAME=enp0s3
+21:02:18,777 DBG ifcfg:   UUID=61e71fca-3f33-4a64-aca1-9e7935a73c89
+21:02:18,777 DBG ifcfg:   DEVICE=enp0s3
+21:02:18,777 DBG ifcfg:   ONBOOT=no
+21:02:18,786 DBG ifcfg: all settings: [{'connection': {'autoconnect': False, 'id': 'enp0s3', 'interface-name': 'enp0s3', 'permissions': [], 'type': '802-3-ethernet', 'uuid': '61e71fca-3f33-4a64-aca1-9e7935a73c89'}, 'ipv4': {'address-data': [], 'addresses': [], 'dns': [], 'dns-search': [], 'method': 'auto', 'route-data': [], 'routes': []}, '802-3-ethernet': {'auto-negotiate': False, 'mac-address-blacklist': [], 's390-options': {}}, 'ipv6': {'address-data': [], 'addresses': [], 'dns': [], 'dns-search': [], 'method': 'auto', 'route-data': [], 'routes': []}, 'proxy': {}}]
+21:03:00,934 DBG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-enp0s3
+21:03:00,936 DBG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:11:51,692 DBG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:11:51,694 DBG ifcfg: IfcfFile.read /etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,393 DBG ifcfg: IfcfFile.read /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,395 DBG ifcfg: IfcfFile.read /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,397 DBG ifcfg: IfcfFile.read /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,398 DBG ifcfg: IfcfFile.read /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,400 DBG ifcfg: IfcfFile.read /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,402 DBG ifcfg: IfcfFile.read /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3
+00:19:20,404 DBG ifcfg: IfcfgFile.set /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3: (('ONBOOT', 'yes'),)
+00:19:20,405 DBG ifcfg: IfcfgFile.write /mnt/sysimage/etc/sysconfig/network-scripts/ifcfg-enp0s3:
+TYPE="Ethernet"
+PROXY_METHOD="none"
+BROWSER_ONLY="no"
+BOOTPROTO="dhcp"
+DEFROUTE="yes"
+IPV4_FAILURE_FATAL="no"
+IPV6INIT="yes"
+IPV6_AUTOCONF="yes"
+IPV6_DEFROUTE="yes"
+IPV6_FAILURE_FATAL="no"
+IPV6_ADDR_GEN_MODE="stable-privacy"
+NAME="enp0s3"
+UUID="61e71fca-3f33-4a64-aca1-9e7935a73c89"
+DEVICE="enp0s3"
+ONBOOT="yes"
+

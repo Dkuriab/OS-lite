@@ -1,0 +1,1036 @@
+21:02:10,042 INF main: /sbin/anaconda 29.19.2.17-1.el8
+21:02:10,299 INF isys: 2166000 kB (2115 MB) are available
+21:02:10,311 INF startup_utils: check_memory(): total:2115, needed:320, graphical:410
+21:02:10,318 INF main: anaconda called with cmdline = ['/sbin/anaconda']
+21:02:10,319 INF main: Default encoding = utf-8 
+21:02:10,332 INF dbus.connection: Connecting to a default bus at unix:abstract=/tmp/dbus-mBiSvoFF8e,guid=5089ab05c94e625654d76a8c5f481f52.
+21:02:10,903 INF startup_utils: Waiting 600 sec for modules to be started.
+21:02:11,906 INF startup_utils: Waiting 599 sec for modules to be started.
+21:02:12,908 INF startup_utils: Waiting 598 sec for modules to be started.
+21:02:13,910 INF startup_utils: Waiting 597 sec for modules to be started.
+21:02:14,924 INF startup_utils: Waiting 596 sec for modules to be started.
+21:02:15,926 INF startup_utils: Waiting 595 sec for modules to be started.
+21:02:16,928 INF startup_utils: Waiting 594 sec for modules to be started.
+21:02:18,030 INF startup_utils: Parsing kickstart: /usr/share/anaconda/interactive-defaults.ks
+21:02:18,523 WRN kickstart: Command firstboot will be parsed in DBus module.
+21:02:18,548 DBG localization: setting locale to: en_US.UTF-8
+21:02:18,563 DBG network: devices found ['enp0s3']
+21:02:18,568 DBG network: ensure single initramfs connections
+21:02:18,603 DBG network: apply kickstart
+21:02:18,606 DBG network: create missing ifcfg files
+21:02:18,674 DBG network: ifcfg file for enp0s3 not found
+21:02:18,766 DBG network: network: creating default ifcfg file for enp0s3
+21:02:18,767 DBG network: missing ifcfgs created for devices ['enp0s3']
+21:02:18,787 DBG network: set real ONBOOT value
+21:02:18,791 INF threading: Running Thread: AnaWaitForConnectingNMThread (140429741389568)
+21:02:18,793 DBG anaconda: setting display mode to GUI
+21:02:18,803 INF threading: Thread Done: AnaWaitForConnectingNMThread (140429741389568)
+21:02:18,809 WRN stdout: Not asking for VNC because we don't have a network
+21:02:18,810 INF anaconda: Display mode is set to 'interactive graphical mode'.
+21:02:18,811 INF isys: 2166000 kB (2115 MB) are available
+21:02:18,818 INF startup_utils: check_memory(): total:2115, needed:320, graphical:410
+21:02:18,819 DBG core.util: Setting timeout 60 seconds for starting X.
+21:02:20,485 DBG core.util: X server has signalled a successful start.
+21:02:20,618 INF display: Started spice-vdagent.
+21:02:21,473 DBG installclass: Searching /usr/lib64/python3.6/site-packages/pyanaconda/installclasses.
+21:02:21,487 DBG installclass: Found Red Hat Enterprise Linux (RHELBaseInstallClass).
+21:02:21,488 DBG installclass: Found oVirt Node Next (OvirtInstallClass).
+21:02:21,488 DBG installclass: Found Red Hat Virtualization (RHEVInstallClass).
+21:02:21,488 DBG installclass: Found Atomic Host (AtomicHostInstallClass).
+21:02:21,489 DBG installclass: Found Fedora Server (FedoraServerInstallClass).
+21:02:21,489 DBG installclass: Found Fedora Workstation (FedoraWorkstationInstallClass).
+21:02:21,489 DBG installclass: Found CentOS Linux (CentOSBaseInstallClass).
+21:02:21,490 DBG installclass: Found Fedora (FedoraBaseInstallClass).
+21:02:21,490 DBG installclass: Found Red Hat Enterprise Linux (DefaultInstallClass).
+21:02:21,490 DBG installclass: Found Scientific Linux (ScientificBaseInstallClass).
+21:02:21,491 INF installclass: Using a visible install class CentOS Linux (CentOSBaseInstallClass).
+21:02:21,893 DBG payload: getting release version from tree at None (8)
+21:02:21,894 DBG payload: using default release version of 8
+21:02:22,100 INF bootloader: bootloader GRUB2 on X86 platform
+21:02:22,105 INF autopart: Detected 2.07 GiB of memory
+21:02:22,107 INF autopart: Suggested swap size (2.07 GiB) exceeds 10 % of disk space, using 10 % of disk space (0.0) instead.
+21:02:22,109 INF autopart: Swap attempt of 0.0
+21:02:22,110 INF bootloader: bootloader GRUB2 on X86 platform
+21:02:22,183 DBG storage_utils: LABEL=OEMDRV matches [] for devicetree=None and disks_only=True
+21:02:22,187 INF threading: Running Thread: AnaStorageThread (140429741389568)
+21:02:22,192 INF threading: Running Thread: AnaTimeInitThread (140429412529920)
+21:02:22,274 DBG payload: Restarting payload thread
+21:02:22,276 INF threading: Running Thread: AnaPayloadRestartThread (140429400725248)
+21:02:22,276 INF geoloc: Geolocation is enabled.
+21:02:22,279 INF threading: Running Thread: AnaPayloadThread (140429392332544)
+21:02:22,280 ERR geoloc: Geolocation refresh failed - no connectivity
+21:02:22,280 INF threading: Thread Done: AnaPayloadRestartThread (140429400725248)
+21:02:22,280 DBG payload: Updating payload thread state: 0
+21:02:22,288 DBG payload: Updating payload thread state: 1
+21:02:23,677 DBG ui.gui: Detected primary monitor: 800x600 95dpix 95dpiy
+21:02:24,504 DBG localization: setting locale to: en_US.UTF-8
+21:02:24,548 DBG localization: setting locale to: en_US.UTF-8
+21:02:24,629 DBG ui.common: Entered spoke: WelcomeLanguageSpoke
+21:02:24,632 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/Gdk.py:336: DeprecationWarning: Gdk.Cursor.new is deprecated
+  return cls.new(*args, **kwds)
+
+21:02:26,482 DBG storage: protected device spec LABEL=CentOS-8-2-2004-x86_64-dvd resolved to sr0
+21:02:26,559 INF threading: Thread Done: AnaStorageThread (140429741389568)
+21:02:26,560 DBG payload: Updating payload thread state: 2
+21:02:26,560 DBG payload: Updating payload thread state: 4
+21:02:26,576 DBG payload: Setting up cdrom install device
+21:02:26,624 DBG payload: payload: using cdrom on non automated installation
+21:02:26,649 DBG payload: retrieving treeinfo from file:///run/install/repo (proxy: None ; sslverify: True)
+21:02:26,662 DBG payload: getting release version from tree at file:///run/install/repo (8)
+21:02:26,662 DBG payload: using treeinfo release version of 8
+21:02:26,714 DBG payload: Updating payload thread state: 5
+21:02:28,001 INF threading: Thread Done: AnaTimeInitThread (140429412529920)
+21:02:28,117 INF payload: Refreshing environmentAddons
+21:02:28,171 DBG payload: Updating payload thread state: 6
+21:02:28,172 INF threading: Thread Done: AnaPayloadThread (140429392332544)
+21:02:56,226 DBG core.util: Skipping detection of TAINT_HARDWARE_UNSUPPORTED.
+21:02:56,226 DBG core.util: Skipping detection of TAINT_SUPPORT_REMOVED.
+21:02:56,229 DBG localization: setting locale to: en_US.UTF-8
+21:02:56,796 DBG ui.gui.spokes.network: network standalone spoke (init): completed: True
+21:02:56,805 DBG ui.common: Left spoke: WelcomeLanguageSpoke
+21:02:56,820 INF lifecycle: Adding controller: SummaryHub
+21:02:58,395 INF threading: Running Thread: AnaAddLayoutsInitThread (140429400725248)
+21:02:58,400 DBG ui.gui.utils: Starting applying <bound method AddLayoutDialog._addLayout of <pyanaconda.ui.gui.spokes.keyboard.AddLayoutDialog object at 0x7fb8424766a0>> on <list object at 0x7fb8424dbc48>
+21:02:58,413 INF threading: Running Thread: AnaGtkBatchPre1 (140429392332544)
+21:02:58,422 INF threading: Thread Done: AnaGtkBatchPre1 (140429392332544)
+21:02:58,540 INF threading: Running Thread: AnaKeyboardThread (140429392332544)
+21:02:58,780 INF lifecycle: Module initialized: LangsupportSpoke
+21:02:59,228 INF threading: Running Thread: AnaNTPserver1 (140429412529920)
+21:02:59,239 INF threading: Running Thread: AnaDateTimeThread (140429741389568)
+21:02:59,307 INF threading: Thread Done: AnaNTPserver1 (140429412529920)
+21:03:00,382 INF threading: Running Thread: AnaSourceWatcher (140429412529920)
+21:03:00,383 DBG ui.gui.hubs: incomplete spokes: [SourceSpoke]
+21:03:00,395 INF ui.gui.spokes.software_selection: using environment from kickstart: None
+21:03:00,408 INF threading: Running Thread: AnaSoftwareWatcher (140429314410240)
+21:03:00,420 DBG ui.gui.hubs: incomplete spokes: [SourceSpoke, SoftwareSelectionSpoke]
+21:03:00,467 INF ui.gui.spokes.storage: Blivet-gui is not supported on CentOS Linux
+21:03:00,469 INF threading: Running Thread: AnaStorageWatcher (140429306017536)
+21:03:00,490 DBG ui.gui.hubs: incomplete spokes: [SourceSpoke, SoftwareSelectionSpoke, StorageSpoke]
+21:03:00,493 INF lifecycle: Module initialized: StorageSpoke
+21:03:00,494 INF threading: Thread Done: AnaStorageWatcher (140429306017536)
+21:03:00,542 INF threading: Running Thread: AnaCustomStorageInit (140429306017536)
+21:03:00,753 INF lifecycle: Module initialized: FilterSpoke
+21:03:00,788 WRN misc: /usr/share/anaconda/addons/com_redhat_kdump/gui/spokes/kdump.py:80: PyGTKDeprecationWarning: Using positional arguments with the GObject constructor has been deprecated. Please specify keyword(s) for "value, lower, upper, step_increment, page_increment, page_size" or use a class specific constructor. See: https://wiki.gnome.org/PyGObject/InitializerDeprecations
+  adjustment = Gtk.Adjustment(lower, lower, upper, step, step, 0)
+
+21:03:00,885 INF lifecycle: Module initialized: CustomPartitioningSpoke
+21:03:00,885 INF threading: Thread Done: AnaCustomStorageInit (140429306017536)
+21:03:00,914 DBG ui.gui.spokes.network: device configuration added: connection 61e71fca-3f33-4a64-aca1-9e7935a73c89 device enp0s3
+21:03:00,917 DBG ui.gui.spokes.network: not adding connection 61e71fca-3f33-4a64-aca1-9e7935a73c89, already in list
+21:03:00,997 DBG network: updating host name localhost.localdomain
+21:03:01,047 INF lifecycle: Module initialized: NetworkSpoke
+21:03:01,070 DBG payload: Source doesn't require network for installation
+21:03:01,071 DBG payload: Source doesn't require network for installation
+21:03:01,071 DBG payload: Source doesn't require network for installation
+21:03:01,071 DBG payload: Source doesn't require network for installation
+21:03:01,089 INF lifecycle: Initialization of all modules (9) has been started.
+21:03:01,092 DBG ui.gui.hubs: Starting event loop for hub SummaryHub
+21:03:01,105 DBG ui.common: Entered hub: SummaryHub
+17:03:01,000 INF isys: System time set to Thu Aug 27 21:03:01 2020 UTC
+17:03:01,000 INF isys: System time set to Thu Aug 27 21:03:01 2020 UTC
+17:03:01,000 INF isys: System time set to Thu Aug 27 21:03:01 2020 UTC
+17:03:01,003 INF lifecycle: Module initialized: DatetimeSpoke
+17:03:01,004 INF threading: Thread Done: AnaDateTimeThread (140429741389568)
+17:03:01,031 INF threading: Running Thread: AnaCheckSoftwareThread (140429741389568)
+17:03:01,031 INF lifecycle: Module initialized: SoftwareSelectionSpoke
+17:03:01,033 INF threading: Thread Done: AnaSoftwareWatcher (140429314410240)
+17:03:01,038 DBG ui.gui.hubs: spoke is not ready: KeyboardSpoke
+17:03:01,039 DBG ui.gui.hubs: setting KeyboardSpoke status to: Getting list of layouts...
+17:03:01,201 DBG ui.gui.hubs: spoke is not ready: SoftwareSelectionSpoke
+17:03:01,203 DBG payload: apply with result True called on requirements []
+17:03:01,205 DBG ui.gui.hubs: spoke is not ready: SourceSpoke
+17:03:01,205 DBG ui.gui.hubs: setting SourceSpoke status to: Setting up installation source...
+17:03:01,206 DBG ui.gui.hubs: setting SourceSpoke status to: Probing storage...
+17:03:01,206 DBG ui.gui.hubs: setting SourceSpoke status to: Downloading package metadata...
+17:03:01,206 DBG ui.gui.hubs: setting SourceSpoke status to: Downloading group metadata...
+17:03:01,219 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+17:03:01,244 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+17:03:01,245 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Downloading package metadata...
+17:03:01,245 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Downloading group metadata...
+17:03:01,245 DBG ui.gui.hubs: setting StorageSpoke status to: Probing storage...
+17:03:01,246 DBG ui.gui.hubs: setting StorageSpoke status to: Probing storage...
+17:03:01,274 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+17:03:01,275 DBG ui.gui.hubs: spoke is ready: OSCAPSpoke
+17:03:01,285 DBG ui.gui.hubs: spoke is ready: DatetimeSpoke
+17:03:01,341 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+17:03:01,354 DBG ui.gui.hubs: spoke is not ready: SoftwareSelectionSpoke
+17:03:01,365 DBG ui.gui.hubs: spoke is not ready: SourceSpoke
+17:03:01,366 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Checking software dependencies...
+17:03:01,559 DBG ui.gui.spokes.installation_source: Clearing checks in source spoke
+17:03:01,559 DBG ui.gui.spokes.installation_source: Setting up repos: ['Minimal']
+17:03:01,954 INF threading: Thread Done: AnaCheckSoftwareThread (140429741389568)
+17:03:02,049 DBG ui.gui.hubs: incomplete spokes: [SourceSpoke, StorageSpoke]
+17:03:02,050 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+17:03:02,062 DBG ui.gui.hubs: incomplete spokes: [StorageSpoke]
+17:03:02,063 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+17:03:02,609 INF lifecycle: Module initialized: SourceSpoke
+17:03:02,610 INF threading: Thread Done: AnaSourceWatcher (140429412529920)
+17:03:02,704 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+17:03:04,818 DBG ui.gui.utils: Finished applying <bound method AddLayoutDialog._addLayout of <pyanaconda.ui.gui.spokes.keyboard.AddLayoutDialog object at 0x7fb8424766a0>> on <list object at 0x7fb8424dbc48>
+17:03:04,818 INF threading: Thread Done: AnaAddLayoutsInitThread (140429400725248)
+17:03:04,819 INF lifecycle: Module initialized: KeyboardSpoke
+17:03:04,819 INF lifecycle: All modules have been initialized.
+17:03:04,819 DBG misc: OSCAP addon: Anaconda init_done signal triggered
+17:03:04,820 INF threading: Thread Done: AnaKeyboardThread (140429392332544)
+17:03:04,825 DBG ui.gui.hubs: spoke is ready: KeyboardSpoke
+17:03:13,154 DBG ui.common: Entered spoke: LangsupportSpoke
+17:03:28,762 DBG ui.common: Left spoke: LangsupportSpoke
+17:03:28,855 DBG payload: Source doesn't require network for installation
+17:03:28,856 DBG payload: Source doesn't require network for installation
+17:03:28,857 DBG payload: Source doesn't require network for installation
+17:03:28,857 DBG payload: Source doesn't require network for installation
+17:03:32,226 DBG ui.common: Entered spoke: LangsupportSpoke
+17:03:45,364 DBG ui.common: Left spoke: LangsupportSpoke
+17:03:45,448 DBG payload: Source doesn't require network for installation
+17:03:45,448 DBG payload: Source doesn't require network for installation
+17:03:45,449 DBG payload: Source doesn't require network for installation
+17:03:45,449 DBG payload: Source doesn't require network for installation
+17:03:48,685 DBG ui.common: Entered spoke: DatetimeSpoke
+00:04:21,000 INF isys: System time set to Thu Aug 27 21:04:21 2020 UTC
+00:04:26,513 DBG ui.common: Left spoke: DatetimeSpoke
+00:04:26,597 DBG payload: Source doesn't require network for installation
+00:04:26,598 DBG payload: Source doesn't require network for installation
+00:04:26,598 DBG payload: Source doesn't require network for installation
+00:04:26,599 DBG payload: Source doesn't require network for installation
+00:04:31,444 DBG ui.common: Entered spoke: SoftwareSelectionSpoke
+00:06:39,429 DBG ui.gui.spokes.software_selection: Environment selected for installation: server-product-environment
+00:06:39,430 DBG ui.gui.spokes.software_selection: Groups selected for installation: ['file-server', 'gnome-desktop', 'hardware-monitoring', 'network-file-system-client', 'performance', 'headless-management', 'system-tools']
+00:06:39,430 INF threading: Running Thread: AnaCheckSoftwareThread (140429400725248)
+00:06:39,431 DBG ui.common: Left spoke: SoftwareSelectionSpoke
+00:06:39,472 DBG payload: apply with result True called on requirements []
+00:06:39,472 DBG ui.gui.hubs: incomplete spokes: [StorageSpoke, SourceSpoke]
+00:06:39,486 DBG ui.gui.hubs: incomplete spokes: [StorageSpoke, SourceSpoke, SoftwareSelectionSpoke]
+00:06:39,568 DBG payload: Source doesn't require network for installation
+00:06:39,569 DBG payload: Source doesn't require network for installation
+00:06:39,569 DBG payload: Source doesn't require network for installation
+00:06:39,570 DBG payload: Source doesn't require network for installation
+00:06:39,586 DBG ui.gui.hubs: spoke is not ready: SoftwareSelectionSpoke
+00:06:39,588 DBG ui.gui.hubs: spoke is not ready: SourceSpoke
+00:06:39,588 DBG ui.gui.hubs: setting SoftwareSelectionSpoke status to: Checking software dependencies...
+00:06:40,218 INF threading: Thread Done: AnaCheckSoftwareThread (140429400725248)
+00:06:40,304 DBG ui.gui.hubs: incomplete spokes: [StorageSpoke, SourceSpoke]
+00:06:40,306 DBG ui.gui.hubs: spoke is ready: SoftwareSelectionSpoke
+00:06:40,321 DBG ui.gui.hubs: incomplete spokes: [StorageSpoke]
+00:06:40,322 DBG ui.gui.hubs: spoke is ready: SourceSpoke
+00:06:45,172 DBG ui.common: Entered spoke: StorageSpoke
+00:07:28,687 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b5142fff30' has no handler with id '30475'
+  return func(*args, **kwargs)
+
+00:07:28,688 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b5142fff30' has no handler with id '30476'
+  return func(*args, **kwargs)
+
+00:07:41,393 INF ui.gui.spokes.storage: Partitioning method changed from auto to custom.
+00:07:41,393 INF ui.gui.spokes.storage: Rolling back planed storage configuration changes.
+00:07:41,454 INF threading: Running Thread: AnaExecuteStorageThread (140429400725248)
+00:07:41,454 DBG ui.common: Left spoke: StorageSpoke
+00:07:41,515 DBG storage: clearpart: initializing sda
+00:07:41,847 DBG payload: Source doesn't require network for installation
+00:07:41,848 DBG payload: Source doesn't require network for installation
+00:07:41,849 DBG payload: Source doesn't require network for installation
+00:07:41,849 DBG payload: Source doesn't require network for installation
+00:07:41,851 DBG kickstart.kickstart.bootloader: Execute the bootloader with dry run True.
+00:07:41,860 DBG kickstart.kickstart.bootloader: Applying bootloader arguments: []
+00:07:41,862 DBG kickstart.kickstart.bootloader: Applying bootloader location: MBR
+00:07:41,866 DBG kickstart.kickstart.bootloader: Applying drive order: []
+00:07:41,866 DBG bootloader: new disk order: []
+00:07:41,868 DBG kickstart.kickstart.bootloader: Use the requested boot drive.
+00:07:41,949 DBG storage_utils: sda matches ['sda'] for devicetree=existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+existing 8 GiB disk sda (13) with non-existent msdos disklabel
+existing 0 B file /run/install/repo/images/install.img (18)
+  existing 0 B loop loop0 (22)
+existing 0 B file /LiveOS/rootfs.img (32)
+  existing 0 B loop loop1 (36) with existing ext4 filesystem
+    existing 3 GiB dm live-rw (60) with existing ext4 filesystem
+    existing 3 GiB dm live-base (70) with existing ext4 filesystem
+existing 0 B file /overlay (deleted) (46)
+  existing 0 B loop loop2 (50)
+ and disks_only=True
+00:07:41,952 DBG kickstart.kickstart.bootloader: Using a boot drive: sda
+00:07:41,966 DBG kickstart.kickstart.bootloader: Execute the bootloader with dry run False.
+00:07:41,974 DBG kickstart.kickstart.bootloader: Applying bootloader arguments: []
+00:07:41,976 DBG kickstart.kickstart.bootloader: Applying bootloader location: MBR
+00:07:41,980 DBG kickstart.kickstart.bootloader: Applying drive order: []
+00:07:41,981 DBG bootloader: new disk order: []
+00:07:41,984 DBG kickstart.kickstart.bootloader: Use the requested boot drive.
+00:07:42,034 DBG storage_utils: sda matches ['sda'] for devicetree=existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+existing 8 GiB disk sda (13) with non-existent msdos disklabel
+existing 0 B file /run/install/repo/images/install.img (18)
+  existing 0 B loop loop0 (22)
+existing 0 B file /LiveOS/rootfs.img (32)
+  existing 0 B loop loop1 (36) with existing ext4 filesystem
+    existing 3 GiB dm live-rw (60) with existing ext4 filesystem
+    existing 3 GiB dm live-base (70) with existing ext4 filesystem
+existing 0 B file /overlay (deleted) (46)
+  existing 0 B loop loop2 (50)
+ and disks_only=True
+00:07:42,037 DBG kickstart.kickstart.bootloader: Using a boot drive: sda
+00:07:42,048 DBG bootloader: _is_valid_disklabel(sda) returning True
+00:07:42,049 DBG bootloader: _is_valid_size(sda) returning True
+00:07:42,049 DBG bootloader: _is_valid_location(sda) returning True
+00:07:42,049 DBG bootloader: _is_valid_format(sda) returning True
+00:07:42,050 DBG bootloader: is_valid_stage1_device(sda) returning True
+00:07:42,065 INF threading: Thread Done: AnaExecuteStorageThread (140429400725248)
+00:07:42,088 DBG ui.gui.spokes.custom_storage: ui: devices=['/LiveOS/rootfs.img', '/overlay (deleted)', '/run/install/repo/images/install.img', 'live-base', 'live-rw', 'loop0', 'loop1', 'loop2', 'sda', 'sr0']
+00:07:42,088 DBG ui.gui.spokes.custom_storage: ui: unused=[]
+00:07:42,088 DBG ui.gui.spokes.custom_storage: ui: new_devices=[]
+00:07:42,107 DBG ui.gui.spokes.custom_storage: page clicked: New CentOS Linux 8 Installation
+00:07:42,108 DBG ui.gui.spokes.custom_storage: show mountpoint: New CentOS Linux 8 Installation
+00:07:42,109 DBG ui.gui.spokes.custom_storage: show mountpoint: New CentOS Linux 8 Installation
+00:07:42,130 DBG ui.common: Entered spoke: CustomPartitioningSpoke
+00:07:42,139 DBG ui.gui.hubs: spoke is not ready: StorageSpoke
+00:07:42,139 DBG ui.gui.hubs: setting StorageSpoke status to: Saving storage configuration...
+00:07:42,147 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+00:07:55,915 DBG ui.gui.spokes.custom_storage: running automatic partitioning
+00:07:55,917 DBG kickstart.kickstart.bootloader: Execute the bootloader with dry run False.
+00:07:55,926 DBG kickstart.kickstart.bootloader: Applying bootloader arguments: []
+00:07:55,929 DBG kickstart.kickstart.bootloader: Applying bootloader location: MBR
+00:07:55,933 DBG kickstart.kickstart.bootloader: Applying drive order: []
+00:07:55,934 DBG bootloader: new disk order: []
+00:07:55,937 DBG kickstart.kickstart.bootloader: Use the requested boot drive.
+00:07:55,986 DBG storage_utils: sda matches ['sda'] for devicetree=existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+existing 8 GiB disk sda (13) with non-existent msdos disklabel
+existing 0 B file /run/install/repo/images/install.img (18)
+  existing 0 B loop loop0 (22)
+existing 0 B file /LiveOS/rootfs.img (32)
+  existing 0 B loop loop1 (36) with existing ext4 filesystem
+    existing 3 GiB dm live-rw (60) with existing ext4 filesystem
+    existing 3 GiB dm live-base (70) with existing ext4 filesystem
+existing 0 B file /overlay (deleted) (46)
+  existing 0 B loop loop2 (50)
+ and disks_only=True
+00:07:55,990 DBG kickstart.kickstart.bootloader: Using a boot drive: sda
+00:07:56,000 INF autopart: Detected 2.07 GiB of memory
+00:07:56,000 INF autopart: Suggested swap size (2.07 GiB) exceeds 10 % of disk space, using 10 % of disk space (819.2 MiB) instead.
+00:07:56,001 INF autopart: Swap attempt of 819.2 MiB
+00:07:56,001 DBG autopart: do_autopart: True
+00:07:56,002 DBG autopart: encrypted_autopart: False
+00:07:56,002 DBG autopart: autopart_type: 2
+00:07:56,003 DBG autopart: clear_part_type: 0
+00:07:56,003 DBG autopart: clear_part_disks: ['sda']
+00:07:56,004 DBG autopart: autopart_requests:
+PartSpec instance (0x7fb841f92358) -- 
+  mountpoint = /  lv = True  thin = True  btrfs = True
+  weight = 0  fstype = xfs  encrypted = True
+  size = 1024 MiB  max_size = 50 GiB  grow = True
+PartSpec instance (0x7fb841f923c8) -- 
+  mountpoint = /home  lv = True  thin = True  btrfs = True
+  weight = 0  fstype = xfs  encrypted = True
+  size = 500 MiB  max_size = None  grow = True
+PartSpec instance (0x7fb841f92550) -- 
+  mountpoint = None  lv = False  thin = False  btrfs = False
+  weight = 0  fstype = biosboot  encrypted = False
+  size = 1024 KiB  max_size = None  grow = False
+PartSpec instance (0x7fb8635f3a20) -- 
+  mountpoint = /boot  lv = False  thin = False  btrfs = False
+  weight = 0  fstype = ext4  encrypted = False
+  size = 1024 MiB  max_size = None  grow = False
+PartSpec instance (0x7fb84118f9e8) -- 
+  mountpoint = None  lv = True  thin = False  btrfs = False
+  weight = 0  fstype = swap  encrypted = True
+  size = 819.2 MiB  max_size = None  grow = False
+
+00:07:56,004 DBG autopart: storage.disks: ['sda']
+00:07:56,005 DBG autopart: storage.partitioned: ['sda']
+00:07:56,006 DBG autopart: all names: ['/LiveOS/rootfs.img', '/overlay (deleted)', '/run/install/repo/images/install.img', 'live-base', 'live-rw', 'loop0', 'loop1', 'loop2', 'sda', 'sr0']
+00:07:56,006 DBG autopart: boot disk: sda
+00:07:56,028 DBG autopart: candidate disks: [DiskDevice instance (0x7fb8411bd0f0) --
+  name = sda  status = True  id = 13
+  children = []
+  parents = []
+  uuid = None  size = 8 GiB
+  format = non-existent msdos disklabel
+  major = 8  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:0d.0/ata3/host2/target2:0:0/2:0:0:0/block/sda
+  target size = 8 GiB  path = /dev/sda
+  format args = []  original_format = None  removable = False  wwn = None]
+00:07:56,030 DBG autopart: devs: [PartitionDevice instance (0x7fb83e65eda0) --
+  name = req0  status = False  id = 221
+  children = []
+  parents = []
+  uuid = None  size = 500 MiB
+  format = non-existent lvmpv
+  major = 0  minor = 0  exists = False  protected = False
+  sysfs path = 
+  target size = 500 MiB  path = /dev/req0
+  format args = []  original_format = lvmpv  grow = True  max size = 0 B  bootable = None
+  part type = None  primary = False  start sector = None  end sector = None
+  parted_partition = None
+  disk = None
+]
+00:07:56,035 DBG bootloader: _is_valid_disklabel(sda) returning True
+00:07:56,035 DBG bootloader: _is_valid_size(sda) returning True
+00:07:56,036 DBG bootloader: _is_valid_location(sda) returning True
+00:07:56,036 DBG bootloader: _is_valid_format(sda) returning True
+00:07:56,036 DBG bootloader: is_valid_stage1_device(sda) returning True
+00:07:56,037 INF autopart: skipping unneeded stage1 biosboot request
+00:07:56,037 DBG autopart: PartSpec instance (0x7fb841f92550) -- 
+  mountpoint = None  lv = False  thin = False  btrfs = False
+  weight = 0  fstype = biosboot  encrypted = False
+  size = 1024 KiB  max_size = None  grow = False
+
+00:07:56,039 DBG autopart: existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:07:56,791 DBG kickstart.kickstart.bootloader: Execute the bootloader with dry run False.
+00:07:56,798 DBG kickstart.kickstart.bootloader: Applying bootloader arguments: []
+00:07:56,800 DBG kickstart.kickstart.bootloader: Applying bootloader location: MBR
+00:07:56,804 DBG kickstart.kickstart.bootloader: Applying drive order: []
+00:07:56,804 DBG bootloader: new disk order: []
+00:07:56,808 DBG kickstart.kickstart.bootloader: Use the requested boot drive.
+00:07:56,855 DBG storage_utils: sda matches ['sda'] for devicetree=existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+existing 8 GiB disk sda (13) with non-existent msdos disklabel
+  non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+  non-existent 7 GiB partition sda2 (221) with non-existent lvmpv
+    non-existent 7 GiB lvmvg cl (234)
+      non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+      non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap
+existing 0 B file /run/install/repo/images/install.img (18)
+  existing 0 B loop loop0 (22)
+existing 0 B file /LiveOS/rootfs.img (32)
+  existing 0 B loop loop1 (36) with existing ext4 filesystem
+    existing 3 GiB dm live-rw (60) with existing ext4 filesystem
+    existing 3 GiB dm live-base (70) with existing ext4 filesystem
+existing 0 B file /overlay (deleted) (46)
+  existing 0 B loop loop2 (50)
+ and disks_only=True
+00:07:56,861 DBG kickstart.kickstart.bootloader: Using a boot drive: sda
+00:07:56,872 DBG bootloader: stage1 device cannot be of type lvmvg
+00:07:56,873 DBG bootloader: stage1 device cannot be of type lvmlv
+00:07:56,874 DBG bootloader: stage1 device cannot be of type lvmlv
+00:07:56,876 DBG bootloader: _is_valid_disklabel(sda) returning True
+00:07:56,877 DBG bootloader: _is_valid_size(sda) returning True
+00:07:56,877 DBG bootloader: _is_valid_location(sda) returning True
+00:07:56,878 DBG bootloader: _is_valid_format(sda) returning True
+00:07:56,878 DBG bootloader: is_valid_stage1_device(sda) returning True
+00:07:56,879 DBG ui.gui.spokes.custom_storage: finished automatic partitioning
+00:07:56,885 DBG bootloader: _is_valid_disklabel(sda) returning True
+00:07:56,886 DBG bootloader: _is_valid_size(sda) returning True
+00:07:56,886 DBG bootloader: _is_valid_location(sda) returning True
+00:07:56,886 DBG bootloader: _is_valid_format(sda) returning True
+00:07:56,887 DBG bootloader: is_valid_stage1_device(sda) returning True
+00:07:56,887 DBG bootloader: _is_valid_disklabel(sda1) returning True
+00:07:56,888 DBG bootloader: _is_valid_size(sda1) returning True
+00:07:56,888 DBG bootloader: _is_valid_partition(sda1) returning True
+00:07:56,889 DBG bootloader: _is_valid_format(sda1) returning True
+00:07:56,890 DBG bootloader: is_valid_stage2_device(sda1) returning True
+00:07:56,894 DBG storage_utils: Available memory: 1.07 GiB
+00:07:56,912 DBG ui.gui.spokes.custom_storage: Storage check started with constraints {'min_ram': 410, 'min_root': Size (250 MiB), 'min_partition_sizes': {'/usr': Size (250 MiB), '/tmp': Size (50 MiB), '/var': Size (384 MiB), '/home': Size (100 MiB), '/boot': Size (200 MiB)}, 'must_be_on_linuxfs': {'/', '/usr/share', '/tmp', '/var', '/usr', '/usr/lib', '/home'}, 'must_be_on_root': {'/proc', '/lib', '/sbin', 'lost+found', '/etc', '/bin', '/dev', '/mnt', '/root'}, 'root_device_types': set(), 'req_partition_sizes': {}, 'must_not_be_on_root': set(), 'swap_is_recommended': True, 'luks2_min_ram': Size (128 MiB)}.
+00:07:56,913 DBG ui.gui.spokes.custom_storage: Run sanity check verify_root.
+00:07:56,913 DBG ui.gui.spokes.custom_storage: Run sanity check verify_s390_constraints.
+00:07:56,913 DBG ui.gui.spokes.custom_storage: Run sanity check verify_partition_sizes.
+00:07:56,914 DBG ui.gui.spokes.custom_storage: Run sanity check verify_partition_format_sizes.
+00:07:56,914 DBG ui.gui.spokes.custom_storage: Run sanity check verify_bootloader.
+00:07:56,914 DBG ui.gui.spokes.custom_storage: Run sanity check verify_gpt_biosboot.
+00:07:56,914 DBG ui.gui.spokes.custom_storage: Run sanity check verify_swap.
+00:07:56,915 DBG ui.gui.spokes.custom_storage: Run sanity check verify_swap_uuid.
+00:07:56,915 DBG ui.gui.spokes.custom_storage: Run sanity check verify_mountpoints_on_linuxfs.
+00:07:56,916 DBG ui.gui.spokes.custom_storage: Run sanity check verify_mountpoints_on_root.
+00:07:56,916 DBG ui.gui.spokes.custom_storage: Run sanity check verify_mountpoints_not_on_root.
+00:07:56,916 DBG ui.gui.spokes.custom_storage: Skipped sanity check verify_luks_devices_have_key.
+00:07:56,916 DBG ui.gui.spokes.custom_storage: Run sanity check verify_luks2_memory_requirements.
+00:07:56,917 DBG ui.gui.spokes.custom_storage: Run sanity check verify_mounted_partitions.
+00:07:56,917 DBG ui.gui.spokes.custom_storage: Storage check finished with success.
+00:07:56,917 DBG ui.gui.spokes.custom_storage: refreshing ui
+00:07:56,926 DBG ui.gui.spokes.custom_storage: ui: devices=['/LiveOS/rootfs.img', '/overlay (deleted)', '/run/install/repo/images/install.img', 'cl', 'cl-root', 'cl-swap', 'live-base', 'live-rw', 'loop0', 'loop1', 'loop2', 'sda', 'sda1', 'sda2', 'sr0']
+00:07:56,927 DBG ui.gui.spokes.custom_storage: ui: unused=[]
+00:07:56,927 DBG ui.gui.spokes.custom_storage: ui: new_devices=['sda1', 'cl-swap', 'cl-root']
+00:07:56,938 DBG ui.gui.spokes.custom_storage: page clicked: New CentOS Linux 8 Installation
+00:07:56,939 DBG ui.gui.spokes.custom_storage: show mountpoint: New CentOS Linux 8 Installation
+00:07:56,939 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:07:56,940 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot device
+00:07:56,951 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:07:56,959 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:07:56,960 DBG ui.gui.spokes.custom_storage: updated device_container_name to None
+00:07:56,960 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:07:56,960 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:07:56,961 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:07:56,974 DBG ui.gui.spokes.custom_storage: device_type_changed: None
+00:07:56,974 DBG ui.gui.spokes.custom_storage: device_type_changed: None
+00:07:56,975 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_PARTITION
+00:07:56,977 DBG ui.gui.spokes.custom_storage: populate_raid: 2, None
+00:07:56,978 DBG ui.gui.spokes.custom_storage: populate_raid: 2, None
+00:07:56,979 DBG ui.gui.spokes.custom_storage: show mountpoint: New CentOS Linux 8 Installation
+00:07:56,980 DBG ui.gui.spokes.custom_storage: finished refreshing ui
+00:07:56,980 DBG ui.gui.spokes.custom_storage: updating space display
+00:07:56,985 DBG ui.gui.spokes.custom_storage: finished updating space display
+00:08:04,507 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:08:04,509 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at / device
+00:08:04,537 DBG ui.gui.spokes.custom_storage: Saving current selector: non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:08:04,543 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+00:08:04,569 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:08:04,570 DBG ui.gui.spokes.custom_storage: updated device_container_name to cl
+00:08:04,570 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:08:04,571 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:08:04,571 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:08:04,583 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_LVM
+00:08:04,584 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:04,590 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:04,591 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:04,593 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:04,599 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:04,599 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:23,310 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:08:23,311 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot device
+00:08:23,315 DBG ui.gui.spokes.custom_storage: Saving current selector: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+00:08:23,340 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:08:23,344 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:08:23,345 DBG ui.gui.spokes.custom_storage: updated device_container_name to None
+00:08:23,345 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:08:23,346 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:08:23,346 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:08:23,358 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_PARTITION
+00:08:23,359 DBG ui.gui.spokes.custom_storage: populate_raid: 2, None
+00:08:23,360 DBG ui.gui.spokes.custom_storage: populate_raid: 2, None
+00:08:27,690 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:08:27,691 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at / device
+00:08:27,715 DBG ui.gui.spokes.custom_storage: Saving current selector: non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:08:27,720 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+00:08:27,744 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:08:27,745 DBG ui.gui.spokes.custom_storage: updated device_container_name to cl
+00:08:27,745 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:08:27,745 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:08:27,745 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:08:27,758 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_LVM
+00:08:27,759 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:27,764 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:27,765 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:27,767 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:27,773 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:27,773 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:28,382 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:08:28,383 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap device
+00:08:28,411 DBG ui.gui.spokes.custom_storage: Saving current selector: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+00:08:28,437 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap
+00:08:28,466 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:08:28,467 DBG ui.gui.spokes.custom_storage: updated device_container_name to cl
+00:08:28,467 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:08:28,468 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:08:28,468 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:08:28,483 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_LVM
+00:08:28,484 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:28,491 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:28,491 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:28,493 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:28,499 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:28,500 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:29,381 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:08:29,382 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at / device
+00:08:29,408 DBG ui.gui.spokes.custom_storage: Saving current selector: non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap
+00:08:29,435 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+00:08:29,462 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:08:29,463 DBG ui.gui.spokes.custom_storage: updated device_container_name to cl
+00:08:29,463 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:08:29,463 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:08:29,464 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:08:29,476 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_LVM
+00:08:29,477 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:29,483 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:29,484 DBG ui.gui.spokes.custom_storage: default container is cl
+00:08:29,485 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:08:29,493 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:08:29,494 DBG ui.gui.spokes.custom_storage: default container is cl
+00:09:01,364 INF ui.gui.spokes.custom_storage: ui: saving changes to device cl-root
+00:09:01,366 DBG ui.gui.spokes.custom_storage: reformat: True
+00:09:01,382 DBG ui.gui.spokes.custom_storage: old disks: ['sda']
+00:09:01,383 DBG ui.gui.spokes.custom_storage: new disks: ['sda']
+00:09:01,383 DBG ui.gui.spokes.custom_storage: device: non-existent 6.2 GiB lvmlv cl-root (240) with non-existent xfs filesystem mounted at /
+00:09:01,408 DBG ui.gui.spokes.custom_storage: old min_luks_entropy: 256
+00:09:01,409 DBG ui.gui.spokes.custom_storage: new min_luks_entropy: 256
+00:09:01,409 DBG ui.gui.spokes.custom_storage: old name: root
+00:09:01,409 DBG ui.gui.spokes.custom_storage: new name: root
+00:09:01,410 DBG ui.gui.spokes.custom_storage: old size: 6.2 GiB
+00:09:01,410 DBG ui.gui.spokes.custom_storage: new size: 4.2 GiB
+00:09:01,411 DBG ui.gui.spokes.custom_storage: old device_type: 0
+00:09:01,411 DBG ui.gui.spokes.custom_storage: new device_type: 0
+00:09:01,411 DBG ui.gui.spokes.custom_storage: old fstype: xfs
+00:09:01,411 DBG ui.gui.spokes.custom_storage: new fstype: ext4
+00:09:01,412 DBG ui.gui.spokes.custom_storage: old encrypted: False
+00:09:01,412 DBG ui.gui.spokes.custom_storage: new encrypted: False
+00:09:01,412 DBG ui.gui.spokes.custom_storage: old luks_version: None
+00:09:01,413 DBG ui.gui.spokes.custom_storage: new luks_version: None
+00:09:01,413 DBG ui.gui.spokes.custom_storage: old label: 
+00:09:01,413 DBG ui.gui.spokes.custom_storage: new label: 
+00:09:01,414 DBG ui.gui.spokes.custom_storage: old mountpoint: /
+00:09:01,414 DBG ui.gui.spokes.custom_storage: new mountpoint: /
+00:09:01,415 DBG ui.gui.spokes.custom_storage: old raid_level: None
+00:09:01,415 DBG ui.gui.spokes.custom_storage: new raid_level: None
+00:09:01,415 DBG ui.gui.spokes.custom_storage: old container_name: cl
+00:09:01,415 DBG ui.gui.spokes.custom_storage: new container_name: cl
+00:09:01,416 DBG ui.gui.spokes.custom_storage: old container_encrypted: False
+00:09:01,416 DBG ui.gui.spokes.custom_storage: new container_encrypted: False
+00:09:01,416 DBG ui.gui.spokes.custom_storage: old container_raid_level: None
+00:09:01,417 DBG ui.gui.spokes.custom_storage: new container_raid_level: None
+00:09:01,417 DBG ui.gui.spokes.custom_storage: old container_size: 0
+00:09:01,417 DBG ui.gui.spokes.custom_storage: new container_size: 0
+00:09:01,813 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 4.2 GiB lvmlv cl-root (240) with non-existent ext4 filesystem mounted at /
+00:09:01,838 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:09:01,838 DBG ui.gui.spokes.custom_storage: updated device_container_name to cl
+00:09:01,839 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:09:01,839 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:09:01,840 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:09:01,853 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_LVM
+00:09:01,853 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:09:01,860 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:09:01,860 DBG ui.gui.spokes.custom_storage: default container is cl
+00:09:01,862 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:09:01,873 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:09:01,874 DBG ui.gui.spokes.custom_storage: default container is cl
+00:09:01,878 DBG ui.gui.spokes.custom_storage: leaving save_right_side
+00:09:03,755 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b5111559c0' has no handler with id '34800'
+  return func(*args, **kwargs)
+
+00:09:03,756 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b5111559c0' has no handler with id '34801'
+  return func(*args, **kwargs)
+
+00:09:20,027 INF ui.gui.spokes.custom_storage: ui: saving changes to device cl-root
+00:09:20,029 DBG ui.gui.spokes.custom_storage: reformat: True
+00:09:20,044 DBG ui.gui.spokes.custom_storage: old disks: ['sda']
+00:09:20,044 DBG ui.gui.spokes.custom_storage: new disks: ['sda']
+00:09:20,044 DBG ui.gui.spokes.custom_storage: device: non-existent 4.2 GiB lvmlv cl-root (240) with non-existent ext4 filesystem mounted at /
+00:09:20,070 DBG ui.gui.spokes.custom_storage: old min_luks_entropy: 256
+00:09:20,070 DBG ui.gui.spokes.custom_storage: new min_luks_entropy: 256
+00:09:20,070 DBG ui.gui.spokes.custom_storage: old name: root
+00:09:20,071 DBG ui.gui.spokes.custom_storage: new name: root
+00:09:20,071 DBG ui.gui.spokes.custom_storage: old size: 4.2 GiB
+00:09:20,071 DBG ui.gui.spokes.custom_storage: new size: 4.2 GiB
+00:09:20,072 DBG ui.gui.spokes.custom_storage: old device_type: 0
+00:09:20,072 DBG ui.gui.spokes.custom_storage: new device_type: 0
+00:09:20,073 DBG ui.gui.spokes.custom_storage: old fstype: ext4
+00:09:20,073 DBG ui.gui.spokes.custom_storage: new fstype: ext4
+00:09:20,074 DBG ui.gui.spokes.custom_storage: old encrypted: False
+00:09:20,074 DBG ui.gui.spokes.custom_storage: new encrypted: False
+00:09:20,074 DBG ui.gui.spokes.custom_storage: old luks_version: None
+00:09:20,075 DBG ui.gui.spokes.custom_storage: new luks_version: None
+00:09:20,075 DBG ui.gui.spokes.custom_storage: old label: 
+00:09:20,076 DBG ui.gui.spokes.custom_storage: new label: 
+00:09:20,076 DBG ui.gui.spokes.custom_storage: old mountpoint: /
+00:09:20,076 DBG ui.gui.spokes.custom_storage: new mountpoint: /
+00:09:20,077 DBG ui.gui.spokes.custom_storage: old raid_level: None
+00:09:20,077 DBG ui.gui.spokes.custom_storage: new raid_level: None
+00:09:20,077 DBG ui.gui.spokes.custom_storage: old container_name: cl
+00:09:20,078 DBG ui.gui.spokes.custom_storage: new container_name: cl
+00:09:20,078 DBG ui.gui.spokes.custom_storage: old container_encrypted: False
+00:09:20,079 DBG ui.gui.spokes.custom_storage: new container_encrypted: False
+00:09:20,079 DBG ui.gui.spokes.custom_storage: old container_raid_level: None
+00:09:20,079 DBG ui.gui.spokes.custom_storage: new container_raid_level: None
+00:09:20,080 DBG ui.gui.spokes.custom_storage: old container_size: 0
+00:09:20,080 DBG ui.gui.spokes.custom_storage: new container_size: 0
+00:09:20,080 DBG ui.gui.spokes.custom_storage: nothing changed for new device
+00:09:41,373 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b5142f1380' has no handler with id '35955'
+  return func(*args, **kwargs)
+
+00:09:41,374 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b5142f1380' has no handler with id '35956'
+  return func(*args, **kwargs)
+
+00:09:41,375 DBG ui.gui.spokes.custom_storage: requested size = 953.67 MiB  ; available space = 1.99 GiB
+00:09:41,740 DBG ui.gui.spokes.custom_storage: ui: devices=['/LiveOS/rootfs.img', '/overlay (deleted)', '/run/install/repo/images/install.img', 'cl', 'cl-home', 'cl-root', 'cl-swap', 'live-base', 'live-rw', 'loop0', 'loop1', 'loop2', 'sda', 'sda1', 'sda2', 'sr0']
+00:09:41,740 DBG ui.gui.spokes.custom_storage: ui: unused=[]
+00:09:41,741 DBG ui.gui.spokes.custom_storage: ui: new_devices=['sda1', 'cl-root', 'cl-home', 'cl-swap']
+00:09:41,754 DBG ui.gui.spokes.custom_storage: page clicked: New CentOS Linux 8 Installation
+00:09:41,754 DBG ui.gui.spokes.custom_storage: show mountpoint: New CentOS Linux 8 Installation
+00:09:41,755 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:09:41,756 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot device
+00:09:41,760 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+00:09:41,765 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:09:41,765 DBG ui.gui.spokes.custom_storage: updated device_container_name to None
+00:09:41,766 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:09:41,766 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:09:41,766 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:09:41,780 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_PARTITION
+00:09:41,781 DBG ui.gui.spokes.custom_storage: populate_raid: 2, None
+00:09:41,783 DBG ui.gui.spokes.custom_storage: populate_raid: 2, None
+00:09:41,784 DBG ui.gui.spokes.custom_storage: show mountpoint: New CentOS Linux 8 Installation
+00:09:41,784 DBG ui.gui.spokes.lib.accordion: Accordion: unselecting all items
+00:09:41,785 DBG ui.gui.spokes.lib.accordion: Accordion: select non-existent 953.67 MiB lvmlv cl-home (423) with non-existent xfs filesystem mounted at /home device
+00:09:41,822 DBG ui.gui.spokes.custom_storage: populate_right_side: non-existent 953.67 MiB lvmlv cl-home (423) with non-existent xfs filesystem mounted at /home
+00:09:41,849 DBG ui.gui.spokes.custom_storage: updated device_disks to ['sda']
+00:09:41,849 DBG ui.gui.spokes.custom_storage: updated device_container_name to cl
+00:09:41,850 DBG ui.gui.spokes.custom_storage: updated device_container_raid_level to None
+00:09:41,850 DBG ui.gui.spokes.custom_storage: updated device_container_encrypted to False
+00:09:41,850 DBG ui.gui.spokes.custom_storage: updated device_container_size to 0
+00:09:41,863 DBG ui.gui.spokes.custom_storage: device_type_changed: DEVICE_TYPE_LVM
+00:09:41,864 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:09:41,871 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:09:41,871 DBG ui.gui.spokes.custom_storage: default container is cl
+00:09:41,873 DBG ui.gui.spokes.custom_storage: populate_raid: 0, None
+00:09:41,886 DBG ui.gui.spokes.custom_storage: new container selection: cl
+00:09:41,887 DBG ui.gui.spokes.custom_storage: default container is cl
+00:10:23,179 DBG kickstart.kickstart.bootloader: Execute the bootloader with dry run False.
+00:10:23,187 DBG kickstart.kickstart.bootloader: Applying bootloader arguments: []
+00:10:23,189 DBG kickstart.kickstart.bootloader: Applying bootloader location: MBR
+00:10:23,193 DBG kickstart.kickstart.bootloader: Applying drive order: []
+00:10:23,194 DBG bootloader: new disk order: []
+00:10:23,196 DBG kickstart.kickstart.bootloader: Use the requested boot drive.
+00:10:23,248 DBG storage_utils: sda matches ['sda'] for devicetree=existing 1.6 GiB cdrom sr0 (3) with existing iso9660 filesystem
+existing 8 GiB disk sda (13) with non-existent msdos disklabel
+  non-existent 1024 MiB partition sda1 (228) with non-existent ext4 filesystem mounted at /boot
+  non-existent 5.94 GiB partition sda2 (221) with non-existent lvmpv
+    non-existent 5.93 GiB lvmvg cl (234)
+      non-existent 4.2 GiB lvmlv cl-root (240) with non-existent ext4 filesystem mounted at /
+      non-existent 819.2 MiB lvmlv cl-swap (249) with non-existent swap
+      non-existent 953.67 MiB lvmlv cl-home (423) with non-existent xfs filesystem mounted at /home
+existing 0 B file /run/install/repo/images/install.img (18)
+  existing 0 B loop loop0 (22)
+existing 0 B file /LiveOS/rootfs.img (32)
+  existing 0 B loop loop1 (36) with existing ext4 filesystem
+    existing 3 GiB dm live-rw (60) with existing ext4 filesystem
+    existing 3 GiB dm live-base (70) with existing ext4 filesystem
+existing 0 B file /overlay (deleted) (46)
+  existing 0 B loop loop2 (50)
+ and disks_only=True
+00:10:23,255 DBG kickstart.kickstart.bootloader: Using a boot drive: sda
+00:10:23,266 DBG bootloader: stage1 device cannot be of type lvmvg
+00:10:23,267 DBG bootloader: stage1 device cannot be of type lvmlv
+00:10:23,268 DBG bootloader: stage1 device cannot be of type lvmlv
+00:10:23,269 DBG bootloader: stage1 device cannot be of type lvmlv
+00:10:23,272 DBG bootloader: _is_valid_disklabel(sda) returning True
+00:10:23,272 DBG bootloader: _is_valid_size(sda) returning True
+00:10:23,273 DBG bootloader: _is_valid_location(sda) returning True
+00:10:23,273 DBG bootloader: _is_valid_format(sda) returning True
+00:10:23,273 DBG bootloader: is_valid_stage1_device(sda) returning True
+00:10:23,281 DBG bootloader: _is_valid_disklabel(sda) returning True
+00:10:23,281 DBG bootloader: _is_valid_size(sda) returning True
+00:10:23,282 DBG bootloader: _is_valid_location(sda) returning True
+00:10:23,282 DBG bootloader: _is_valid_format(sda) returning True
+00:10:23,283 DBG bootloader: is_valid_stage1_device(sda) returning True
+00:10:23,283 DBG bootloader: _is_valid_disklabel(sda1) returning True
+00:10:23,284 DBG bootloader: _is_valid_size(sda1) returning True
+00:10:23,285 DBG bootloader: _is_valid_partition(sda1) returning True
+00:10:23,286 DBG bootloader: _is_valid_format(sda1) returning True
+00:10:23,286 DBG bootloader: is_valid_stage2_device(sda1) returning True
+00:10:23,292 DBG storage_utils: Available memory: 1.07 GiB
+00:10:23,310 DBG ui.helpers: Storage check started with constraints {'min_ram': 410, 'min_root': Size (250 MiB), 'min_partition_sizes': {'/usr': Size (250 MiB), '/tmp': Size (50 MiB), '/var': Size (384 MiB), '/home': Size (100 MiB), '/boot': Size (200 MiB)}, 'must_be_on_linuxfs': {'/', '/usr/share', '/tmp', '/var', '/usr', '/usr/lib', '/home'}, 'must_be_on_root': {'/proc', '/lib', '/sbin', 'lost+found', '/etc', '/bin', '/dev', '/mnt', '/root'}, 'root_device_types': set(), 'req_partition_sizes': {}, 'must_not_be_on_root': set(), 'swap_is_recommended': True, 'luks2_min_ram': Size (128 MiB)}.
+00:10:23,311 DBG ui.helpers: Run sanity check verify_root.
+00:10:23,311 DBG ui.helpers: Run sanity check verify_s390_constraints.
+00:10:23,311 DBG ui.helpers: Run sanity check verify_partition_sizes.
+00:10:23,311 DBG ui.helpers: Run sanity check verify_partition_format_sizes.
+00:10:23,312 DBG ui.helpers: Run sanity check verify_bootloader.
+00:10:23,312 DBG ui.helpers: Run sanity check verify_gpt_biosboot.
+00:10:23,312 DBG ui.helpers: Run sanity check verify_swap.
+00:10:23,313 DBG ui.helpers: Run sanity check verify_swap_uuid.
+00:10:23,313 DBG ui.helpers: Run sanity check verify_mountpoints_on_linuxfs.
+00:10:23,313 DBG ui.helpers: Run sanity check verify_mountpoints_on_root.
+00:10:23,314 DBG ui.helpers: Run sanity check verify_mountpoints_not_on_root.
+00:10:23,314 DBG ui.helpers: Run sanity check verify_luks_devices_have_key.
+00:10:23,314 DBG ui.helpers: Run sanity check verify_luks2_memory_requirements.
+00:10:23,315 DBG ui.helpers: Run sanity check verify_mounted_partitions.
+00:10:23,315 DBG ui.helpers: Storage check finished with success.
+00:10:23,364 DBG ui.gui.hubs: incomplete spokes: []
+00:10:23,494 INF ui.lib.space: fs space: 3.57 GiB  needed: 2.68 GiB
+00:10:23,496 DBG ui.gui.hubs: spoke is not ready: StorageSpoke
+00:10:23,499 DBG ui.gui.hubs: setting StorageSpoke status to: Checking storage configuration...
+00:10:23,631 INF ui.lib.space: fs space: 3.57 GiB  needed: 2.68 GiB
+00:10:23,633 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+00:10:48,961 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b514599680' has no handler with id '37815'
+  return func(*args, **kwargs)
+
+00:10:48,962 WRN misc: /usr/lib64/python3.6/site-packages/gi/overrides/GObject.py:553: Warning: gsignal.c:2641: instance '0x55b514599680' has no handler with id '37816'
+  return func(*args, **kwargs)
+
+00:10:48,969 DBG ui.common: Left spoke: CustomPartitioningSpoke
+00:10:49,059 DBG payload: Source doesn't require network for installation
+00:10:49,059 DBG payload: Source doesn't require network for installation
+00:10:49,060 DBG payload: Source doesn't require network for installation
+00:10:49,060 DBG payload: Source doesn't require network for installation
+00:10:49,189 INF ui.lib.space: fs space: 3.57 GiB  needed: 2.68 GiB
+00:10:49,327 INF ui.lib.space: fs space: 3.57 GiB  needed: 2.68 GiB
+00:10:49,328 DBG ui.gui.hubs: spoke is ready: StorageSpoke
+00:11:00,049 DBG ui.common: Entered spoke: NetworkSpoke
+00:11:05,586 INF ui.gui.spokes.network: device enp0s3 switched on
+00:11:05,652 DBG ui.gui.spokes.network: IPv4 object changed
+00:11:05,658 DBG ui.gui.spokes.network: IPv6 object changed
+00:11:05,943 DBG ui.gui.hubs: setting NetworkSpoke status to: Wired (enp0s3) connected
+00:11:05,944 DBG ui.gui.hubs: setting NetworkSpoke status to: Wired (enp0s3) connected
+00:11:05,944 DBG ui.gui.hubs: setting NetworkSpoke status to: Wired (enp0s3) connected
+00:11:05,944 DBG ui.gui.hubs: setting NetworkSpoke status to: Wired (enp0s3) connected
+00:11:05,945 DBG ui.gui.hubs: setting NetworkSpoke status to: Wired (enp0s3) connected
+00:11:51,764 DBG network: updating host name localhost.localdomain
+00:11:51,815 DBG ui.gui.spokes.network: apply ksdata # Network information
+network  --bootproto=dhcp --device=enp0s3 --onboot=off --ipv6=auto --activate
+network  --hostname=localhost.localdomain
+
+00:11:51,817 DBG payload: Source doesn't require network for installation
+00:11:51,818 DBG payload: Source doesn't require network for installation
+00:11:51,818 DBG ui.gui.spokes.network: network spoke (apply), network configuration changed - skipping restart of payload thread, payload does not need network
+00:11:51,819 DBG ui.common: Left spoke: NetworkSpoke
+00:11:51,943 DBG payload: Source doesn't require network for installation
+00:11:51,944 DBG payload: Source doesn't require network for installation
+00:11:52,068 INF ui.lib.space: fs space: 3.57 GiB  needed: 2.68 GiB
+00:11:57,139 DBG ui.common: Entered spoke: KdumpSpoke
+00:12:03,200 DBG ui.common: Left spoke: KdumpSpoke
+00:12:03,344 DBG payload: Source doesn't require network for installation
+00:12:03,344 DBG payload: Source doesn't require network for installation
+00:12:03,474 INF ui.lib.space: fs space: 3.57 GiB  needed: 2.68 GiB
+00:12:09,233 DBG ui.common: Left hub: SummaryHub
+00:12:09,253 INF lifecycle: Adding controller: ProgressHub
+00:12:09,269 INF lifecycle: Module initialized: PasswordSpoke
+00:12:09,283 DBG ui.gui.hubs: incomplete spokes: [PasswordSpoke]
+00:12:09,306 INF lifecycle: Module initialized: UserSpoke
+00:12:09,315 DBG ui.gui.hubs: incomplete spokes: [PasswordSpoke, UserSpoke]
+00:12:09,316 INF lifecycle: Initialization of all modules (2) has been started.
+00:12:09,316 INF lifecycle: All modules have been initialized.
+00:12:09,319 DBG ui.gui.hubs: Disabling event loop for hub SummaryHub
+00:12:09,319 DBG ui.gui.hubs: Starting event loop for hub ProgressHub
+00:12:09,320 INF threading: Running Thread: AnaInstallThread (140429400725248)
+00:12:09,330 DBG ui.common: Entered hub: ProgressHub
+00:12:09,369 INF installation: Top-level task queue: Installation queue
+Number of task queues: 10
+Number of tasks: 20
+Task & task group listing:
+ Task: Save system time to HW clock
+ Task queue: Installation environment setup
+  Task: Setup addons
+ Task queue: Early storage configuration
+  Task: Insert custom storage to ksdata
+  Task: Run pre-storage tasks
+  Task: Activate filesystems
+  Task: Write early storage
+ Task queue: Pre-install scripts
+  Task: Run %pre-install scripts
+ Task queue: Realm discover
+  Task: Discover realm to join
+ Task queue: Pre install tasks
+  Task: Setup authselect
+  Task: Setup firewall
+  Task: Setup network
+  Task: Setup timezone
+  Task: Copy /resolv.conf to sysroot
+  Task: Find additional packages & run preInstall()
+ Task queue: Payload installation
+  Task: Install the payload
+ Task queue: Late storage configuration
+  Task: Write late storage
+ Task queue: Subscription configuration
+  Task: Transfer subscription tokens to target system
+  Task: Connect the target system to Red Hat Insights
+ Task queue: Bootloader installation
+  Task: Install bootloader
+ Task queue: Post-installation setup tasks
+  Task: Run post-installation setup tasks
+00:12:09,371 INF installation: Task started: Save system time to HW clock (1/20)
+00:12:09,440 DBG ui.gui.hubs: spoke is ready: PasswordSpoke
+00:12:10,502 INF progress: Save system time to HW clock
+00:12:10,502 DBG installation: Task completed: Save system time to HW clock (1/20) (1.1 s)
+00:12:10,503 INF progress: Setting up the installation environment
+00:12:10,503 INF installation: Queue started: Installation environment setup (1/10)
+00:12:10,504 INF installation: Task started: Setup addons (2/20)
+00:12:10,510 INF progress: Setup addons
+00:12:10,511 DBG installation: Task completed: Setup addons (2/20) (0.0 s)
+00:12:10,512 INF progress: Configuring storage
+00:12:10,512 INF installation: Queue started: Early storage configuration (2/10)
+00:12:10,512 INF installation: Task started: Insert custom storage to ksdata (3/20)
+00:12:10,541 INF storage: omitting ksdata: existing 8 GiB disk sda (13) with non-existent msdos disklabel
+00:12:10,545 INF progress: Insert custom storage to ksdata
+00:12:10,546 DBG installation: Task completed: Insert custom storage to ksdata (3/20) (0.0 s)
+00:12:10,546 INF installation: Task started: Run pre-storage tasks (4/20)
+00:12:10,546 INF progress: Run pre-storage tasks
+00:12:10,547 DBG installation: Task completed: Run pre-storage tasks (4/20) (0.0 s)
+00:12:10,547 INF installation: Task started: Activate filesystems (5/20)
+00:12:10,970 INF progress: Creating disklabel on /dev/sda
+00:12:12,078 INF progress: Creating lvmpv on /dev/sda2
+00:12:13,397 INF progress: Creating ext4 on /dev/mapper/cl-root
+00:12:14,440 INF progress: Creating swap on /dev/mapper/cl-swap
+00:12:14,966 INF progress: Creating xfs on /dev/mapper/cl-home
+00:12:15,383 INF progress: Creating ext4 on /dev/sda1
+00:12:16,000 INF storage: setting boot flag on sda1
+00:12:19,483 INF progress: Activate filesystems
+00:12:19,483 DBG installation: Task completed: Activate filesystems (5/20) (8.9 s)
+00:12:19,484 INF installation: Task started: Write early storage (6/20)
+00:12:19,494 INF storage: not writing out mpath configuration
+00:12:19,495 INF progress: Write early storage
+00:12:19,496 DBG installation: Task completed: Write early storage (6/20) (0.0 s)
+00:12:19,497 INF progress: Running pre-installation scripts
+00:12:19,497 INF installation: Queue started: Pre-install scripts (3/10)
+00:12:19,497 INF installation: Task started: Run %pre-install scripts (7/20)
+00:12:19,498 INF progress: Run %pre-install scripts
+00:12:19,498 DBG installation: Task completed: Run %pre-install scripts (7/20) (0.0 s)
+00:12:19,499 INF progress: Discovering realm to join
+00:12:19,499 INF installation: Queue started: Realm discover (4/10)
+00:12:19,500 INF installation: Task started: Discover realm to join (8/20)
+00:12:19,505 INF progress: Discover realm to join
+00:12:19,507 DBG installation: Task completed: Discover realm to join (8/20) (0.0 s)
+00:12:19,508 INF progress: Running pre-installation tasks
+00:12:19,508 INF installation: Queue started: Pre install tasks (5/10)
+00:12:19,508 INF installation: Task started: Setup authselect (9/20)
+00:12:19,513 INF progress: Setup authselect
+00:12:19,514 DBG installation: Task completed: Setup authselect (9/20) (0.0 s)
+00:12:19,515 INF installation: Task started: Setup firewall (10/20)
+00:12:19,519 INF progress: Setup firewall
+00:12:19,520 DBG installation: Task completed: Setup firewall (10/20) (0.0 s)
+00:12:19,520 INF installation: Task started: Setup network (11/20)
+00:12:19,531 INF progress: Setup network
+00:12:19,531 DBG installation: Task completed: Setup network (11/20) (0.0 s)
+00:12:19,532 INF installation: Task started: Setup timezone (12/20)
+00:12:19,604 INF progress: Setup timezone
+00:12:19,604 DBG installation: Task completed: Setup timezone (12/20) (0.1 s)
+00:12:19,605 INF installation: Task started: Copy /resolv.conf to sysroot (13/20)
+00:12:19,607 INF progress: Copy /resolv.conf to sysroot
+00:12:19,609 DBG installation: Task completed: Copy /resolv.conf to sysroot (13/20) (0.0 s)
+00:12:19,609 INF installation: Task started: Find additional packages & run preInstall() (14/20)
+00:12:19,613 DBG payload: added package requirement 'e2fsprogs' for storage, strong=True
+00:12:19,614 DBG payload: added package requirement 'lvm2' for storage, strong=True
+00:12:19,614 DBG payload: added package requirement 'xfsprogs' for storage, strong=True
+00:12:19,615 DBG payload: no package requirement added for realm
+00:12:19,615 DBG payload: added package requirement 'authselect' for authselect, strong=True
+00:12:19,616 DBG payload: no package requirement added for firewall
+00:12:19,616 DBG payload: no package requirement added for network
+00:12:19,616 DBG payload: no package requirement added for ntp
+00:12:19,617 DBG payload: added package requirement 'grub2' for bootloader, strong=True
+00:12:19,617 DBG payload: added package requirement 'grub2-tools' for bootloader, strong=True
+00:12:19,625 DBG payload: no group requirement added for language groups
+00:12:19,632 DBG payload: no package requirement added for langpacks
+00:12:19,653 WRN payload: Platform group platform-oracle not available.
+00:12:19,662 INF progress: Find additional packages & run preInstall()
+00:12:19,662 DBG installation: Task completed: Find additional packages & run preInstall() (14/20) (0.1 s)
+00:12:19,663 INF progress: Installing.
+00:12:19,663 INF installation: Queue started: Payload installation (6/10)
+00:12:19,664 INF installation: Task started: Install the payload (15/20)
+00:12:19,664 INF progress: Starting package installation process
+00:12:19,959 DBG payload: apply with result True called on requirements [('package', 'e2fsprogs', PayloadRequirement(id=e2fsprogs, reasons=[PayloadRequirementReason(reason='storage', strong=True)])), ('package', 'lvm2', PayloadRequirement(id=lvm2, reasons=[PayloadRequirementReason(reason='storage', strong=True)])), ('package', 'xfsprogs', PayloadRequirement(id=xfsprogs, reasons=[PayloadRequirementReason(reason='storage', strong=True)])), ('package', 'authselect', PayloadRequirement(id=authselect, reasons=[PayloadRequirementReason(reason='authselect', strong=True)])), ('package', 'grub2', PayloadRequirement(id=grub2, reasons=[PayloadRequirementReason(reason='bootloader', strong=True)])), ('package', 'grub2-tools', PayloadRequirement(id=grub2-tools, reasons=[PayloadRequirementReason(reason='bootloader', strong=True)]))]
+00:12:23,284 INF progress: Preparing transaction from installation source
+00:12:24,374 DBG ui.common: Entered spoke: PasswordSpoke
+00:12:42,930 INF ui.gui.spokes.root_password: Return to hub prevented by password checking rules.
+00:12:43,575 DBG ui.common: Left spoke: PasswordSpoke
+00:12:43,593 DBG ui.gui.hubs: incomplete spokes: [UserSpoke]
+00:12:43,600 DBG ui.gui.hubs: incomplete spokes: []
+00:12:43,674 DBG ui.gui.hubs: spoke is ready: PasswordSpoke
+00:12:48,387 DBG ui.common: Entered spoke: UserSpoke
+00:13:21,956 INF ui.gui.spokes.user: Return to hub prevented by password checking rules.
+00:13:22,875 DBG ui.common: Left spoke: UserSpoke
+00:19:07,126 INF progress: Install the payload
+00:19:07,126 DBG installation: Task completed: Install the payload (15/20) (407.5 s)
+00:19:07,128 INF progress: Configuring storage
+00:19:07,128 INF installation: Queue started: Late storage configuration (7/10)
+00:19:07,129 INF installation: Task started: Write late storage (16/20)
+00:19:07,129 INF progress: Write late storage
+00:19:07,130 DBG installation: Task completed: Write late storage (16/20) (0.0 s)
+00:19:07,130 INF progress: Configuring Red Hat subscription
+00:19:07,131 INF installation: Queue started: Subscription configuration (8/10)
+00:19:07,131 INF installation: Task started: Transfer subscription tokens to target system (17/20)
+00:19:08,138 INF progress: Transfer subscription tokens to target system
+00:19:08,139 DBG installation: Task completed: Transfer subscription tokens to target system (17/20) (1.0 s)
+00:19:08,139 INF installation: Task started: Connect the target system to Red Hat Insights (18/20)
+00:19:09,145 INF progress: Connect the target system to Red Hat Insights
+00:19:09,146 DBG installation: Task completed: Connect the target system to Red Hat Insights (18/20) (1.0 s)
+00:19:09,147 INF progress: Installing boot loader
+00:19:09,147 INF installation: Queue started: Bootloader installation (9/10)
+00:19:09,148 INF installation: Task started: Install bootloader (19/20)
+00:19:09,148 INF bootloader: boot loader stage1 target device is sda
+00:19:09,149 INF bootloader: boot loader stage2 target device is sda1
+00:19:09,250 DBG bootloader: new default image: <pyanaconda.bootloader.LinuxBootLoaderImage object at 0x7fb840d9ea20>
+00:19:09,396 INF bootloader: bootloader.py: mbr will be updated for grub2
+00:19:11,947 INF bootloader: bootloader.py: used boot args: crashkernel=auto resume=/dev/mapper/cl-swap rd.lvm.lv=cl/root rd.lvm.lv=cl/swap 
+00:19:16,906 INF progress: Install bootloader
+00:19:16,906 DBG installation: Task completed: Install bootloader (19/20) (7.8 s)
+00:19:16,907 INF progress: Performing post-installation setup tasks
+00:19:16,908 INF installation: Queue started: Post-installation setup tasks (10/10)
+00:19:16,908 INF installation: Task started: Run post-installation setup tasks (20/20)
+00:19:16,949 INF payload: Installation requirements: [('package', 'e2fsprogs', PayloadRequirement(id=e2fsprogs, reasons=[PayloadRequirementReason(reason='storage', strong=True)])), ('package', 'lvm2', PayloadRequirement(id=lvm2, reasons=[PayloadRequirementReason(reason='storage', strong=True)])), ('package', 'xfsprogs', PayloadRequirement(id=xfsprogs, reasons=[PayloadRequirementReason(reason='storage', strong=True)])), ('package', 'authselect', PayloadRequirement(id=authselect, reasons=[PayloadRequirementReason(reason='authselect', strong=True)])), ('package', 'grub2', PayloadRequirement(id=grub2, reasons=[PayloadRequirementReason(reason='bootloader', strong=True)])), ('package', 'grub2-tools', PayloadRequirement(id=grub2-tools, reasons=[PayloadRequirementReason(reason='bootloader', strong=True)]))]
+00:19:16,951 INF progress: Run post-installation setup tasks
+00:19:16,951 DBG installation: Task completed: Run post-installation setup tasks (20/20) (0.0 s)
+00:19:16,952 INF threading: Thread Done: AnaInstallThread (140429400725248)
+00:19:17,013 INF threading: Running Thread: AnaConfigurationThread (140429400725248)
+00:19:17,057 INF installation: Top-level task queue: Configuration queue
+Number of task queues: 7
+Number of tasks: 20
+Task & task group listing:
+ Task queue: Installed system configuration
+  Task: Configure authselect
+  Task: Configure SELinux
+  Task: Configure first boot tasks
+  Task: Configure services
+  Task: Configure keyboard
+  Task: Configure timezone
+  Task: Configure language
+  Task: Configure firewall
+  Task: Configure X
+  Task: Configure system purpose
+ Task queue: Network configuration
+  Task: Network configuration
+ Task queue: User creation
+  Task: Configure root
+  Task: Configure user groups
+  Task: Configure user
+  Task: Configure SSH key
+ Task queue: Anaconda addon configuration
+  Task: Configure Anaconda addons
+ Task queue: Initramfs generation
+  Task: Generate initramfs
+ Task queue: Post installation scripts
+  Task: Run post installation scripts
+ Task queue: Write configs and kickstarts
+  Task: Store kickstarts
+  Task: Store user interaction config
+00:19:17,058 INF progress: Configuring installed system
+00:19:17,058 INF installation: Queue started: Installed system configuration (1/7)
+00:19:17,059 INF installation: Task started: Configure authselect (1/20)
+00:19:17,064 INF progress: Configure authselect
+00:19:17,065 DBG installation: Task completed: Configure authselect (1/20) (0.0 s)
+00:19:17,065 INF installation: Task started: Configure SELinux (2/20)
+00:19:17,070 DBG kickstart.kickstart.selinux: Use SELinux default configuration.
+00:19:17,070 INF progress: Configure SELinux
+00:19:17,071 DBG installation: Task completed: Configure SELinux (2/20) (0.0 s)
+00:19:17,071 INF installation: Task started: Configure first boot tasks (3/20)
+00:19:17,075 DBG kickstart: The initial-setup.service service will not be started on first boot, because it's unit file is not installed.
+00:19:17,076 INF progress: Configure first boot tasks
+00:19:17,076 DBG installation: Task completed: Configure first boot tasks (3/20) (0.0 s)
+00:19:17,077 INF installation: Task started: Configure services (4/20)
+00:19:17,081 DBG kickstart: Disabling the service chronyd.
+00:19:17,124 INF progress: Configure services
+00:19:17,125 DBG installation: Task completed: Configure services (4/20) (0.0 s)
+00:19:17,125 INF installation: Task started: Configure keyboard (5/20)
+00:19:17,763 INF progress: Configure keyboard
+00:19:17,764 DBG installation: Task completed: Configure keyboard (5/20) (0.6 s)
+00:19:17,764 INF installation: Task started: Configure timezone (6/20)
+00:19:17,812 INF progress: Configure timezone
+00:19:17,813 DBG installation: Task completed: Configure timezone (6/20) (0.0 s)
+00:19:17,814 INF installation: Task started: Configure language (7/20)
+00:19:18,830 INF progress: Configure language
+00:19:18,831 DBG installation: Task completed: Configure language (7/20) (1.0 s)
+00:19:18,831 INF installation: Task started: Configure firewall (8/20)
+00:19:20,242 INF progress: Configure firewall
+00:19:20,243 DBG installation: Task completed: Configure firewall (8/20) (1.4 s)
+00:19:20,243 INF installation: Task started: Configure X (9/20)
+00:19:20,249 DBG kickstart: Using the default target multi-user.target.
+00:19:20,250 DBG desktop: Setting systemd default target to: multi-user.target
+00:19:20,250 INF progress: Configure X
+00:19:20,251 DBG installation: Task completed: Configure X (9/20) (0.0 s)
+00:19:20,251 INF installation: Task started: Configure system purpose (10/20)
+00:19:20,256 INF progress: Configure system purpose
+00:19:20,257 DBG installation: Task completed: Configure system purpose (10/20) (0.0 s)
+00:19:20,258 INF progress: Writing network configuration
+00:19:20,258 INF installation: Queue started: Network configuration (2/7)
+00:19:20,258 INF installation: Task started: Network configuration (11/20)
+00:19:20,349 DBG network: setting ONBOOT value of enp0s3 to True
+00:19:20,415 INF progress: Network configuration
+00:19:20,416 DBG installation: Task completed: Network configuration (11/20) (0.2 s)
+00:19:20,417 INF progress: Creating users
+00:19:20,417 INF installation: Queue started: User creation (3/7)
+00:19:20,418 INF installation: Task started: Configure root (12/20)
+00:19:20,831 INF progress: Configure root
+00:19:20,831 DBG installation: Task completed: Configure root (12/20) (0.4 s)
+00:19:20,831 INF installation: Task started: Configure user groups (13/20)
+00:19:20,832 INF progress: Configure user groups
+00:19:20,833 DBG installation: Task completed: Configure user groups (13/20) (0.0 s)
+00:19:20,833 INF installation: Task started: Configure user (14/20)
+00:19:21,173 INF progress: Configure user
+00:19:21,173 DBG installation: Task completed: Configure user (14/20) (0.3 s)
+00:19:21,174 INF installation: Task started: Configure SSH key (15/20)
+00:19:21,174 INF progress: Configure SSH key
+00:19:21,174 DBG installation: Task completed: Configure SSH key (15/20) (0.0 s)
+00:19:21,175 INF progress: Configuring addons
+00:19:21,176 INF installation: Queue started: Anaconda addon configuration (4/7)
+00:19:21,176 INF installation: Task started: Configure Anaconda addons (16/20)
+00:19:21,177 INF progress: Executing com_redhat_kdump addon
+00:19:21,210 INF progress: Executing org_fedora_oscap addon
+00:19:21,210 INF progress: Configure Anaconda addons
+00:19:21,211 DBG installation: Task completed: Configure Anaconda addons (16/20) (0.0 s)
+00:19:21,212 INF progress: Generating initramfs
+00:19:21,212 INF installation: Queue started: Initramfs generation (5/7)
+00:19:21,213 INF installation: Task started: Generate initramfs (17/20)
+00:19:21,213 DBG payload: new-kernel-pkg does not exist, using dracut instead.
+00:19:21,303 INF payload: recreating initrd for 4.18.0-193.el8.x86_64
+00:19:58,939 INF progress: Generate initramfs
+00:19:58,939 DBG installation: Task completed: Generate initramfs (17/20) (37.7 s)
+00:19:58,940 INF progress: Running post-installation scripts
+00:19:58,940 INF installation: Queue started: Post installation scripts (6/7)
+00:19:58,941 INF installation: Task started: Run post installation scripts (18/20)
+00:19:58,941 INF kickstart.script: Running kickstart %%post script(s)
