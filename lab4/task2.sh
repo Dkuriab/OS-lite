@@ -32,14 +32,15 @@ for i in $(grep -e "$1$" $log | awk '{printf "%s-%s\n",$1,$2}'); do
 	fi
 
 	filepath=$(echo $i | awk -F "-" '{print $2}')
-	echo "Restore $filepath?(y/n)"
-	read rest
-	if [[ "$rest" == "y" ]]; then
+	echo "Do you want to restore $filepath? (y/n)"
+	read user_answer
+
+	if [[ "$user_answer" == "y" ]]; then
 		restore_name="$(basename $filepath)"
 		if [[ -d "$(dirname $filepath)" ]]; then
 			restore_dir="$(dirname $filepath)"
 		else
-			echo "Attemp to restore to homedir"
+			echo "Restoring to homedir"
 			restore_dir=~
 		fi
 		restore

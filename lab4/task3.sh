@@ -3,11 +3,12 @@
 backup_dir=~/Backup-"$(date -I)"
 last_backup=$(ls ~/ | grep Backup-)
 report_file=~/backup_report
-existing="false" # TODO
+existing="false"
 source_dir=~/source
 touch $report_file || true
 
 lbc=Backup-$(date --date "-7 days" -I)
+
 if [ "$last_backup" != "" ] && [ "$last_backup" > "$lbc" ] || [ "$last_backup" == "$lbc" ]; then
 	existing="true"
 	backup_dir=~/$last_backup
