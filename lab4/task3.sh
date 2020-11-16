@@ -1,7 +1,7 @@
 #!/bin/bash
 
 backup_dir=~/Backup-"$(date -I)"
-last_backup=$(ls ~/ | grep Backup-)
+last_backup=$(ls ~/ | grep Backup- | tail -n 1)
 report_file=~/backup_report
 existing="false"
 source_dir=~/source
@@ -9,9 +9,15 @@ touch $report_file || true
 
 lbc=Backup-$(date --date "-7 days" -I)
 
-if [ "$last_backup" != "" ] && [ "$last_backup" > "$lbc" ] || [ "$last_backup" == "$lbc" ]; then
-	existing="true"
-	backup_dir=~/$last_backup
+echo "lbc is  $lbc"
+echo "last backup $last_backup"
+
+if [[ "$last_backup" > "$lbc" ]] || [[ "$last_backup" == "$lbc" ]]; then
+	if [ "$last_backup" != "" ]; then
+		echo "exists realy..."
+		existing="true"
+		backup_dir=~/$last_backup
+	fi
 fi
 
 if [ "$existing" == "true" ]; then

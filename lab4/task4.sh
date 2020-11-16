@@ -1,6 +1,6 @@
 #!/bin/bash
 
-last_backup=$(ls ~/ | grep Backup-)
+last_backup=$(ls ~/ | grep Backup- | tail -n 1)
 dest=~/restore/
 rm -rf $dest || true
 mkdir -p $dest
