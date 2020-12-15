@@ -1,0 +1,2 @@
+sc query > services.txt
+script1.bat

@@ -1,0 +1,430 @@
+
+SERVICE_NAME: AudioSrv
+DISPLAY_NAME: Windows Audio
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Browser
+DISPLAY_NAME: Computer Browser
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CryptSvc
+DISPLAY_NAME: Cryptographic Services
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DcomLaunch
+DISPLAY_NAME: DCOM Server Process Launcher
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dhcp
+DISPLAY_NAME: DHCP Client
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: dmserver
+DISPLAY_NAME: Logical Disk Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dnscache
+DISPLAY_NAME: DNS Client
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ERSvc
+DISPLAY_NAME: Error Reporting Service
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Eventlog
+DISPLAY_NAME: Event Log
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EventSystem
+DISPLAY_NAME: COM+ Event System
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: FastUserSwitchingCompatibility
+DISPLAY_NAME: Fast User Switching Compatibility
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: helpsvc
+DISPLAY_NAME: Help and Support
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Intel(R) PROSet Monitoring Service
+DISPLAY_NAME: Intel(R) PROSet Monitoring Service
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LanmanServer
+DISPLAY_NAME: Server
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: lanmanworkstation
+DISPLAY_NAME: Workstation
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LmHosts
+DISPLAY_NAME: TCP/IP NetBIOS Helper
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Netman
+DISPLAY_NAME: Network Connections
+        TYPE               : 120  WIN32_SHARE_PROCESS (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Nla
+DISPLAY_NAME: Network Location Awareness (NLA)
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PlugPlay
+DISPLAY_NAME: Plug and Play
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PolicyAgent
+DISPLAY_NAME: IPSEC Services
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ProtectedStorage
+DISPLAY_NAME: Protected Storage
+        TYPE               : 120  WIN32_SHARE_PROCESS (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RasMan
+DISPLAY_NAME: Remote Access Connection Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RemoteRegistry
+DISPLAY_NAME: Remote Registry
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RpcSs
+DISPLAY_NAME: Remote Procedure Call (RPC)
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SamSs
+DISPLAY_NAME: Security Accounts Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Schedule
+DISPLAY_NAME: Task Scheduler
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: seclogon
+DISPLAY_NAME: Secondary Logon
+        TYPE               : 120  WIN32_SHARE_PROCESS (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SENS
+DISPLAY_NAME: System Event Notification
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ShellHWDetection
+DISPLAY_NAME: Shell Hardware Detection
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Spooler
+DISPLAY_NAME: Print Spooler
+        TYPE               : 110  WIN32_OWN_PROCESS (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: srservice
+DISPLAY_NAME: System Restore Service
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SSDPSRV
+DISPLAY_NAME: SSDP Discovery Service
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TapiSrv
+DISPLAY_NAME: Telephony
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TermService
+DISPLAY_NAME: Terminal Services
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Themes
+DISPLAY_NAME: Themes
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TrkWks
+DISPLAY_NAME: Distributed Link Tracking Client
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VBoxService
+DISPLAY_NAME: VirtualBox Guest Additions Service
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: W32Time
+DISPLAY_NAME: Windows Time
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WebClient
+DISPLAY_NAME: WebClient
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: winmgmt
+DISPLAY_NAME: Windows Management Instrumentation
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wscsvc
+DISPLAY_NAME: Security Center
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wuauserv
+DISPLAY_NAME: Automatic Updates
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WZCSVC
+DISPLAY_NAME: Wireless Zero Configuration
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        STATE              : 4  RUNNING 
+                                (STOPPABLE,NOT_PAUSABLE,ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0	(0x0)
+        SERVICE_EXIT_CODE  : 0	(0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0

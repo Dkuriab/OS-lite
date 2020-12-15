@@ -1,0 +1,10 @@
+
+
+    655360 bytes total conventional memory
+    655360 bytes available to MS-DOS
+    634080 largest executable program size
+
+   1048576 bytes total contiguous extended memory
+         0 bytes available contiguous extended memory
+    941056 bytes available XMS memory
+           MS-DOS resident in High Memory Area

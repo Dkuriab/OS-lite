@@ -1,0 +1,23 @@
+cd..
+cd LAB6
+cd TEST
+for /f %f in ('dir /b c:\LAB6\TEST') do echo %f
+for /f "skip=1 delims=" %f in ('dir /b /od "c:\LAB6\TEST"') DO echo"%f" will be deleted
+for /f "skip=1 delims=" %f in ('dir /b /od "c:\LAB6\TEST"') DO echo "%f" will be deleted
+for /f "skip=1 delims=" %f in ('dir /b /od "c:\LAB6\TEST"') DO rd %f
+for /f "skip=1 delims=" %f in ('dir /b /od "c:\LAB6\TEST"') DO del %f
+del cmd.txt
+xcopy c:\LAB6 c:\LAB6\TEST
+copy 'cmd.txt+diskpart.txt+mem.txt' all.txt
+copy "cmd.txt+diskpart.txt+mem.txt" all.txt
+copy "cmd.txt+diskpart.txt+mem.txt" "all.txt"
+copy "cmd.txt+diskpart.txt+mem.txt" "c:\LAB6\TEST\all.txt"
+copy "cmd.txt+diskpart.txt+mem.txt" all.txt
+xcopy "cmd.txt+diskpart.txt+mem.txt" all.txt
+copy "cmd.txt+diskpart.txt+mem.txt" all.txt
+copy cmd.txt+diskpart.txt+mem.txt all.txt
+copy * all2.txt
+for /f "skip=1 delims=" %f in ('dir /b /o-d "c:\LAB6\TEST"') DO del %f
+mkdir HELLO
+rd HELLO
+doskey /HISTORY > history.txt

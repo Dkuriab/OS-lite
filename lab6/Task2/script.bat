@@ -1,0 +1,1 @@
+copy /z c:\WINDOWS\MaxSize.txt \\danila\temp\MaxSizeCopy.txt

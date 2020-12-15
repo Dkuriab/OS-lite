@@ -1,0 +1,4 @@
+4.1)
+	driverquery /FO table /NH > drivers.txt
+4.2)
+	sort /reverse drivers.txt > sorted.txt

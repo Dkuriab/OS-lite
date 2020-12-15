@@ -1,0 +1,115 @@
+wdmaud       Microsoft WINMM WDM Au Kernel        4/13/2008 11:17:18 PM 
+Wanarp       Remote Access IP ARP D Kernel        4/13/2008 10:57:20 PM 
+VolSnap      VolSnap                Kernel        4/13/2008 10:41:00 PM 
+VgaSave      VgaSave                Kernel        4/13/2008 10:44:40 PM 
+VBoxVideo    VBoxVideo              Kernel        9/4/2020 11:43:48 AM  
+VBoxSF       VirtualBox Shared Fold File System   9/4/2020 11:43:48 AM  
+VBoxMouse    VirtualBox Guest Mouse Kernel        9/4/2020 11:43:48 AM  
+VBoxGuest    VirtualBox Guest Drive Kernel        9/4/2020 11:43:48 AM  
+usbohci      Microsoft USB Open Hos Kernel        4/13/2008 10:45:34 PM 
+usbhub       USB2 Enabled Hub       Kernel        4/13/2008 10:45:36 PM 
+Update       Microcode Update Drive Kernel        4/13/2008 10:39:46 PM 
+Udfs         Udfs                   File System   4/13/2008 10:32:35 PM 
+TermDD       Terminal Device Driver Kernel        4/13/2008 10:38:36 PM 
+TDTCP        TDTCP                  Kernel        4/13/2008 10:38:35 PM 
+TDPIPE       TDPIPE                 Kernel        4/13/2008 10:38:37 PM 
+Tcpip        TCP/IP Protocol Driver Kernel        4/13/2008 11:20:12 PM 
+sysaudio     Microsoft Kernel Syste Kernel        4/13/2008 11:15:55 PM 
+swmidi       Microsoft Kernel GS Wa Kernel        4/13/2008 10:45:07 PM 
+swenum       Software Bus Driver    Kernel        4/13/2008 10:39:52 PM 
+Srv          Srv                    File System   4/13/2008 11:15:08 PM 
+sr           System Restore Filter  File System   4/13/2008 10:36:50 PM 
+splitter     Microsoft Kernel Audio Kernel        4/13/2008 10:45:07 PM 
+Sfloppy      Sfloppy                Kernel        4/13/2008 10:40:47 PM 
+Serial       Serial                 Kernel        4/13/2008 11:15:44 PM 
+Secdrv       Secdrv                 Kernel        9/13/2006 5:18:32 PM  
+redbook      Digital CD Audio Playb Kernel        4/13/2008 10:40:27 PM 
+RDPWD        RDPWD                  Kernel        4/13/2008 10:38:40 PM 
+rdpdr        Terminal Server Device Kernel        4/13/2008 10:32:50 PM 
+RDPCDD       RDPCDD                 Kernel        8/18/2001 12:46:56 AM 
+Rdbss        Rdbss                  File System   4/13/2008 11:28:38 PM 
+Raspti       Direct Parallel        Kernel        8/18/2001 12:55:32 AM 
+RasPppoe     Remote Access PPPOE Dr Kernel        4/13/2008 10:57:31 PM 
+Rasl2tp      WAN Miniport (L2TP)    Kernel        4/13/2008 11:19:43 PM 
+RasAcd       Remote Access Auto Con Kernel        8/18/2001 12:55:39 AM 
+Ptilink      Direct Parallel Link D Kernel        8/18/2001 12:49:53 AM 
+PSched       QoS Packet Scheduler   Kernel        4/13/2008 10:56:36 PM 
+PptpMiniport WAN Miniport (PPTP)    Kernel        4/13/2008 11:19:47 PM 
+Pcmcia       Pcmcia                 Kernel        4/13/2008 10:36:41 PM 
+PCI          PCI Bus Driver         Kernel        4/13/2008 10:36:43 PM 
+ParVdm       ParVdm                 Kernel        8/18/2001 12:49:49 AM 
+PartMgr      PartMgr                Kernel        4/13/2008 10:40:48 PM 
+Parport      Parport                Kernel        4/13/2008 10:40:09 PM 
+NwlnkFwd     IPX Traffic Forwarder  Kernel        8/18/2001 12:54:08 AM 
+NwlnkFlt     IPX Traffic Filter Dri Kernel        8/18/2001 12:54:05 AM 
+Null         Null                   Kernel        8/18/2001 12:47:39 AM 
+Ntfs         Ntfs                   File System   4/13/2008 11:15:49 PM 
+Npfs         Npfs                   File System   4/13/2008 10:32:38 PM 
+NetBT        NetBios over Tcpip     Kernel        4/13/2008 11:20:59 PM 
+NetBIOS      NetBIOS Interface      File System   4/13/2008 10:56:01 PM 
+NDProxy      NDIS Proxy             Kernel        4/13/2008 10:57:28 PM 
+NdisWan      Remote Access NDIS WAN Kernel        4/13/2008 11:20:41 PM 
+Ndisuio      NDIS Usermode I/O Prot Kernel        4/13/2008 10:55:57 PM 
+NdisTapi     Remote Access NDIS TAP Kernel        4/13/2008 10:57:27 PM 
+NDIS         NDIS System Driver     Kernel        4/13/2008 11:20:35 PM 
+Mup          Mup                    File System   4/13/2008 11:17:05 PM 
+mssmbios     Microsoft System Manag Kernel        4/13/2008 10:36:45 PM 
+MSPQM        Microsoft Streaming Qu Kernel        4/13/2008 10:39:51 PM 
+MSPCLOCK     Microsoft Streaming Cl Kernel        4/13/2008 10:39:50 PM 
+msloop       Microsoft Loopback Ada Kernel        8/18/2001 12:53:40 AM 
+MSKSSRV      Microsoft Streaming Se Kernel        4/13/2008 10:39:51 PM 
+Msfs         Msfs                   File System   4/13/2008 10:32:38 PM 
+MRxSmb       MRXSMB                 File System   4/13/2008 11:16:58 PM 
+MRxDAV       WebDav Client Redirect File System   4/13/2008 10:32:42 PM 
+MountMgr     MountMgr               Kernel        4/13/2008 10:39:45 PM 
+mouhid       Mouse HID Driver       Kernel        8/18/2001 12:47:57 AM 
+Mouclass     Mouse Class Driver     Kernel        4/13/2008 10:39:47 PM 
+Modem        Modem                  Kernel        4/13/2008 11:00:18 PM 
+mnmdd        mnmdd                  Kernel        8/18/2001 12:57:28 AM 
+KSecDD       KSecDD                 Kernel        4/13/2008 10:31:40 PM 
+kmixer       Microsoft Kernel Wave  Kernel        4/13/2008 10:45:07 PM 
+Kbdclass     Keyboard Class Driver  Kernel        4/13/2008 10:39:46 PM 
+isapnp       PnP ISA/EISA Bus Drive Kernel        4/13/2008 10:36:40 PM 
+IRENUM       IR Enumerator Service  Kernel        4/13/2008 10:54:28 PM 
+IPSec        IPSEC driver           Kernel        4/13/2008 11:19:42 PM 
+IpNat        IP Network Address Tra Kernel        4/13/2008 10:57:10 PM 
+IpInIp       IP in IP Tunnel Driver Kernel        4/13/2008 10:57:07 PM 
+IpFilterDriv IP Traffic Filter Driv Kernel        8/18/2001 12:55:07 AM 
+Ip6Fw        IPv6 Windows Firewall  Kernel        4/13/2008 10:53:32 PM 
+intelppm     Intel Processor Driver Kernel        4/13/2008 10:31:31 PM 
+IntelIde     IntelIde               Kernel        4/13/2008 10:40:29 PM 
+Imapi        CD-Burning Filter Driv Kernel        4/13/2008 10:40:57 PM 
+i8042prt     i8042 Keyboard and PS/ Kernel        4/13/2008 11:17:59 PM 
+HTTP         HTTP                   Kernel        4/13/2008 10:53:48 PM 
+hidusb       Microsoft HID Class Dr Kernel        4/13/2008 10:45:27 PM 
+Gpc          Generic Packet Classif Kernel        4/13/2008 10:56:32 PM 
+Ftdisk       Volume Manager Driver  Kernel        8/18/2001 12:52:41 AM 
+FltMgr       FltMgr                 File System   4/13/2008 10:32:58 PM 
+Flpydisk     Flpydisk               Kernel        4/13/2008 10:40:24 PM 
+Fips         Fips                   Kernel        4/13/2008 10:33:27 PM 
+Fdc          Fdc                    Kernel        4/13/2008 10:40:25 PM 
+Fastfat      Fastfat                File System   4/13/2008 11:14:28 PM 
+E1000        Intel(R) PRO/1000 Netw Kernel        8/21/2008 2:09:39 AM  
+drmkaud      Microsoft Kernel DRM A Kernel        4/13/2008 10:45:13 PM 
+DMusic       Microsoft Kernel DLS S Kernel        4/13/2008 10:45:00 PM 
+dmload       dmload                 Kernel        8/18/2001 12:58:15 AM 
+dmio         Logical Disk Manager D Kernel        4/13/2008 10:44:45 PM 
+dmboot       dmboot                 Kernel        4/13/2008 10:44:45 PM 
+Disk         Disk Driver            Kernel        4/13/2008 10:40:46 PM 
+Compbatt     Microsoft Composite Ba Kernel        4/13/2008 10:36:36 PM 
+CmBatt       Microsoft AC Adapter D Kernel        4/13/2008 10:36:36 PM 
+Cdrom        CD-ROM Driver          Kernel        4/13/2008 10:40:45 PM 
+Cdfs         Cdfs                   File System   4/13/2008 11:14:21 PM 
+Cdaudio      Cdaudio                Kernel        8/18/2001 12:52:26 AM 
+cbidf2k      cbidf2k                Kernel        8/18/2001 12:52:06 AM 
+Beep         Beep                   Kernel        8/18/2001 12:47:33 AM 
+audstub      Audio Stub Driver      Kernel        8/18/2001 12:59:40 AM 
+Atmarpc      ATM ARP Client Protoco Kernel        4/13/2008 10:51:24 PM 
+atapi        Standard IDE/ESDI Hard Kernel        4/13/2008 10:40:29 PM 
+AsyncMac     RAS Asynchronous Media Kernel        4/13/2008 10:57:27 PM 
+AFD          AFD                    Kernel        4/13/2008 11:19:22 PM 
+aec          Microsoft Kernel Acous Kernel        5/24/2007 11:53:32 PM 
+ACPIEC       ACPIEC                 Kernel        8/18/2001 12:57:55 AM 
+ACPI         Microsoft ACPI Driver  Kernel        4/13/2008 10:36:33 PM 
+ac97intc     Intel(r) 82801 Audio D Kernel        7/20/2001 2:43:40 AM  
+
